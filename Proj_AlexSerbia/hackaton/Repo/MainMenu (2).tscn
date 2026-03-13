@@ -1,0 +1,111 @@
+[gd_scene load_steps=6 format=3 uid="uid://main_menu_final"]
+
+[ext_resource type="Script" path="res://MainMenu.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://background.png" id="2_bg"]
+[ext_resource type="Texture2D" path="res://btn_normal.png" id="3_btn_n"]
+[ext_resource type="Texture2D" path="res://btn_hover.png" id="4_btn_h"]
+[ext_resource type="FontFile" path="res://fonts/PressStart2P.ttf" id="5_font"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_script")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_bg")
+expand_mode = 1
+stretch_mode = 1
+
+[node name="VBox" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -350.0
+offset_top = -140.0
+offset_right = 350.0
+offset_bottom = 140.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+theme_override_constants/separation = 20
+
+[node name="TitleLabel" type="Label" parent="VBox"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "MY GAME"
+theme_override_fonts/font = ExtResource("5_font")
+theme_override_font_sizes/font_size = 48
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.227, 0.353, 0.0, 1)
+theme_override_constants/shadow_offset_x = 4
+theme_override_constants/shadow_offset_y = 4
+horizontal_alignment = 1
+
+[node name="Spacer" type="Control" parent="VBox"]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 16)
+
+[node name="PlayButton" type="TextureButton" parent="VBox"]
+custom_minimum_size = Vector2(700, 144)
+layout_mode = 2
+size_flags_horizontal = 4
+texture_normal = ExtResource("3_btn_n")
+texture_hover = ExtResource("4_btn_h")
+texture_pressed = ExtResource("4_btn_h")
+
+[node name="PlayLabel" type="Label" parent="VBox/PlayButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+text = "Play Game"
+theme_override_fonts/font = ExtResource("5_font")
+theme_override_font_sizes/font_size = 22
+theme_override_colors/font_color = Color(0.22, 0.18, 0.15, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 0.6)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="QuitButton" type="TextureButton" parent="VBox"]
+custom_minimum_size = Vector2(700, 144)
+layout_mode = 2
+size_flags_horizontal = 4
+texture_normal = ExtResource("3_btn_n")
+texture_hover = ExtResource("4_btn_h")
+texture_pressed = ExtResource("4_btn_h")
+
+[node name="QuitLabel" type="Label" parent="VBox/QuitButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+text = "Quit"
+theme_override_fonts/font = ExtResource("5_font")
+theme_override_font_sizes/font_size = 22
+theme_override_colors/font_color = Color(0.22, 0.18, 0.15, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 0.6)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+horizontal_alignment = 1
+vertical_alignment = 1
