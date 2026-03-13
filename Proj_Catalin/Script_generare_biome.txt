@@ -1,0 +1,120 @@
+extends TileMapLayer
+## Generator procedural de hartă 2D pentru Godot 4.3+
+## Se atașează pe un nod TileMapLayer.
+
+# =========================
+# CONFIGURARE GENERALĂ
+# =========================
+
+@export var map_width: int = 100
+@export var map_height: int = 100
+
+## Dacă este bifat, harta se generează automat la pornire.
+@export var generate_on_ready: bool = true
+
+## Dacă este bifat, poți regenera harta și din editor (tool script).
+@export var clear_before_generate: bool = true
+
+# =========================
+# NOISE / FASTNOISELITE
+# =========================
+
+## Poți seta direct din Inspector o resursă FastNoiseLite.
+## Dacă nu setezi nimic, scriptul va crea automat una folosind seed/frequency de mai jos.
+@export var noise: FastNoiseLite
+
+@export var seed: int = 12345
+@export_range(0.001, 1.0, 0.001) var frequency: float = 0.05
+
+# =========================
+# TILESET / SOURCE
+# =========================
+
+## ID-ul sursei din TileSet.
+## De obicei este 0 dacă ai un singur atlas în TileSet.
+@export var source_id: int = 0
+
+# =========================
+# PRAGURI BIOME
+# =========================
+
+## Valorile generate de FastNoiseLite sunt în general între -1 și 1.
+## Aceste praguri controlează ce tip de teren se plasează.
+@export var water_threshold: float = -0.2
+@export var sand_threshold: float = 0.0
+@export var grass_threshold: float = 0.4
+
+# =========================
+# COORDONATE ATLAS
+# =========================
+## Aceste coordonate trebuie adaptate la TileSet-ul tău.
+## Exemplu:
+## water_atlas_coords = Vector2i(0, 0) înseamnă că tile-ul de apă este
+## la coloana 0, rândul 0 în atlasul din TileSet.
+
+@export var water_atlas_coords: Vector2i = Vector2i(0, 0)
+@export var sand_atlas_coords: Vector2i = Vector2i(1, 0)
+@export var grass_atlas_coords: Vector2i = Vector2i(2, 0)
+@export var rock_atlas_coords: Vector2i = Vector2i(3, 0)
+
+# Dicționar util pentru acces rapid la coordonatele atlasului.
+var terrain_tiles := {}
+
+func _ready() -> void:
+	_initialize_noise()
+	_initialize_terrain_dictionary()
+
+	if generate_on_ready:
+		generate_map()
+
+func _initialize_noise() -> void:
+	# Dacă utilizatorul nu a setat manual o resursă FastNoiseLite,
+	# creăm una automat.
+	if noise == null:
+		noise = FastNoiseLite.new()
+
+	# Setări de bază pentru noise.
+	noise.seed = seed
+	noise.frequency = frequency
+	noise.noise_type = FastNoiseLite.TYPE_SIMPLEX
+
+func _initialize_terrain_dictionary() -> void:
+	terrain_tiles = {
+		"water": water_atlas_coords,
+		"sand": sand_atlas_coords,
+		"grass": grass_atlas_coords,
+		"rock": rock_atlas_coords
+	}
+
+func generate_map() -> void:
+	if clear_before_generate:
+		clear()
+
+	for y in range(map_height):
+		for x in range(map_width):
+			var noise_value: float = noise.get_noise_2d(x, y)
+			var atlas_coords: Vector2i = _get_terrain_from_noise(noise_value)
+
+			# Plasează tile-ul în TileMapLayer.
+			# Parametri:
+			# - coords în grid
+			# - source_id din TileSet
+			# - atlas_coords din atlas
+			set_cell(Vector2i(x, y), source_id, atlas_coords)
+
+func _get_terrain_from_noise(value: float) -> Vector2i:
+	# Mapăm valorile zgomotului pe biome-uri / tipuri de teren.
+	if value < water_threshold:
+		return terrain_tiles["water"]
+	elif value < sand_threshold:
+		return terrain_tiles["sand"]
+	elif value < grass_threshold:
+		return terrain_tiles["grass"]
+	else:
+		return terrain_tiles["rock"]
+
+## Funcție opțională pentru regenerare rapidă din alte scripturi sau butoane UI.
+func regenerate() -> void:
+	_initialize_noise()
+	_initialize_terrain_dictionary()
+	generate_map()
