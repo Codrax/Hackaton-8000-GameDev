@@ -1,10 +1,9 @@
-[gd_scene format=3 uid="uid://dsfhg2ekaj7kw"]
+[gd_scene format=4 uid="uid://dsfhg2ekaj7kw"]
 
 [ext_resource type="PackedScene" uid="uid://c0lsnfct0maiq" path="res://character_main.tscn" id="1_dxppu"]
+[ext_resource type="TileSet" uid="uid://bil632g55ry7b" path="res://tilemap_master.tres" id="2_dsnr4"]
 [ext_resource type="PackedScene" uid="uid://dwycx2kxywua0" path="res://wall.tscn" id="2_gy3sr"]
 [ext_resource type="AudioStream" uid="uid://b1ep62kbfo77j" path="res://vibeees.mp3" id="3_1lwx6"]
-
-[sub_resource type="TileSet" id="TileSet_dxppu"]
 
 [node name="Node2D" type="Node2D" unique_id=1669356560]
 scale = Vector2(1, 1.1)
@@ -13,7 +12,8 @@ scale = Vector2(1, 1.1)
 position = Vector2(500, 200)
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=30240025]
-tile_set = SubResource("TileSet_dxppu")
+tile_map_data = PackedByteArray("AAD9AQ8AAAAGAAAAAACRAV0AAAAGAAAAAACSAVwAAAAGAAAAAACTAVwAAAAGAAAAAACUAVwAAAAGAAAAAACVAVwAAAAGAAAAAACWAVwAAAAGAAAAAACXAVwAAAAGAAAAAAA=")
+tile_set = ExtResource("2_dsnr4")
 
 [node name="Node2D2" parent="." unique_id=518584187 instance=ExtResource("2_gy3sr")]
 position = Vector2(225, 123.63636)
