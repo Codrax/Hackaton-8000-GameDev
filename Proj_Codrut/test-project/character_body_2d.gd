@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-const SPEED = 200.0
+const SPEED = 100.0
 
 func _physics_process(_delta: float) -> void:
 	# Am înlocuit "ui_left", etc. cu noile tale acțiuni personalizate
