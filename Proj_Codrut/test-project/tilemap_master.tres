@@ -4,7 +4,9 @@
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_54vjb"]
 texture = ExtResource("1_osj2m")
-texture_region_size = Vector2i(128, 128)
+margins = Vector2i(5, 5)
+separation = Vector2i(10, 10)
+texture_region_size = Vector2i(118, 118)
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -16903,5 +16905,5 @@ texture_region_size = Vector2i(128, 128)
 175:95/0 = 0
 
 [resource]
-tile_size = Vector2i(1, 1)
+tile_size = Vector2i(118, 118)
 sources/0 = SubResource("TileSetAtlasSource_54vjb")
