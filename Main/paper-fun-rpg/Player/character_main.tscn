@@ -14,9 +14,8 @@
 [ext_resource type="Texture2D" uid="uid://bbk42r74gunv6" path="res://Images/Sprites/RUN/run_right.png" id="12_kbxdy"]
 [ext_resource type="Texture2D" uid="uid://cavgmv2xvasu2" path="res://Images/Sprites/RUN/run_up.png" id="13_g6daa"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rucpe"]
-radius = 18.189484
-height = 81.012665
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sm6kc"]
+size = Vector2(20, 13.164557)
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_lk07w"]
 animation = &"attack_up"
@@ -520,8 +519,9 @@ slide_on_ceiling = false
 script = ExtResource("1_l7dh1")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=217518866]
+position = Vector2(0, 28)
 scale = Vector2(0.9895833, 0.9875)
-shape = SubResource("CapsuleShape2D_rucpe")
+shape = SubResource("RectangleShape2D_sm6kc")
 
 [node name="AnimationTree" type="AnimationTree" parent="." unique_id=103412276]
 tree_root = SubResource("AnimationNodeStateMachine_hhwm4")

@@ -5,11 +5,12 @@ extends CharacterBody2D
 @onready var animation_tree = $AnimationTree
 @onready var anim_state = animation_tree.get("parameters/playback")
 
-func _physics_process(_delta):
-	# 1. Get Input Vector
+func _physics_process(_delta):		
+	# 1. Get Input Vector (if not doing attack animation)
 	var input_vector = Vector2.ZERO
-	input_vector.x = Input.get_action_strength("move_right") - Input.get_action_strength("move_left")
-	input_vector.y = Input.get_action_strength("move_down") - Input.get_action_strength("move_up")
+	if anim_state.get_current_node() != "Attack":
+		input_vector.x = Input.get_action_strength("move_right") - Input.get_action_strength("move_left")
+		input_vector.y = Input.get_action_strength("move_down") - Input.get_action_strength("move_up")
 	input_vector = input_vector.normalized()
 
 	# 2. Apply Speed Multiplier if Shift is held
