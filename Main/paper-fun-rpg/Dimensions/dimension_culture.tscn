@@ -55,3 +55,4 @@ script = ExtResource("6_g03h1")
 visible = false
 
 [node name="Pause_Menu" parent="." unique_id=1790332088 instance=ExtResource("11_g03h1")]
+visible = false

@@ -1,6 +1,5 @@
 [gd_scene format=4 uid="uid://di52b8n3mmy86"]
 
-[ext_resource type="PackedScene" uid="uid://b4dneoxua7pe6" path="res://Tests/Test Player/character_main.tscn" id="1_ep3gk"]
 [ext_resource type="AudioStream" uid="uid://belrhymkpkpfv" path="res://Music/dimensions/hub/ambient.mp3" id="2_lri0m"]
 [ext_resource type="TileSet" uid="uid://dfmqfrlltfrm4" path="res://Tilemaps/tile_128.tres" id="2_rl0p0"]
 [ext_resource type="PackedScene" uid="uid://b7ty4i7kybeto" path="res://UI/PauseMenu/scenes/PauseMenu.tscn" id="3_7hfs0"]
@@ -14,8 +13,6 @@
 [ext_resource type="Script" uid="uid://cgka7ek3csm22" path="res://Tilemaps/tile_clouds.gd" id="9_qn8vm"]
 
 [node name="Node2D" type="Node2D" unique_id=411654325]
-
-[node name="CharacterBody2D" parent="." unique_id=1640696164 instance=ExtResource("1_ep3gk")]
 
 [node name="tile_world" type="TileMapLayer" parent="." unique_id=669253101]
 tile_set = ExtResource("2_rl0p0")
@@ -31,7 +28,6 @@ script = ExtResource("5_dtkbd")
 player = NodePath("")
 
 [node name="Player" parent="." unique_id=1146817872 instance=ExtResource("6_4ni5d")]
-position = Vector2(380, -464.54544)
 
 [node name="tile_invisiblewall" type="TileMapLayer" parent="." unique_id=1660053097]
 visible = false
@@ -54,3 +50,4 @@ autoplay = true
 visible = false
 
 [node name="Pause_Menu" parent="." unique_id=1790332088 instance=ExtResource("3_7hfs0")]
+visible = false
