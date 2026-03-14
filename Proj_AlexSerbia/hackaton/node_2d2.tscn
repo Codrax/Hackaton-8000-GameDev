@@ -1,13 +1,8 @@
 [gd_scene format=3 uid="uid://btagpldfh1j81"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_aehv4"]
-radius = 151.0
-height = 410.0
+[ext_resource type="PackedScene" uid="uid://0x0jiopidkk" path="res://npc_3.tscn" id="1_om433"]
 
 [node name="Node2D" type="Node2D" unique_id=157261740]
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1491387979]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1136439344]
-position = Vector2(0, 10)
-shape = SubResource("CapsuleShape2D_aehv4")
+[node name="npc2" parent="." unique_id=1143432311 instance=ExtResource("1_om433")]
+position = Vector2(175, 338)

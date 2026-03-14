@@ -4,8 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://g7qt7s8huruo" path="res://npc1.png" id="2_0e48y"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0e48y"]
-radius = 52.0
-height = 296.0
+radius = 44.0
+height = 272.0
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_epypp"]
 animations = [{

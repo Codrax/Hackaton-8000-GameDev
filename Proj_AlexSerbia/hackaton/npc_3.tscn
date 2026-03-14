@@ -3,8 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://buoe5kqg0ujwr" path="res://pixel-art-warrior-with-sword-and-shield-ready-for-battle-retro-style-character-for-game-or-digital-art-project-png.png" id="1_pxhhw"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_yk8p1"]
-radius = 126.0
-height = 368.0
+radius = 93.0
+height = 346.0
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ufif8"]
 

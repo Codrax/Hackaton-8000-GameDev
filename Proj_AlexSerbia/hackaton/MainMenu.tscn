@@ -2,8 +2,6 @@
 
 [ext_resource type="Script" uid="uid://e5ckndcn08fs" path="res://MainMenu.gd" id="1_script"]
 [ext_resource type="Texture2D" uid="uid://b2phod2jqfcn2" path="res://background.png" id="2_qoqlk"]
-[ext_resource type="Texture2D" uid="uid://cq3iqdirch4xd" path="res://btn_hover.png" id="3_iwfq2"]
-[ext_resource type="Texture2D" uid="uid://fk8vd0qgut63" path="res://btn_normal.png" id="4_7r1g0"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_btn_normal"]
 bg_color = Color(0.408, 0.408, 0.408, 1)
@@ -60,6 +58,26 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 0.35)
 
+[node name="Background2" type="Sprite2D" parent="." unique_id=1667430353]
+position = Vector2(582, 314.00003)
+scale = Vector2(1.2083334, 1.1962965)
+texture = ExtResource("2_qoqlk")
+
+[node name="TitleLabel" type="Label" parent="." unique_id=326050736]
+layout_mode = 0
+offset_left = 388.0
+offset_top = 87.0
+offset_right = 758.0
+offset_bottom = 175.0
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.2, 0.2, 0.2, 1)
+theme_override_constants/shadow_offset_x = 4
+theme_override_constants/shadow_offset_y = 4
+theme_override_font_sizes/font_size = 52
+text = "Paper Fun RPG"
+horizontal_alignment = 1
+
 [node name="CenterContainer" type="VBoxContainer" parent="." unique_id=94537028]
 layout_mode = 1
 anchors_preset = 8
@@ -76,23 +94,8 @@ grow_vertical = 2
 theme_override_constants/separation = 16
 alignment = 1
 
-[node name="TitleLabel" type="Label" parent="CenterContainer" unique_id=326050736]
-layout_mode = 2
-size_flags_horizontal = 4
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_colors/font_shadow_color = Color(0.2, 0.2, 0.2, 1)
-theme_override_constants/shadow_offset_x = 4
-theme_override_constants/shadow_offset_y = 4
-theme_override_font_sizes/font_size = 52
-text = "MY GAME"
-horizontal_alignment = 1
-
-[node name="Spacer" type="Control" parent="CenterContainer" unique_id=812414883]
-custom_minimum_size = Vector2(0, 20)
-layout_mode = 2
-
 [node name="PlayButton" type="Button" parent="CenterContainer" unique_id=1749792764]
-custom_minimum_size = Vector2(350, 55)
+custom_minimum_size = Vector2(350, 50)
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -102,7 +105,7 @@ theme_override_font_sizes/font_size = 22
 theme_override_styles/normal = SubResource("StyleBoxFlat_btn_normal")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_btn_pressed")
 theme_override_styles/hover = SubResource("StyleBoxFlat_btn_hover")
-text = "Play Game"
+text = "▶  Play"
 
 [node name="QuitButton" type="Button" parent="CenterContainer" unique_id=953477019]
 custom_minimum_size = Vector2(350, 55)
@@ -115,17 +118,8 @@ theme_override_font_sizes/font_size = 22
 theme_override_styles/normal = SubResource("StyleBoxFlat_btn_normal")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_btn_pressed")
 theme_override_styles/hover = SubResource("StyleBoxFlat_btn_hover")
-text = "Quit"
+text = "✕  Quit"
 
-[node name="Background2" type="Sprite2D" parent="." unique_id=1667430353]
-position = Vector2(580.00006, 324)
-scale = Vector2(1.2083334, 1.1962965)
-texture = ExtResource("2_qoqlk")
-
-[node name="BtnHover" type="Sprite2D" parent="." unique_id=985926048]
-position = Vector2(579, 361)
-texture = ExtResource("3_iwfq2")
-
-[node name="BtnNormal" type="Sprite2D" parent="." unique_id=895246057]
-position = Vector2(581, 539)
-texture = ExtResource("4_7r1g0")
+[node name="Spacer" type="Control" parent="CenterContainer" unique_id=812414883]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
