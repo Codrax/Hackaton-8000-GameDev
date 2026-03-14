@@ -1,5 +1,6 @@
 extends CanvasLayer
 
+@onready var ui_overlay = $"../UI_Overlay"
 @onready var pause_menu = $"../Pause_Menu" # Replace with the exact node name
 #Why does rain fall from the sky? Please tell me
 @onready var help_input = $"Contailer_Help/CenterContainer/CenterContainer2/Help_Input"
@@ -10,6 +11,12 @@ const API_URL = "https://devsocket.025555.xyz/"
 const AUTH_TOKEN = "b8d4de9d-4c35-4143-b0c4-61c3776c0586"
 
 @onready var ui_container = $Contailer_Help
+
+func _ready() -> void:
+	if ui_overlay == null:
+		push_error("Pause_Menu nu a fost gasit.")
+		return
+	ui_overlay.visible = true
 
 func _on_pressed() -> void:
 	if pause_menu == null:

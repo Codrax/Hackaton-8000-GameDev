@@ -51,6 +51,7 @@ tile_map_data = PackedByteArray("AADV/+7/AAAOAAAAAADV////AAAOAAAAAADX/wwAAAAOAAA
 tile_set = ExtResource("5_6ramc")
 script = ExtResource("6_g03h1")
 
-[node name="CanvasLayer" parent="." unique_id=853865014 instance=ExtResource("10_6ramc")]
+[node name="UI_Overlay" parent="." unique_id=853865014 instance=ExtResource("10_6ramc")]
+visible = false
 
 [node name="Pause_Menu" parent="." unique_id=1790332088 instance=ExtResource("11_g03h1")]
