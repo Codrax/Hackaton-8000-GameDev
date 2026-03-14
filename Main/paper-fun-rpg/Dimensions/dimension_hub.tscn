@@ -13,6 +13,6 @@
 stream = ExtResource("2_lri0m")
 autoplay = true
 
-[node name="Pause_Menu" parent="." unique_id=1790332088 instance=ExtResource("3_7hfs0")]
-
 [node name="CanvasLayer" parent="." unique_id=853865014 instance=ExtResource("4_xpjkn")]
+
+[node name="Pause_Menu" parent="." unique_id=1790332088 instance=ExtResource("3_7hfs0")]
