@@ -32,7 +32,8 @@ folder_colors={
 "res://Player/": "blue",
 "res://Tests/": "gray",
 "res://Tilemaps/": "orange",
-"res://UI/": "red"
+"res://UI/": "red",
+"res://Videos/": "blue"
 }
 
 [input]
