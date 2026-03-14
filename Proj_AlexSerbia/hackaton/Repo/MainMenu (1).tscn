@@ -1,12 +1,18 @@
 [gd_scene format=3 uid="uid://c35ynecltusao"]
 
 [ext_resource type="Script" uid="uid://e5ckndcn08fs" path="res://MainMenu.gd" id="1_script"]
+[ext_resource type="Texture2D" uid="uid://blxci13mlhxci" path="res://player.png" id="2_7sk82"]
+[ext_resource type="Texture2D" uid="uid://g7qt7s8huruo" path="res://npc1.png" id="3_4ds2r"]
 
 [node name="MainMenu" type="Control" unique_id=1252631748]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 12.0
+offset_top = 11.0
+offset_right = 12.0
+offset_bottom = 11.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_script")
@@ -16,6 +22,10 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -2369.0
+offset_top = 1757.0
+offset_right = -2369.0
+offset_bottom = 1757.0
 grow_horizontal = 2
 grow_vertical = 2
 expand_mode = 1
@@ -93,3 +103,14 @@ theme_override_font_sizes/font_size = 18
 text = "Quit"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Player" type="Sprite2D" parent="." unique_id=26611206]
+position = Vector2(116, 434)
+texture = ExtResource("2_7sk82")
+
+[node name="Node2D" type="Node2D" parent="Player" unique_id=1303441510]
+position = Vector2(-860.5231, 500.2721)
+
+[node name="Npc1" type="Sprite2D" parent="." unique_id=451510836]
+position = Vector2(-737, 960)
+texture = ExtResource("3_4ds2r")
