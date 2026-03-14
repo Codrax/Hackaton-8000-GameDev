@@ -5,7 +5,10 @@ extends CharacterBody2D
 @onready var animation_tree = $AnimationTree
 @onready var anim_state = animation_tree.get("parameters/playback")
 
-func _physics_process(_delta):		
+# --- ADAUGĂ ASTA: Variabilă pentru a ține minte NPC-ul de lângă tine ---
+var interactable_target = null
+
+func _physics_process(_delta):        
 	# 1. Get Input Vector (if not doing attack animation)
 	var input_vector = Vector2.ZERO
 	if anim_state.get_current_node() != "Attack":
@@ -34,3 +37,18 @@ func _physics_process(_delta):
 		anim_state.travel("Attack")
 
 	move_and_slide()
+
+
+#Logica pentru tasta de interacțiune ---
+func _input(event):
+	if event.is_action_pressed("interact") and interactable_target:
+		interactable_target.interact()
+
+# --- ADAUGĂ ASTA: Funcțiile declanșate de Area2D (Signals) ---
+func _on_interaction_area_area_entered(area):
+	if area.has_method("interact"):
+		interactable_target = area
+
+func _on_interaction_area_area_exited(area):
+	if interactable_target == area:
+		interactable_target = null

@@ -512,6 +512,9 @@ _data = {
 &"run_up": SubResource("Animation_snwhb")
 }
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_sm6kc"]
+radius = 93.50535
+
 [node name="Player" type="CharacterBody2D" unique_id=1640696164]
 position = Vector2(359, 146)
 scale = Vector2(2, 2)
@@ -547,3 +550,15 @@ drag_top_margin = 0.5
 drag_right_margin = 0.5
 drag_bottom_margin = 0.5
 editor_draw_drag_margin = true
+
+[node name="InteractionArea" type="Area2D" parent="." unique_id=1041272765]
+disable_mode = 2
+collision_layer = 0
+collision_mask = 512
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea" unique_id=749522038]
+position = Vector2(2, 22)
+shape = SubResource("CircleShape2D_sm6kc")
+
+[connection signal="area_entered" from="InteractionArea" to="." method="_on_interaction_area_area_entered"]
+[connection signal="area_exited" from="InteractionArea" to="." method="_on_interaction_area_area_exited"]
