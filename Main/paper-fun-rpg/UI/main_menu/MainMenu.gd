@@ -1,6 +1,6 @@
 extends Control
 
-const GAME_SCENE = "res://Game.tscn"
+const GAME_SCENE = "res://Dimensions/dimension_hub.tscn"
 
 func _ready() -> void:
 	await get_tree().process_frame
