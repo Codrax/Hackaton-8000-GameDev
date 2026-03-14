@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dbf52ccu3mo7p"]
 
-[ext_resource type="Script" uid="uid://e5ckndcn08fs" path="res://MainMenu.gd" id="1_script"]
-[ext_resource type="Texture2D" uid="uid://b2phod2jqfcn2" path="res://background.png" id="2_qoqlk"]
+[ext_resource type="Script" uid="uid://e5ckndcn08fs" path="res://UI/main_menu/MainMenu.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://background.png" id="2_qoqlk"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_btn_normal"]
 bg_color = Color(0.408, 0.408, 0.408, 1)
