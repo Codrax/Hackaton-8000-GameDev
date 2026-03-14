@@ -1,9 +1,10 @@
 [gd_scene format=3 uid="uid://dhb5erdrirn4a"]
 
-[ext_resource type="Script" uid="uid://di6j11fguu2ko" path="res://MC/MC-Codrut/character_body_2d.gd" id="1_n28t2"]
+[ext_resource type="Script" uid="uid://5gu7sw1mlwg2" path="res://MC/MC-Codrut/character_body_2d.gd" id="1_n28t2"]
 [ext_resource type="PackedScene" uid="uid://c0lsnfct0maiq" path="res://MC/MC-Codrut/character_main.tscn" id="2_26pds"]
 
 [node name="MC" type="Node2D" unique_id=1188441900]
 script = ExtResource("1_n28t2")
 
 [node name="Player" parent="." unique_id=777368228 instance=ExtResource("2_26pds")]
+position = Vector2(448, 189)

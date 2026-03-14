@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://0x0jiopidkk"]
+
+[ext_resource type="Texture2D" uid="uid://buoe5kqg0ujwr" path="res://pixel-art-warrior-with-sword-and-shield-ready-for-battle-retro-style-character-for-game-or-digital-art-project-png.png" id="1_pxhhw"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_yk8p1"]
+radius = 126.0
+height = 368.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ufif8"]
+
+[node name="npc2" type="Node2D" unique_id=1143432311]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=2116604788]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1305806097]
+shape = SubResource("CapsuleShape2D_yk8p1")
+
+[node name="PixelArtWarriorWithSwordAndShieldReadyForBattleRetroStyleCharacterForGameOrDigitalArtProjectPng" type="Sprite2D" parent="." unique_id=603772060]
+position = Vector2(5, -7)
+texture = ExtResource("1_pxhhw")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="PixelArtWarriorWithSwordAndShieldReadyForBattleRetroStyleCharacterForGameOrDigitalArtProjectPng" unique_id=1235542511]
+sprite_frames = SubResource("SpriteFrames_ufif8")

@@ -1,0 +1,69 @@
+[gd_scene format=3 uid="uid://r6gph1axf5ha"]
+
+[ext_resource type="Script" uid="uid://vyncgn7p1eit" path="res://node_2d.gd" id="1_wtcfe"]
+[ext_resource type="Texture2D" uid="uid://g7qt7s8huruo" path="res://npc1.png" id="2_0e48y"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0e48y"]
+radius = 52.0
+height = 296.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_epypp"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_0e48y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_0e48y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_0e48y")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Node2D" unique_id=863432192]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=502532267]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1242640689]
+position = Vector2(1, 9)
+shape = SubResource("CapsuleShape2D_0e48y")
+
+[node name="Area2D" type="Area2D" parent="CharacterBody2D" unique_id=1429226031]
+
+[node name="Npc3" type="Sprite2D" parent="." unique_id=1524604823]
+position = Vector2(2, -2)
+scale = Vector2(1, 0.97428566)
+texture = ExtResource("2_0e48y")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Npc3" unique_id=1369820027]
+position = Vector2(9, 15.395925)
+sprite_frames = SubResource("SpriteFrames_epypp")
+animation = &"idle"
+script = ExtResource("1_wtcfe")
