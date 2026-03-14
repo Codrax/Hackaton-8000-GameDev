@@ -9,11 +9,8 @@
 [ext_resource type="Script" uid="uid://djtwoxygfqieq" path="res://Tilemaps/tile_after_128.gd" id="5_q6oif"]
 [ext_resource type="Script" uid="uid://cgka7ek3csm22" path="res://Tilemaps/tile_clouds.gd" id="6_g03h1"]
 [ext_resource type="TileSet" uid="uid://8qjqvrq3hifa" path="res://Tilemaps/tile_purple_128.tres" id="9_s8o0v"]
-<<<<<<< Updated upstream
 [ext_resource type="PackedScene" uid="uid://tpr6jwkkirof" path="res://UI/overlay/layer_overlay.tscn" id="10_6ramc"]
-=======
 [ext_resource type="PackedScene" uid="uid://b7ty4i7kybeto" path="res://UI/PauseMenu/scenes/PauseMenu.tscn" id="10_6ramc"]
->>>>>>> Stashed changes
 
 [node name="Node2D" type="Node2D" unique_id=1669356560]
 scale = Vector2(1, 1.1)
@@ -50,13 +47,10 @@ tile_map_data = PackedByteArray("AADV/+7/AAAOAAAAAADV////AAAOAAAAAADX/wwAAAAOAAA
 tile_set = ExtResource("5_6ramc")
 script = ExtResource("6_g03h1")
 
-<<<<<<< Updated upstream
 [node name="CanvasLayer" parent="." unique_id=853865014 instance=ExtResource("10_6ramc")]
-=======
 [node name="Pause_Menu" parent="." unique_id=1790332088 instance=ExtResource("10_6ramc")]
 visible = false
 script = null
->>>>>>> Stashed changes
 
 [node name="MusicDimensionHub" type="AudioStreamPlayer" parent="." unique_id=27103067]
 stream = ExtResource("4_s8o0v")
