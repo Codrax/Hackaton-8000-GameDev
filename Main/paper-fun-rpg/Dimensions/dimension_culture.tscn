@@ -4,7 +4,7 @@
 [ext_resource type="TileSet" uid="uid://ja7pfnosw06b" path="res://Tilemaps/tile_pre_64.tres" id="2_kauso"]
 [ext_resource type="PackedScene" uid="uid://c0lsnfct0maiq" path="res://Player/character_main.tscn" id="2_q6oif"]
 [ext_resource type="TileSet" uid="uid://cn2671iycwmg6" path="res://Tilemaps/tile_after_128.tres" id="3_q6oif"]
-[ext_resource type="AudioStream" uid="uid://1j40pik1wbgc" path="res://Music/music_dimension_hub.mp3" id="4_s8o0v"]
+[ext_resource type="AudioStream" uid="uid://1j40pik1wbgc" path="res://Music/dimensions/music_dimension_hub.mp3" id="4_s8o0v"]
 [ext_resource type="TileSet" uid="uid://gjjfbqjhnsw1" path="res://Tilemaps/tile_clouds.tres" id="5_6ramc"]
 [ext_resource type="Script" uid="uid://djtwoxygfqieq" path="res://Tilemaps/tile_after_128.gd" id="5_q6oif"]
 [ext_resource type="Script" uid="uid://cgka7ek3csm22" path="res://Tilemaps/tile_clouds.gd" id="6_g03h1"]
