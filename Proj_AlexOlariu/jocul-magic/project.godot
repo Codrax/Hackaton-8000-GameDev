@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Jocul_magic"
-run/main_scene="uid://c0lsnfct0maiq"
+run/main_scene="uid://dai6m5oaffu17"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
