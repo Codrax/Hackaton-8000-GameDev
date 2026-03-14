@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="PaperFunRPG"
-run/main_scene="uid://di52b8n3mmy86"
+run/main_scene="uid://dai6m5oaffu17"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://Images/icon.svg"
 
@@ -62,3 +62,5 @@ attack={
 [rendering]
 
 rendering_device/driver.windows="d3d12"
+textures/vram_compression/compress_with_gpu=false
+textures/vram_compression/cache_gpu_compressor=false
