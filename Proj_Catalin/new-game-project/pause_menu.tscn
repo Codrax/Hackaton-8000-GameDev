@@ -1,0 +1,123 @@
+[gd_scene format=3 uid="uid://c201kqm66rjry"]
+
+[node name="Pause_Menu" type="CanvasLayer" unique_id=1790332088]
+
+[node name="Dim" type="ColorRect" parent="." unique_id=2014690606]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Main_Panel" type="NinePatchRect" parent="." unique_id=1565258397]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Title" type="Label" parent="Main_Panel" unique_id=1423721922]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="Main_buttons" type="VBoxContainer" parent="Main_Panel" unique_id=394703285]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ResumeButton" type="TextureButton" parent="Main_Panel/Main_buttons" unique_id=651551174]
+layout_mode = 2
+
+[node name="SettingsButton" type="TextureButton" parent="Main_Panel/Main_buttons" unique_id=791033744]
+layout_mode = 2
+
+[node name="QuitButton" type="TextureButton" parent="Main_Panel/Main_buttons" unique_id=1762078534]
+layout_mode = 2
+
+[node name="CloseButton" type="TextureButton" parent="Main_Panel" unique_id=1360919454]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="SettingsPanel" type="NinePatchRect" parent="." unique_id=1403328306]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="SettingsTitle" type="Label" parent="SettingsPanel" unique_id=110163283]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="TabButtons" type="HBoxContainer" parent="SettingsPanel" unique_id=1291597682]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="AudioButton" type="TextureButton" parent="SettingsPanel/TabButtons" unique_id=1745483075]
+layout_mode = 2
+
+[node name="GraphicsButton" type="TextureButton" parent="SettingsPanel/TabButtons" unique_id=381932020]
+layout_mode = 2
+
+[node name="KeybindsButton" type="TextureButton" parent="SettingsPanel/TabButtons" unique_id=1777226738]
+layout_mode = 2
+
+[node name="Pages" type="Control" parent="SettingsPanel" unique_id=1614181472]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="AudioPage" type="TextureButton" parent="SettingsPanel/Pages" unique_id=143369855]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="MasterButton" type="TextureButton" parent="SettingsPanel/Pages/AudioPage" unique_id=2083371471]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VolumeLabel" type="Label" parent="SettingsPanel/Pages/AudioPage" unique_id=23148319]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="MasterSlider" type="HSlider" parent="SettingsPanel/Pages/AudioPage" unique_id=878552674]
+layout_mode = 0
+offset_top = -1.0
+offset_right = 8.0
+offset_bottom = 15.0
+
+[node name="GraphicsPage" type="Control" parent="SettingsPanel/Pages" unique_id=532142488]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="FullScreenButton" type="Button" parent="SettingsPanel/Pages/GraphicsPage" unique_id=906188156]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="WindowedButton" type="Button" parent="SettingsPanel/Pages/GraphicsPage" unique_id=1083748869]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="KeybindsPage" type="Control" parent="SettingsPanel/Pages" unique_id=232076197]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Title" type="Label" parent="SettingsPanel/Pages/KeybindsPage" unique_id=454782463]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="ScrollContainer" type="ScrollContainer" parent="SettingsPanel/Pages/KeybindsPage" unique_id=1160504677]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="SettingsPanel/Pages/KeybindsPage/ScrollContainer" unique_id=538014513]
+layout_mode = 2
+
+[node name="BackButton" type="TextureButton" parent="SettingsPanel" unique_id=797335780]
+layout_mode = 0
+offset_top = -1.0
+offset_right = 40.0
+offset_bottom = 39.0
