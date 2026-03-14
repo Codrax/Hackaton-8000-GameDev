@@ -32,7 +32,7 @@ script = ExtResource("5_q6oif")
 player = NodePath("../Player")
 
 [node name="Player" parent="." unique_id=1640696164 instance=ExtResource("2_q6oif")]
-position = Vector2(279, -1.8181763)
+position = Vector2(380, -464.54544)
 
 [node name="MusicDimensionHub" type="AudioStreamPlayer" parent="." unique_id=27103067]
 stream = ExtResource("4_s8o0v")

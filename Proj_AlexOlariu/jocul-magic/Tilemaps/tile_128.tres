@@ -1,6 +1,9 @@
 [gd_resource type="TileSet" format=3 uid="uid://dfmqfrlltfrm4"]
 
+[ext_resource type="Texture2D" uid="uid://dbhitd1md55rd" path="res://Images/tile_world.png" id="1_psvhq"]
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_otfkd"]
+texture = ExtResource("1_psvhq")
 texture_region_size = Vector2i(125, 125)
 0:0/0 = 0
 1:0/0 = 0
@@ -335,7 +338,7 @@ texture_region_size = Vector2i(125, 125)
 3:6/0 = 0
 3:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-62.5, -62.5, 62.5, -62.5, 62.5, 62.5, -62.5, 62.5)
 4:6/0 = 0
-4:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-62.5, -62.5, 62.5, -62.5, 62.5, -54, 62.5, 62.5, -62.5, 62.5)
+4:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-62.5, -36, 62.5, -36, 62.5, 62.5, -62.5, 62.5)
 5:6/0 = 0
 5:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-62.5, -62.5, 11, -62.5, 18, 62.5, -62.5, 62.5)
 6:6/0 = 0
@@ -4274,6 +4277,7 @@ texture_region_size = Vector2i(125, 125)
 10:3/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1wpsp"]
+texture = ExtResource("1_psvhq")
 texture_region_size = Vector2i(125, 125)
 0:6/0 = 0
 0:7/0 = 0

@@ -1,6 +1,9 @@
 [gd_resource type="TileSet" format=3 uid="uid://gjjfbqjhnsw1"]
 
+[ext_resource type="Texture2D" uid="uid://658p2qthcqmp" path="res://Images/tile_objects_64.png" id="1_x2kjo"]
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_m438l"]
+texture = ExtResource("1_x2kjo")
 texture_region_size = Vector2i(64, 64)
 37:0/0 = 0
 38:0/0 = 0
@@ -409,7 +412,9 @@ texture_region_size = Vector2i(64, 64)
 58:57/0 = 0
 53:58/0 = 0
 12:1/0 = 0
+12:0/size_in_atlas = Vector2i(2, 1)
 12:0/0 = 0
+14:0/size_in_atlas = Vector2i(4, 1)
 14:0/0 = 0
 
 [resource]
