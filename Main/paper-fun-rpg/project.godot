@@ -22,6 +22,19 @@ window/size/viewport_height=1080
 window/size/mode=3
 window/stretch/mode="viewport"
 
+[file_customization]
+
+folder_colors={
+"res://Dimensions/": "pink",
+"res://Images/": "yellow",
+"res://Music/": "purple",
+"res://NPCs/": "green",
+"res://Player/": "blue",
+"res://Tests/": "gray",
+"res://Tilemaps/": "orange",
+"res://UI/": "red"
+}
+
 [input]
 
 move_left={
