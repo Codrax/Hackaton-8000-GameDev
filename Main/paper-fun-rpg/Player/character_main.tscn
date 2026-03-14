@@ -15,8 +15,8 @@
 [ext_resource type="Texture2D" uid="uid://cavgmv2xvasu2" path="res://Images/Sprites/RUN/run_up.png" id="13_g6daa"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rucpe"]
-radius = 17.215195
-height = 34.43039
+radius = 18.189484
+height = 81.012665
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_lk07w"]
 animation = &"attack_up"
@@ -520,7 +520,6 @@ slide_on_ceiling = false
 script = ExtResource("1_l7dh1")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=217518866]
-position = Vector2(0, 15)
 scale = Vector2(0.9895833, 0.9875)
 shape = SubResource("CapsuleShape2D_rucpe")
 
@@ -539,7 +538,7 @@ position = Vector2(0.9999993, -3.999998)
 scale = Vector2(2, 2.155)
 hframes = 8
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=1029666192]
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1625080841]
 zoom = Vector2(0.75, 0.75)
 drag_horizontal_enabled = true
 drag_vertical_enabled = true
