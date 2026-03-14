@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://dhb5erdrirn4a"]
 
-[ext_resource type="Script" uid="uid://5gu7sw1mlwg2" path="res://MC/MC-Codrut/character_body_2d.gd" id="1_n28t2"]
-[ext_resource type="PackedScene" uid="uid://c0lsnfct0maiq" path="res://MC/character_main.tscn" id="2_26pds"]
-[ext_resource type="PackedScene" uid="uid://c0lsnfct0maiq" path="res://MC/MC-Codrut/character_main.tscn" id="2_n28t2"]
+[ext_resource type="Script" uid="uid://5gu7sw1mlwg2" path="res://Player/MC-Codrut/character_body_2d.gd" id="1_n28t2"]
+[ext_resource type="PackedScene" uid="uid://c0lsnfct0maiq" path="res://Player/character_main.tscn" id="2_26pds"]
+[ext_resource type="PackedScene" uid="uid://c0lsnfct0maiq" path="res://Player/character_main.tscn" id="2_n28t2"]
 
 [node name="MC" type="Node2D" unique_id=1188441900]
 script = ExtResource("1_n28t2")

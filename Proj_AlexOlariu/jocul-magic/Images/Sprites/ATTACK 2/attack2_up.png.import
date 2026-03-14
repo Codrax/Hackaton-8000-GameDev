@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://0esmqwtmoy6w"
-path="res://.godot/imported/run_left.png-1e4d1869a9f71568b5cd5e36b8f3b84c.ctex"
+uid="uid://gq0w35u4vxus"
+path="res://.godot/imported/attack2_up.png-c6be583fa750eef6e63d1df2648a7cde.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://MC/Sprites/RUN/run_left.png"
-dest_files=["res://.godot/imported/run_left.png-1e4d1869a9f71568b5cd5e36b8f3b84c.ctex"]
+source_file="res://Images/Sprites/ATTACK 2/attack2_up.png"
+dest_files=["res://.godot/imported/attack2_up.png-c6be583fa750eef6e63d1df2648a7cde.ctex"]
 
 [params]
 
