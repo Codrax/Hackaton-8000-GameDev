@@ -4,11 +4,12 @@
 [ext_resource type="TileSet" uid="uid://ja7pfnosw06b" path="res://Tilemaps/tile_pre_64.tres" id="2_kauso"]
 [ext_resource type="PackedScene" uid="uid://c0lsnfct0maiq" path="res://Player/character_main.tscn" id="2_q6oif"]
 [ext_resource type="TileSet" uid="uid://cn2671iycwmg6" path="res://Tilemaps/tile_after_128.tres" id="3_q6oif"]
-[ext_resource type="AudioStream" uid="uid://1j40pik1wbgc" path="res://Music/dimensions/music_dimension_hub.mp3" id="4_s8o0v"]
+[ext_resource type="AudioStream" uid="uid://1j40pik1wbgc" path="res://Music/dimensions/ambient.mp3" id="4_s8o0v"]
 [ext_resource type="TileSet" uid="uid://gjjfbqjhnsw1" path="res://Tilemaps/tile_clouds.tres" id="5_6ramc"]
 [ext_resource type="Script" uid="uid://djtwoxygfqieq" path="res://Tilemaps/tile_after_128.gd" id="5_q6oif"]
 [ext_resource type="Script" uid="uid://cgka7ek3csm22" path="res://Tilemaps/tile_clouds.gd" id="6_g03h1"]
 [ext_resource type="TileSet" uid="uid://8qjqvrq3hifa" path="res://Tilemaps/tile_purple_128.tres" id="9_s8o0v"]
+[ext_resource type="PackedScene" uid="uid://tpr6jwkkirof" path="res://UI/overlay/layer_overlay.tscn" id="10_6ramc"]
 
 [node name="Node2D" type="Node2D" unique_id=1669356560]
 scale = Vector2(1, 1.1)
@@ -48,3 +49,5 @@ scale = Vector2(2, 2)
 tile_map_data = PackedByteArray("AADV/+7/AAAOAAAAAADV////AAAOAAAAAADX/wwAAAAOAAAAAADZ/+T/AAAOAAAAAADa/+T/AAAOAAAAAADb//r/AAAOAAAAAADk/+T/AAAOAAAAAADn/wgAAAAOAAAAAADo/+z/AAAOAAAAAADr/+z/AAAOAAAAAADw/wsAAAAOAAAAAAD0/wwAAAAOAAAAAAD+/wwAAAAOAAAAAAAAAOX/AAAOAAAAAAAAAPr/AAAOAAAAAAADAO7/AAAOAAAAAAAFAAEAAAAOAAAAAAAIAPP/AAAOAAAAAAAJAPL/AAAOAAAAAAAMAOf/AAAOAAAAAAARAAIAAAAOAAAAAAAVAPj/AAAOAAAAAAAYAPX/AAAOAAAAAAAYAP//AAAOAAAAAAAcAPn/AAAOAAAAAAAcAAcAAAAOAAAAAAAeAPf/AAAOAAAAAAAeAAkAAAAOAAAAAAAfAAMAAAAOAAAAAAAgAAYAAAAOAAAAAAAiAOj/AAAOAAAAAAAjAOr/AAAOAAAAAAA=")
 tile_set = ExtResource("5_6ramc")
 script = ExtResource("6_g03h1")
+
+[node name="CanvasLayer" parent="." unique_id=853865014 instance=ExtResource("10_6ramc")]
