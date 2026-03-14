@@ -1,14 +1,14 @@
 [gd_scene format=3 uid="uid://b7ty4i7kybeto"]
 
-[ext_resource type="Script" path="res://UI/PauseMenu/scenes/pause_menu.gd" id="1_8a8ug"]
+[ext_resource type="Script" uid="uid://dl5kg2uy6fk74" path="res://UI/PauseMenu/scenes/pause_menu.gd" id="1_8a8ug"]
 [ext_resource type="Texture2D" uid="uid://0v47odql0ulg" path="res://UI/PauseMenu/scenes/ui/RESUME.png" id="2_2q77i"]
 [ext_resource type="FontFile" uid="uid://bskte1qa7vhox" path="res://UI/PauseMenu/scenes/ui/GothicByte.ttf" id="2_schy6"]
 [ext_resource type="Texture2D" uid="uid://btcpbeqy0hs4c" path="res://UI/PauseMenu/scenes/ui/SETTINGS.png" id="3_83mwt"]
 [ext_resource type="Texture2D" uid="uid://yqaw55p72nin" path="res://UI/PauseMenu/scenes/ui/QUIT.png" id="4_q4okv"]
 [ext_resource type="Texture2D" uid="uid://cv8oufuyw7ah5" path="res://UI/PauseMenu/scenes/ui/Adobe Express - file (2).png" id="6_h82un"]
-[ext_resource type="Script" path="res://UI/PauseMenu/scenes/audio_settings.gd" id="7_fqk8w"]
-[ext_resource type="Script" path="res://UI/PauseMenu/scenes/graphics_page.gd" id="8_ns6jn"]
-[ext_resource type="Script" path="res://UI/PauseMenu/scenes/keybinds_menu.gd" id="9_rs4t4"]
+[ext_resource type="Script" uid="uid://30s8qhh3arcy" path="res://UI/PauseMenu/scenes/audio_settings.gd" id="7_fqk8w"]
+[ext_resource type="Script" uid="uid://c8escj65jjgrl" path="res://UI/PauseMenu/scenes/graphics_page.gd" id="8_ns6jn"]
+[ext_resource type="Script" uid="uid://cp3q5udbj3rnh" path="res://UI/PauseMenu/scenes/keybinds_menu.gd" id="9_rs4t4"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_c4xau"]
 atlas = ExtResource("2_2q77i")
