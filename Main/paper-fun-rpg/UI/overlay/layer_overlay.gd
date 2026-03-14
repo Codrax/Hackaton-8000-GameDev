@@ -25,7 +25,12 @@ func _on_button_help_pressed() -> void:
 
 func _on_button_pause_pressed() -> void:
 	# Your button logic here
-	print("PAUSE Clicked! 🍦")
+	if pause_menu == null:
+		push_error("Pause_Menu nu a fost gasit.")
+		return
+
+	pause_menu.open_pause_menu()
+
 	
 	# This stops the input from reaching the game world
 	get_viewport().set_input_as_handled()
