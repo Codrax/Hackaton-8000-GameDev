@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/Menu_Navigate_00.wav-60c11d146cce0f0a6662972668c6524f.sample"
+type="AudioStreamWAV"
+uid="uid://bbbtxu86sg758"
+path="res://.godot/imported/Menu_Navigate_00.wav-60c11d146cce0f0a6662972668c6524f.sample"
 
 [deps]
 
 source_file="res://resources/style/Menu_Navigate_00.wav"
-dest_files=[ "res://.import/Menu_Navigate_00.wav-60c11d146cce0f0a6662972668c6524f.sample" ]
+dest_files=["res://.godot/imported/Menu_Navigate_00.wav-60c11d146cce0f0a6662972668c6524f.sample"]
 
 [params]
 
@@ -17,5 +18,7 @@ force/max_rate=false
 force/max_rate_hz=44100
 edit/trim=true
 edit/normalize=true
-edit/loop=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
 compress/mode=0

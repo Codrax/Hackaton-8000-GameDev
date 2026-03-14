@@ -1,7 +1,15 @@
 [gd_scene format=3 uid="uid://di52b8n3mmy86"]
 
 [ext_resource type="PackedScene" uid="uid://b4dneoxua7pe6" path="res://Tests/Test Player/character_main.tscn" id="1_ep3gk"]
+[ext_resource type="AudioStream" uid="uid://belrhymkpkpfv" path="res://Music/dimensions/hub/ambient.mp3" id="2_lri0m"]
+[ext_resource type="PackedScene" uid="uid://b7ty4i7kybeto" path="res://UI/PauseMenu/scenes/PauseMenu.tscn" id="3_7hfs0"]
 
 [node name="Node2D" type="Node2D" unique_id=411654325]
 
 [node name="CharacterBody2D" parent="." unique_id=1640696164 instance=ExtResource("1_ep3gk")]
+
+[node name="Ambient" type="AudioStreamPlayer" parent="." unique_id=428647985]
+stream = ExtResource("2_lri0m")
+autoplay = true
+
+[node name="Pause_Menu" parent="." unique_id=1790332088 instance=ExtResource("3_7hfs0")]

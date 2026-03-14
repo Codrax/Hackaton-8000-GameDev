@@ -1,3 +1,48 @@
 [gd_scene format=3 uid="uid://tpr6jwkkirof"]
 
+[ext_resource type="Texture2D" uid="uid://dpxhi0r6yt4fl" path="res://Images/UI/button_tile.png" id="1_rbpc5"]
+[ext_resource type="Script" uid="uid://dtjnqh3i4cuq8" path="res://UI/overlay/button_help.gd" id="2_juwm5"]
+[ext_resource type="Script" uid="uid://bdgar4jtkw5x1" path="res://UI/overlay/button_pause.gd" id="3_ttosf"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rbpc5"]
+atlas = ExtResource("1_rbpc5")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ttosf"]
+atlas = SubResource("AtlasTexture_rbpc5")
+region = Rect2(24, 667, 272, 291)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k2s1m"]
+atlas = ExtResource("1_rbpc5")
+region = Rect2(24, 667, 272, 291)
+margin = Rect2(10, 10, 10, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_juwm5"]
+atlas = ExtResource("1_rbpc5")
+region = Rect2(938, 23, 272, 289)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ibwjw"]
+atlas = ExtResource("1_rbpc5")
+region = Rect2(938, 23, 272, 289)
+margin = Rect2(10, 10, 10, 10)
+
 [node name="CanvasLayer" type="CanvasLayer" unique_id=853865014]
+scale = Vector2(0.4, 0.4)
+transform = Transform2D(0.4, 0, 0, 0.4, 0, 0)
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=1509821210]
+offset_left = 4475.0
+offset_top = 47.499992
+offset_right = 4747.0
+offset_bottom = 338.5
+texture_normal = SubResource("AtlasTexture_ttosf")
+texture_pressed = SubResource("AtlasTexture_k2s1m")
+script = ExtResource("2_juwm5")
+
+[node name="TextureButton2" type="TextureButton" parent="." unique_id=743322849]
+offset_left = 52.499996
+offset_top = 39.999996
+offset_right = 324.5
+offset_bottom = 329.0
+texture_normal = SubResource("AtlasTexture_juwm5")
+texture_pressed = SubResource("AtlasTexture_ibwjw")
+script = ExtResource("3_ttosf")

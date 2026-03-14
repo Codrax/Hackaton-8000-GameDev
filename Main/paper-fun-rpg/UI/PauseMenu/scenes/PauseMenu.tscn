@@ -1,0 +1,231 @@
+[gd_scene format=3 uid="uid://b7ty4i7kybeto"]
+
+[ext_resource type="Script" uid="uid://dl5kg2uy6fk74" path="res://UI/PauseMenu/scenes/pause_menu.gd" id="1_8a8ug"]
+[ext_resource type="Texture2D" uid="uid://0v47odql0ulg" path="res://UI/PauseMenu/scenes/ui/RESUME.png" id="2_2q77i"]
+[ext_resource type="FontFile" uid="uid://bskte1qa7vhox" path="res://UI/PauseMenu/scenes/ui/GothicByte.ttf" id="2_schy6"]
+[ext_resource type="Texture2D" uid="uid://btcpbeqy0hs4c" path="res://UI/PauseMenu/scenes/ui/SETTINGS.png" id="3_83mwt"]
+[ext_resource type="Texture2D" uid="uid://yqaw55p72nin" path="res://UI/PauseMenu/scenes/ui/QUIT.png" id="4_q4okv"]
+[ext_resource type="Texture2D" uid="uid://cv8oufuyw7ah5" path="res://UI/PauseMenu/scenes/ui/Adobe Express - file (2).png" id="6_h82un"]
+[ext_resource type="Script" uid="uid://30s8qhh3arcy" path="res://UI/PauseMenu/scenes/audio_settings.gd" id="7_fqk8w"]
+[ext_resource type="Script" uid="uid://c8escj65jjgrl" path="res://UI/PauseMenu/scenes/graphics_page.gd" id="8_ns6jn"]
+[ext_resource type="Script" uid="uid://cp3q5udbj3rnh" path="res://UI/PauseMenu/scenes/keybinds_menu.gd" id="9_rs4t4"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c4xau"]
+atlas = ExtResource("2_2q77i")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jsupi"]
+atlas = ExtResource("4_q4okv")
+
+[node name="Pause_Menu" type="CanvasLayer" unique_id=1790332088]
+process_mode = 3
+script = ExtResource("1_8a8ug")
+
+[node name="Dim" type="ColorRect" parent="." unique_id=2014690606]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = 6.0
+offset_right = 2.0
+offset_bottom = 6.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.21176471)
+
+[node name="MainPanel" type="NinePatchRect" parent="." unique_id=1565258397]
+custom_minimum_size = Vector2(520, 420)
+offset_left = 241.0
+offset_top = 77.0
+offset_right = 1679.0
+offset_bottom = 983.0
+patch_margin_left = 8
+patch_margin_top = 8
+patch_margin_right = 8
+patch_margin_bottom = 8
+
+[node name="Title" type="Label" parent="MainPanel" unique_id=1423721922]
+modulate = Color(18.892157, 18.892157, 18.892157, 1)
+self_modulate = Color(18.892157, 18.892157, 18.892157, 1)
+custom_minimum_size = Vector2(200, 40)
+layout_mode = 0
+offset_left = 353.0
+offset_top = 53.0
+offset_right = 1089.0
+offset_bottom = 187.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_schy6")
+theme_override_font_sizes/font_size = 107
+text = "PAUSE MENU"
+horizontal_alignment = 1
+
+[node name="Mainbuttons" type="VBoxContainer" parent="MainPanel" unique_id=394703285]
+layout_mode = 0
+offset_left = 471.0
+offset_top = 243.0
+offset_right = 938.0
+offset_bottom = 804.0
+
+[node name="ResumeButton" type="TextureButton" parent="MainPanel/Mainbuttons" unique_id=651551174]
+custom_minimum_size = Vector2(300, 150)
+layout_mode = 2
+texture_normal = SubResource("AtlasTexture_c4xau")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="SettingsButton" type="TextureButton" parent="MainPanel/Mainbuttons" unique_id=791033744]
+custom_minimum_size = Vector2(300, 150)
+layout_mode = 2
+texture_normal = ExtResource("3_83mwt")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="QuitButton" type="TextureButton" parent="MainPanel/Mainbuttons" unique_id=1762078534]
+custom_minimum_size = Vector2(300, 150)
+layout_mode = 2
+texture_normal = SubResource("AtlasTexture_jsupi")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="SettingsPanel" type="NinePatchRect" parent="." unique_id=144510988]
+offset_left = 512.0
+offset_top = 222.0
+offset_right = 1372.0
+offset_bottom = 868.0
+texture = ExtResource("6_h82un")
+
+[node name="SettingsTitle" type="Label" parent="SettingsPanel" unique_id=110163283]
+layout_mode = 0
+offset_left = 262.0
+offset_top = 47.0
+offset_right = 598.0
+offset_bottom = 155.0
+theme_override_colors/font_color = Color(0.07683582, 0.07683582, 0.07683582, 1)
+theme_override_font_sizes/font_size = 27
+text = "SETTINGS"
+horizontal_alignment = 1
+
+[node name="TabButtons" type="HBoxContainer" parent="SettingsPanel" unique_id=1291597682]
+layout_mode = 1
+anchors_preset = -1
+offset_left = 110.0
+offset_top = 90.0
+offset_right = 790.0
+offset_bottom = 140.0
+
+[node name="AudioTabButton" type="Button" parent="SettingsPanel/TabButtons" unique_id=1349146252]
+custom_minimum_size = Vector2(210, 48)
+layout_mode = 2
+tooltip_text = "Audio
+"
+text = "Audio"
+
+[node name="GraphicsTabButton" type="Button" parent="SettingsPanel/TabButtons" unique_id=151637746]
+custom_minimum_size = Vector2(210, 48)
+layout_mode = 2
+tooltip_text = "Graphics"
+text = "Graphics"
+
+[node name="KeybindsTabButton" type="Button" parent="SettingsPanel/TabButtons" unique_id=846673135]
+custom_minimum_size = Vector2(210, 48)
+layout_mode = 2
+tooltip_text = "Keybinds"
+text = "Keybinds
+"
+
+[node name="Pages" type="Control" parent="SettingsPanel" unique_id=1614181472]
+anchors_preset = 0
+offset_left = 80.0
+offset_top = 170.0
+offset_right = 820.0
+offset_bottom = 530.0
+
+[node name="AudioPage" type="Control" parent="SettingsPanel/Pages" unique_id=1226976843]
+anchors_preset = 0
+offset_right = 740.0
+offset_bottom = 360.0
+script = ExtResource("7_fqk8w")
+
+[node name="MuteButton" type="Button" parent="SettingsPanel/Pages/AudioPage" unique_id=1853152302]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 40.0
+offset_right = 240.0
+offset_bottom = 90.0
+text = "Mute Game"
+
+[node name="VolumeLabel" type="Label" parent="SettingsPanel/Pages/AudioPage" unique_id=23148319]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 130.0
+offset_right = 320.0
+offset_bottom = 179.0
+text = "Master Volume:
+100%"
+
+[node name="MasterSlider" type="HSlider" parent="SettingsPanel/Pages/AudioPage" unique_id=878552674]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 170.0
+offset_right = 540.0
+offset_bottom = 200.0
+max_value = 1.0
+step = 0.01
+value = 1.0
+
+[node name="GraphicsPage" type="Control" parent="SettingsPanel/Pages" unique_id=532142488]
+anchors_preset = 0
+offset_right = 740.0
+offset_bottom = 360.0
+script = ExtResource("8_ns6jn")
+
+[node name="FullscreenButton" type="Button" parent="SettingsPanel/Pages/GraphicsPage" unique_id=906188156]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 40.0
+offset_right = 260.0
+offset_bottom = 90.0
+text = "Fullscreen"
+
+[node name="WindowedButton" type="Button" parent="SettingsPanel/Pages/GraphicsPage" unique_id=1083748869]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.5
+offset_left = 40.0
+offset_top = 110.0
+offset_right = -110.0
+offset_bottom = 160.0
+text = "Windowed"
+
+[node name="KeybindsPage" type="Control" parent="SettingsPanel/Pages" unique_id=232076197]
+anchors_preset = 0
+offset_right = 740.0
+offset_bottom = 360.0
+script = ExtResource("9_rs4t4")
+
+[node name="KeybindsTitle" type="Label" parent="SettingsPanel/Pages/KeybindsPage" unique_id=454782463]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 20.0
+offset_right = 240.0
+offset_bottom = 50.0
+text = "Controls"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="SettingsPanel/Pages/KeybindsPage" unique_id=1160504677]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 60.0
+offset_right = 660.0
+offset_bottom = 310.0
+
+[node name="KeybindList" type="VBoxContainer" parent="SettingsPanel/Pages/KeybindsPage/ScrollContainer" unique_id=1001555094]
+custom_minimum_size = Vector2(600, 250)
+layout_mode = 2
+
+[node name="BackButton" type="Button" parent="SettingsPanel" unique_id=983012200]
+layout_mode = 0
+offset_left = 632.0
+offset_top = 528.0
+offset_right = 772.0
+offset_bottom = 568.0
+text = "Back"
