@@ -4272,6 +4272,9 @@ texture_region_size = Vector2i(125, 125)
 21:70/0 = 0
 22:70/0 = 0
 23:70/0 = 0
+8:3/0 = 0
+9:3/0 = 0
+10:3/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1wpsp"]
 texture = ExtResource("1_psvhq")

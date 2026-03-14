@@ -1,3 +1,16 @@
 [gd_scene format=3 uid="uid://dbypdampassr5"]
 
+[ext_resource type="PackedScene" uid="uid://c201kqm66rjry" path="res://addons/scenes/PauseMenu.tscn" id="1_fxsng"]
+
 [node name="NPC\'s" type="Node2D" unique_id=373163535]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=869664473]
+
+[node name="Button" type="Button" parent="CanvasLayer" unique_id=2064776999]
+offset_left = 667.0
+offset_top = 384.0
+offset_right = 1415.0
+offset_bottom = 921.0
+
+[node name="Pause_Menu" parent="." unique_id=1790332088 instance=ExtResource("1_fxsng")]
+visible = false

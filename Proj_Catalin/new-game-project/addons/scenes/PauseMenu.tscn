@@ -17,9 +17,9 @@ atlas = ExtResource("4_q4okv")
 [sub_resource type="GDScript" id="GDScript_i8t3s"]
 script/source = "extends Control
 
-@onready var mute_button: TextureButton = $MuteButton
-@onready var master_slider: HSlider = $MasterSlider
-@onready var volume_label: Label = $VolumeLabel
+#@onready var mute_button: TextureButton = $MuteButton
+#@onready var master_slider: HSlider = $MasterSlider
+#@onready var volume_label: Label = $VolumeLabel
 
 var master_bus_index: int
 var is_muted: bool = false
@@ -29,18 +29,18 @@ func _ready() -> void:
 	master_bus_index = AudioServer.get_bus_index(\"Master\")
 	
 	# Slider-ul lucreaza in valori lineare: 0.0 - 1.0
-	master_slider.min_value = 0.0
-	master_slider.max_value = 1.0
-	master_slider.step = 0.01
+	#master_slider.min_value = 0.0
+	#master_slider.max_value = 1.0
+	#master_slider.step = 0.01
 	
 	var current_db := AudioServer.get_bus_volume_db(master_bus_index)
 	var current_linear := db_to_linear(current_db)
 	
-	master_slider.value = current_linear
-	_update_volume_label(current_linear)
-	
-	mute_button.pressed.connect(_on_mute_pressed)
-	master_slider.value_changed.connect(_on_master_slider_changed)
+	#smaster_slider.value = current_linear
+	#s_update_volume_label(current_linear)
+#s	
+	# mute_button.pressed.connect(_on_mute_pressed)
+	# master_slider.value_changed.connect(_on_master_slider_changed)
 
 func _on_master_slider_changed(value: float) -> void:
 	# Convertim din linear (0..1) in dB
@@ -59,20 +59,21 @@ func _on_master_slider_changed(value: float) -> void:
 		is_muted = false
 		previous_volume_linear = value
 	
-	_update_volume_label(value)
-
-func _on_mute_pressed() -> void:
-	is_muted = !is_muted
-	AudioServer.set_bus_mute(master_bus_index, is_muted)
-	
-	if is_muted:
-		previous_volume_linear = master_slider.value
-		volume_label.text = \"Master Volume: Muted\"
-	else:
-		volume_label.text = \"Master Volume: %d%%\" % int(master_slider.value * 100)
-
-func _update_volume_label(value: float) -> void:
-	volume_label.text = \"Master Volume: %d%%\" % int(value * 100)"
+	#_update_volume_label(value)
+#
+#func _on_mute_pressed() -> void:
+	#is_muted = !is_muted
+	#AudioServer.set_bus_mute(master_bus_index, is_muted)
+	#
+	#if is_muted:
+		#previous_volume_linear = master_slider.value
+		#volume_label.text = \"Master Volume: Muted\"
+	#else:
+		#volume_label.text = \"Master Volume: %d%%\" % int(master_slider.value * 100)
+#
+#func _update_volume_label(value: float) -> void:
+	#volume_label.text = \"Master Volume: %d%%\" % int(value * 100)
+"
 
 [node name="Pause_Menu" type="CanvasLayer" unique_id=1790332088]
 process_mode = 3
