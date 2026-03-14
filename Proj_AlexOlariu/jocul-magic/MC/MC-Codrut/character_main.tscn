@@ -1,0 +1,87 @@
+[gd_scene format=3 uid="uid://c0lsnfct0maiq"]
+
+[ext_resource type="Script" uid="uid://di6j11fguu2ko" path="res://MC/MC-Codrut/character_body_2d.gd" id="1_4v4wp"]
+[ext_resource type="Texture2D" uid="uid://cp4q14fqn30e5" path="res://MC/Sprites/IDLE/idle_right.png" id="2_w42lo"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_isvob"]
+atlas = ExtResource("2_w42lo")
+region = Rect2(0, 0, 96, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hy47s"]
+atlas = ExtResource("2_w42lo")
+region = Rect2(96, 0, 96, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mmr2t"]
+atlas = ExtResource("2_w42lo")
+region = Rect2(192, 0, 96, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g7tjr"]
+atlas = ExtResource("2_w42lo")
+region = Rect2(288, 0, 96, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_adnls"]
+atlas = ExtResource("2_w42lo")
+region = Rect2(384, 0, 96, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2rkwg"]
+atlas = ExtResource("2_w42lo")
+region = Rect2(480, 0, 96, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rxl1w"]
+atlas = ExtResource("2_w42lo")
+region = Rect2(576, 0, 96, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qbuu1"]
+atlas = ExtResource("2_w42lo")
+region = Rect2(672, 0, 96, 80)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cos71"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_isvob")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hy47s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mmr2t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g7tjr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_adnls")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2rkwg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rxl1w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qbuu1")
+}],
+"loop": true,
+"name": &"Idle_left",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rucpe"]
+radius = 12.126316
+height = 76.96203
+
+[node name="Player" type="CharacterBody2D" unique_id=1640696164]
+position = Vector2(209, 127)
+script = ExtResource("1_4v4wp")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1526924115]
+position = Vector2(-6.7762636e-21, -1)
+scale = Vector2(1.8958334, 2.1250002)
+sprite_frames = SubResource("SpriteFrames_cos71")
+animation = &"Idle_left"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=217518866]
+position = Vector2(-5.9604645e-08, 0)
+scale = Vector2(0.9895833, 0.9875)
+shape = SubResource("CapsuleShape2D_rucpe")
