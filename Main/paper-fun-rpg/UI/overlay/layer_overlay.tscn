@@ -39,9 +39,9 @@ texture_pressed = SubResource("AtlasTexture_k2s1m")
 
 [node name="Button_Pause" type="TextureButton" parent="." unique_id=743322849]
 offset_left = 52.5
-offset_top = 40.0
+offset_top = 47.5
 offset_right = 324.5
-offset_bottom = 329.0
+offset_bottom = 336.5
 texture_normal = SubResource("AtlasTexture_juwm5")
 texture_pressed = SubResource("AtlasTexture_ibwjw")
 
