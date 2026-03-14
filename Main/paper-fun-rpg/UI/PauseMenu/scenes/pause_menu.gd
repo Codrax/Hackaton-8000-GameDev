@@ -72,3 +72,9 @@ func _show_page(page_name: String) -> void:
 	audio_page.visible = page_name == "audio"
 	graphics_page.visible = page_name == "graphics"
 	keybinds_page.visible = page_name == "keybinds"
+	
+func open_pause_menu() -> void:
+	get_tree().paused = true
+	visible = true
+	main_panel.visible = true
+	settings_panel.visible = false

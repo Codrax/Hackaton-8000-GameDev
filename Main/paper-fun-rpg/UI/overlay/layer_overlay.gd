@@ -1,14 +1,18 @@
 extends CanvasLayer
 
+@export var pause_menu_path: NodePath
 
-# Called when the node enters the scene tree for the first time.
+@onready var pause_menu = get_node(pause_menu_path)
+
 func _ready() -> void:
-	pass # Replace with function body.
+	pressed.connect(_on_pressed)
 
+func _on_pressed() -> void:
+	if pause_menu == null:
+		push_error("Pause_Menu nu a fost gasit.")
+		return
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+	pause_menu.open_pause_menu()
 
 
 func _on_button_help_pressed() -> void:
