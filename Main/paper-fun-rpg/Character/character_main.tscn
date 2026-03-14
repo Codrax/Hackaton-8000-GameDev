@@ -1,14 +1,11 @@
-[gd_scene format=3 uid="uid://c0lsnfct0maiq"]
+[gd_scene format=3 uid="uid://b4dneoxua7pe6"]
 
-[ext_resource type="Script" uid="uid://di6j11fguu2ko" path="res://character_main.gd" id="1_4v4wp"]
+[ext_resource type="Script" uid="uid://cr61pavkg28fr" path="res://Character/character_main.gd" id="1_4v4wp"]
+[ext_resource type="Texture2D" uid="uid://dbfl38x86p31r" path="res://Tests/red.png" id="2_or4pb"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rucpe"]
 radius = 30.0
 height = 100.0
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4v4wp"]
-resource_local_to_scene = true
-load_path = "res://.godot/imported/player.png-2dd0af52de4b213777cd8c9df94c0978.ctex"
 
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=1640696164]
 script = ExtResource("1_4v4wp")
@@ -28,4 +25,4 @@ editor_draw_drag_margin = true
 
 [node name="Sprite2D" type="Sprite2D" parent="Camera2D" unique_id=837005042]
 scale = Vector2(0.21333332, 0.204)
-texture = SubResource("CompressedTexture2D_4v4wp")
+texture = ExtResource("2_or4pb")
