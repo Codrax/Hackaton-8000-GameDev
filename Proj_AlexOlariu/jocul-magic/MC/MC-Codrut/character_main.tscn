@@ -533,6 +533,6 @@ parameters/Run/blend_position = Vector2(0, 0)
 libraries/ = SubResource("AnimationLibrary_h6y1v")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=291549253]
-position = Vector2(0.9999993, -2.999998)
-scale = Vector2(2.784, 3)
+position = Vector2(0.9999993, -3.999998)
+scale = Vector2(2, 2.155)
 hframes = 8
