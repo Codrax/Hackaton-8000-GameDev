@@ -12,20 +12,17 @@ func _physics_process(_delta):
 	input_vector = input_vector.normalized()
 
 	# 2. Apply Movement
-	if input_vector != Vector2.ZERO:
-		# Update AnimationTree "Blend Positions" for Idle and Run
+	# Inside _physics_process
+	if input_vector.length() > 0.1: # Use a small deadzone
 		animation_tree.set("parameters/Idle/blend_position", input_vector)
 		animation_tree.set("parameters/Run/blend_position", input_vector)
 		animation_tree.set("parameters/Attack/blend_position", input_vector)
-		
 		anim_state.travel("Run")
 		velocity = input_vector * speed
 	else:
 		anim_state.travel("Idle")
 		velocity = Vector2.ZERO
-
 	# 3. Handle Attack
 	if Input.is_action_just_pressed("attack"):
 		anim_state.travel("Attack")
-
 	move_and_slide()
