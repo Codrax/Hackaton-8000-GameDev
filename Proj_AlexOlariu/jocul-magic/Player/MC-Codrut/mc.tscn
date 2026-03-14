@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://dhb5erdrirn4a"]
+
+[ext_resource type="Script" uid="uid://5gu7sw1mlwg2" path="res://Player/MC-Codrut/character_body_2d.gd" id="1_n28t2"]
+[ext_resource type="PackedScene" uid="uid://c0lsnfct0maiq" path="res://Player/character_main.tscn" id="2_26pds"]
+[ext_resource type="PackedScene" uid="uid://c0lsnfct0maiq" path="res://Player/character_main.tscn" id="2_n28t2"]
+
+[node name="MC" type="Node2D" unique_id=1188441900]
+script = ExtResource("1_n28t2")
+
+[node name="Player" parent="." unique_id=777368228 instance=ExtResource("2_26pds")]
+visible = false
+position = Vector2(937, 530)
+
+[node name="Player2" parent="." unique_id=1640696164 instance=ExtResource("2_n28t2")]
+position = Vector2(353, 179)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1822082539]
+position = Vector2(949, 545)

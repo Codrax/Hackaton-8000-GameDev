@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://b4dneoxua7pe6"]
+
+[ext_resource type="Script" uid="uid://cr61pavkg28fr" path="res://Tests/Test Player/character_main.gd" id="1_4v4wp"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rucpe"]
+radius = 30.0
+height = 100.0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4v4wp"]
+resource_local_to_scene = true
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1640696164]
+script = ExtResource("1_4v4wp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=217518866]
+shape = SubResource("CapsuleShape2D_rucpe")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=837005042]
+scale = Vector2(0.21333332, 0.204)
+texture = SubResource("CompressedTexture2D_4v4wp")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1147954875]
+zoom = Vector2(0.75, 0.75)
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
+drag_left_margin = 0.5
+drag_top_margin = 0.5
+drag_right_margin = 0.5
+drag_bottom_margin = 0.5
+editor_draw_drag_margin = true
