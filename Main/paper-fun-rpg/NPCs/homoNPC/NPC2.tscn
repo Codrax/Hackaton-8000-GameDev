@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://4vpd5oy0vech"]
+
+[ext_resource type="Texture2D" uid="uid://dnwss1urorej8" path="res://NPCs/homoNPC/NPC_Labirint (2).png" id="1_uctpq"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_c228v"]
+radius = 241.0
+height = 988.0
+
+[node name="Npc2" type="Node2D" unique_id=1345982728]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=204370485]
+
+[node name="NpcLabirint(2)" type="Sprite2D" parent="CharacterBody2D" unique_id=241081905]
+position = Vector2(11, -1)
+texture = ExtResource("1_uctpq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=28010888]
+position = Vector2(-12, 60)
+shape = SubResource("CapsuleShape2D_c228v")
