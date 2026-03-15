@@ -4,6 +4,8 @@ var player: Node2D
 var camera: Camera2D
 var battle_index: int = 0
 
+const SCENE_BATTLE = "res://Scenes/scene_battle.tscn"
+
 func fetchPlayerInstance():
 	player = get_tree().get_first_node_in_group("Player")
 	if player:
@@ -41,7 +43,7 @@ func battle_start(index: int):
 
 func _screen_fill():
 	var viewport_size = get_viewport().get_visible_rect().size
-	var box_size = 128
+	var box_size = 200
 
 	var cols = int(viewport_size.x / box_size) + 1
 	var rows = int(viewport_size.y / box_size) + 1
@@ -61,5 +63,5 @@ func _screen_fill():
 			await get_tree().create_timer(0.001).timeout
 
 	print("LOADING LEVEL")
-	await get_tree().create_timer(0.2).timeout
-	get_tree().change_scene_to_file("res://Scenes/scene_battle.tscn")
+	get_tree().change_scene_to_file(SCENE_BATTLE)
+	layer.queue_free()  # remove the black layer

@@ -9,3 +9,4 @@
 [node name="Player" parent="." unique_id=1640696164 instance=ExtResource("1_rsulo")]
 position = Vector2(657, 225)
 scale = Vector2(5, 5)
+script = null
