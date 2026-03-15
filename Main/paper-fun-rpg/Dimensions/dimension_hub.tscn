@@ -81,8 +81,8 @@ _data = {
 }
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hmkhn"]
-radius = 159.99998
-height = 584.0
+radius = 160.99998
+height = 618.0
 
 [sub_resource type="GDScript" id="GDScript_4ni5d"]
 script/source = "extends TileMapLayer
@@ -174,7 +174,7 @@ libraries/ = SubResource("AnimationLibrary_g5fkf")
 autoplay = &"new_animation"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D" unique_id=188099686]
-position = Vector2(-91, -114)
+position = Vector2(-87, -93)
 rotation = 1.5707964
 shape = SubResource("CapsuleShape2D_hmkhn")
 
