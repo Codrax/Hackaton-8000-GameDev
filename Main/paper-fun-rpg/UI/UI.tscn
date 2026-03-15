@@ -18,4 +18,4 @@ color = Color(0, 0, 0, 0.58431375)
 [node name="Label" type="Label" parent="UI_Unavalabile" unique_id=953413981]
 layout_mode = 2
 theme_override_font_sizes/font_size = 50
-text = "THIS AREA IS UNAVALBILE"
+text = "// ZONA INDISPONIBILA //"

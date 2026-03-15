@@ -1,0 +1,58 @@
+[gd_scene format=4 uid="uid://i5vn6u5mce1j"]
+
+[ext_resource type="TileSet" uid="uid://dfmqfrlltfrm4" path="res://Tilemaps/tile_128.tres" id="1_7jnp5"]
+[ext_resource type="TileSet" uid="uid://ja7pfnosw06b" path="res://Tilemaps/tile_pre_64.tres" id="2_3ttbe"]
+[ext_resource type="PackedScene" uid="uid://bp3dmn0ilbjle" path="res://Player/Pet/Pisica.tscn" id="3_b56ak"]
+[ext_resource type="PackedScene" uid="uid://c0lsnfct0maiq" path="res://Player/character_main.tscn" id="4_2yk1p"]
+[ext_resource type="TileSet" uid="uid://cn2671iycwmg6" path="res://Tilemaps/tile_after_128.tres" id="5_wyqnh"]
+[ext_resource type="TileSet" uid="uid://8qjqvrq3hifa" path="res://Tilemaps/tile_purple_128.tres" id="6_0br6r"]
+[ext_resource type="TileSet" uid="uid://gjjfbqjhnsw1" path="res://Tilemaps/tile_clouds.tres" id="7_ob163"]
+[ext_resource type="Script" uid="uid://cgka7ek3csm22" path="res://Tilemaps/tile_clouds.gd" id="8_37omu"]
+[ext_resource type="AudioStream" uid="uid://bbj1cs0gxie88" path="res://Music/dimensions/special/ambient.mp3" id="9_3ttbe"]
+[ext_resource type="PackedScene" uid="uid://tpr6jwkkirof" path="res://UI/overlay/layer_overlay.tscn" id="9_hxqjc"]
+[ext_resource type="PackedScene" uid="uid://b7ty4i7kybeto" path="res://UI/PauseMenu/scenes/PauseMenu.tscn" id="10_lwbgl"]
+
+[node name="DimensionSpecial" type="Node2D" unique_id=407112639]
+
+[node name="tile_world" type="TileMapLayer" parent="." unique_id=500490644]
+z_index = -100
+tile_set = ExtResource("1_7jnp5")
+
+[node name="tile_pre_64" type="TileMapLayer" parent="." unique_id=929049013]
+z_index = -1
+tile_set = ExtResource("2_3ttbe")
+
+[node name="Pisica" parent="." unique_id=238727010 instance=ExtResource("3_b56ak")]
+position = Vector2(310, -449.99997)
+
+[node name="Player" parent="." unique_id=1640696164 instance=ExtResource("4_2yk1p")]
+position = Vector2(380, -464.54544)
+
+[node name="tile_after_128_auto" type="TileMapLayer" parent="." unique_id=154892454]
+y_sort_enabled = true
+position = Vector2(-1, -0.90909076)
+tile_set = ExtResource("5_wyqnh")
+
+[node name="tile_clouds" type="TileMapLayer" parent="." unique_id=1707576006]
+self_modulate = Color(1, 1, 1, 0.78431374)
+z_index = 100
+scale = Vector2(2, 2)
+tile_map_data = PackedByteArray("AADV/+7/AAAOAAAAAADV////AAAOAAAAAADX/wwAAAAOAAAAAADZ/+T/AAAOAAAAAADa/+T/AAAOAAAAAADb//r/AAAOAAAAAADk/+T/AAAOAAAAAADn/wgAAAAOAAAAAADo/+z/AAAOAAAAAADr/+z/AAAOAAAAAADw/wsAAAAOAAAAAAD0/wwAAAAOAAAAAAD+/wwAAAAOAAAAAAAAAOX/AAAOAAAAAAAAAPr/AAAOAAAAAAADAO7/AAAOAAAAAAAFAAEAAAAOAAAAAAAIAPP/AAAOAAAAAAAJAPL/AAAOAAAAAAAMAOf/AAAOAAAAAAARAAIAAAAOAAAAAAAVAPj/AAAOAAAAAAAYAPX/AAAOAAAAAAAYAP//AAAOAAAAAAAcAPn/AAAOAAAAAAAcAAcAAAAOAAAAAAAeAPf/AAAOAAAAAAAeAAkAAAAOAAAAAAAfAAMAAAAOAAAAAAAgAAYAAAAOAAAAAAAiAOj/AAAOAAAAAAAjAOr/AAAOAAAAAAA=")
+tile_set = ExtResource("7_ob163")
+script = ExtResource("8_37omu")
+
+[node name="tile_invisiblewall" type="TileMapLayer" parent="." unique_id=370871497]
+visible = false
+y_sort_enabled = true
+tile_map_data = PackedByteArray("AAD4//H/AAAAAAAAAAD5//H/AAAAAAAAAAD6//H/AAAAAAAAAAD7//H/AAAAAAAAAAAEAOr/AAAAAAAAAAAFAOr/AAAAAAAAAAAGAOr/AAAAAAAAAAAHAOr/AAAAAAAAAAAIAOr/AAAAAAAAAAAJAOr/AAAAAAAAAAAKAOr/AAAAAAAAAAALAOr/AAAAAAAAAAAMAOr/AAAAAAAAAAA=")
+tile_set = ExtResource("6_0br6r")
+
+[node name="Ambient" type="AudioStreamPlayer" parent="." unique_id=1259814273]
+stream = ExtResource("9_3ttbe")
+autoplay = true
+
+[node name="UI_Overlay" parent="." unique_id=853865014 instance=ExtResource("9_hxqjc")]
+visible = false
+
+[node name="Pause_Menu" parent="." unique_id=1790332088 instance=ExtResource("10_lwbgl")]
+visible = false

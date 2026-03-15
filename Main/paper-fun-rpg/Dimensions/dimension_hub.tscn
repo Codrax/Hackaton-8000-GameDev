@@ -8,7 +8,9 @@
 [ext_resource type="TileSet" uid="uid://ja7pfnosw06b" path="res://Tilemaps/tile_pre_64.tres" id="3_a1sdl"]
 [ext_resource type="TileSet" uid="uid://cn2671iycwmg6" path="res://Tilemaps/tile_after_128.tres" id="4_ghnmt"]
 [ext_resource type="PackedScene" uid="uid://tpr6jwkkirof" path="res://UI/overlay/layer_overlay.tscn" id="4_xpjkn"]
+[ext_resource type="Script" uid="uid://da28rm6bhuapg" path="res://Dimensions/portal_blue.gd" id="5_g5fkf"]
 [ext_resource type="PackedScene" uid="uid://c0lsnfct0maiq" path="res://Player/character_main.tscn" id="6_4ni5d"]
+[ext_resource type="Script" uid="uid://jjo2rtuqshw2" path="res://Dimensions/portal_green.gd" id="7_g5fkf"]
 [ext_resource type="TileSet" uid="uid://8qjqvrq3hifa" path="res://Tilemaps/tile_purple_128.tres" id="7_hmkhn"]
 [ext_resource type="Script" uid="uid://r5ia5aie8vnb" path="res://Dimensions/portal_yellow.gd" id="8_dtkbd"]
 [ext_resource type="TileSet" uid="uid://gjjfbqjhnsw1" path="res://Tilemaps/tile_clouds.tres" id="8_g5fkf"]
@@ -19,7 +21,7 @@
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4ni5d"]
 atlas = ExtResource("14_ghnmt")
-region = Rect2(31, 819, 337, 376)
+region = Rect2(31, 19, 337, 379)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ghnmt"]
 size = Vector2(305, 201)
@@ -119,6 +121,7 @@ tile_set = ExtResource("3_a1sdl")
 
 [node name="Portal_Blue" type="StaticBody2D" parent="." unique_id=1222598422]
 position = Vector2(-818, 137)
+script = ExtResource("5_g5fkf")
 
 [node name="Sprite2D" type="Sprite2D" parent="Portal_Blue" unique_id=1982261254]
 texture = SubResource("AtlasTexture_4ni5d")
@@ -140,6 +143,7 @@ shape = SubResource("RectangleShape2D_ghnmt")
 
 [node name="Portal_Green" type="StaticBody2D" parent="." unique_id=1856385158]
 position = Vector2(398, 1316)
+script = ExtResource("7_g5fkf")
 
 [node name="Sprite2D" type="Sprite2D" parent="Portal_Green" unique_id=695941557]
 texture = SubResource("AtlasTexture_dtkbd")
@@ -192,13 +196,6 @@ tile_set = ExtResource("4_ghnmt")
 script = SubResource("GDScript_4ni5d")
 
 [node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=814037960]
-
-[node name="Area2D_1" type="Area2D" parent="." unique_id=595521028]
-position = Vector2(-825, 0)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D_1" unique_id=786534614]
-position = Vector2(29.5, 136)
-shape = SubResource("RectangleShape2D_dtkbd")
 
 [node name="Area2D_2" type="Area2D" parent="." unique_id=1770131278]
 position = Vector2(336, -1040)
