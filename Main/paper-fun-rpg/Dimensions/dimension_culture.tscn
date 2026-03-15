@@ -14,6 +14,10 @@
 [ext_resource type="PackedScene" uid="uid://cdwwaf1cxov4l" path="res://NPCs/npc_1_beginner.tscn" id="12_ngs5n"]
 [ext_resource type="PackedScene" path="res://NPCs/v_box_container.tscn" id="13_gotnx"]
 [ext_resource type="PackedScene" uid="uid://cle52dntl30ce" path="res://Player/Pet/Pisica.tscn" id="14_e4tka"]
+[ext_resource type="PackedScene" path="res://NPCs/v_box_container.tscn" id="13_gotnx"]
+[ext_resource type="PackedScene" uid="uid://triuqh11jt7x" path="res://NPCs/Goblins/goblin_base.tscn" id="15_guc8d"]
+[ext_resource type="PackedScene" uid="uid://c3faavbg87gwr" path="res://Player/Pet/Pisica.tscn" id="14_e4tka"]
+[ext_resource type="PackedScene" uid="uid://c8qes1sjo7hlg" path="res://NPCs/v_box_container.tscn" id="13_gotnx"]
 
 [node name="Node2D" type="Node2D" unique_id=1669356560]
 process_mode = 3
@@ -27,6 +31,12 @@ tile_set = ExtResource("1_jejax")
 tile_map_data = PackedByteArray("AAD7//P/AAATAAEAAAD9/+r/AAAUAAEAAAD9//n/AAATAAEAAAD///f/AAAYAAEAAAADAPX/AAATAAAAAAAJAPj/AAAXAAEAAAALAPf/AAAYAAAAAAAQAO//AAATAAEAAAASAOP/AAAXAAAAAAAVAO//AAATAAEAAAAYAP3/AAATAAAAAAAaAPb/AAAYAAAAAAAeAPT/AAAYAAEAAAAgAOv/AAATAAAAAAAHANj/AAAZAAEAAAAKANb/AAAUAAAAAAAPAN3/AAASAAAAAAARANn/AAAWAAEAAADz//z/AAASAAEAAADg/wYAAAASAAEAAADr/woAAAAUAAAAAADt/wYAAAAXAAAAAADv/wUAAAAVAAEAAADt//D/AAAUAAAAAADu/+//AAAXAAEAAADv//L/AAAYAAEAAAAAAP7/AAABAAMAAAD5//z/AAADAAMAAAD1/wAAAAAEAAMAAAAQAP3/AAACAAQAAADf//7/AAAAAAQAAADk//z/AAAAAAQAAADq/wYAAAACAAQAAADs/woAAAABAAQAAADw/wkAAAACAAQAAADy/wcAAAACAAQAAAD0/wwAAAACAAQAAAD2/wAAAAAAAAQAAAADAPD/AAAAAAQAAAAHAOX/AAAAAAQAAAAIAPD/AAAAAAQAAAARAPf/AAAAAAQAAAAVAOb/AAACAAQAAAAWAPX/AAAAAAQAAAAZAPD/AAAAAAQAAAD6/+X/AQAAAAQAAAAiAP//AAADAAMAAAAhAP//AAABAAMAAAAbAO//AAABAAQAAAA=")
 tile_set = ExtResource("2_kauso")
 
+[node name="Pisica" parent="." unique_id=238727010 instance=ExtResource("14_e4tka")]
+position = Vector2(310, -449.99997)
+
+[node name="Player" parent="." unique_id=1640696164 instance=ExtResource("2_q6oif")]
+position = Vector2(380, -464.54544)
+
 [node name="tile_after_128_auto" type="TileMapLayer" parent="." unique_id=1716514134 node_paths=PackedStringArray("player")]
 y_sort_enabled = true
 position = Vector2(-1, -0.90909076)
@@ -34,12 +44,6 @@ tile_map_data = PackedByteArray("AAAEAO7/AAAEAAIAAAAPAP3/AAAGAAIAAAD5//H/AAABAAQ
 tile_set = ExtResource("3_q6oif")
 script = ExtResource("5_q6oif")
 player = NodePath("../Player")
-
-[node name="Pisica" parent="." unique_id=238727010 instance=ExtResource("14_e4tka")]
-position = Vector2(310, -449.99997)
-
-[node name="Player" parent="." unique_id=1640696164 instance=ExtResource("2_q6oif")]
-position = Vector2(380, -464.54544)
 
 [node name="MusicDimensionHub" type="AudioStreamPlayer" parent="." unique_id=27103067]
 stream = ExtResource("4_s8o0v")
@@ -69,3 +73,6 @@ position = Vector2(795, -434.18176)
 
 [node name="VBoxContainer" parent="." unique_id=1974735420 instance=ExtResource("13_gotnx")]
 visible = false
+
+[node name="GoblinBase" parent="." unique_id=1156250879 instance=ExtResource("15_guc8d")]
+position = Vector2(-364, -479.09088)

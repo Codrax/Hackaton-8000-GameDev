@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dl1obkxrhnp0p" path="res://NPCs/npc_1_beginner.gd" id="1_fkj1y"]
 [ext_resource type="Texture2D" uid="uid://b65c4uqvycc83" path="res://Images/Sprites/NPC/NPC1.png" id="2_7f2xe"]
+[ext_resource type="Script" uid="uid://b4oxkcm01rf8f" path="res://UI/quests/QuestUI.gd" id="3_7f2xe"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_dte7o"]
 radius = 216.03703
@@ -100,3 +101,40 @@ frame = 81
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1590530091]
 position = Vector2(-1, 49)
 shape = SubResource("CapsuleShape2D_d1ypo")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=863763325]
+layer = 10
+
+[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer" unique_id=1073123635]
+custom_minimum_size = Vector2(300, 150)
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -108.0
+grow_horizontal = 0
+grow_vertical = 0
+script = ExtResource("3_7f2xe")
+
+[node name="VBox" type="VBoxContainer" parent="CanvasLayer/PanelContainer" unique_id=517962300]
+layout_mode = 2
+
+[node name="LabelTitlu" type="Label" parent="CanvasLayer/PanelContainer/VBox" unique_id=1527262645]
+layout_mode = 2
+
+[node name="LabelDesc" type="Label" parent="CanvasLayer/PanelContainer/VBox" unique_id=2143111281]
+layout_mode = 2
+
+[node name="LabelProgress" type="Label" parent="CanvasLayer/PanelContainer/VBox" unique_id=587001157]
+layout_mode = 2
+
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/PanelContainer/VBox" unique_id=73638717]
+layout_mode = 2
+
+[node name="ProgressBar" type="ProgressBar" parent="." unique_id=120539850]
+offset_left = 1620.0
+offset_top = 1011.0
+offset_right = 1920.0
+offset_bottom = 1038.0
