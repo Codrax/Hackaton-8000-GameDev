@@ -202,10 +202,10 @@ shape = SubResource("CircleShape2D_is3ru")
 [node name="InteractionLabel" type="Label" parent="." unique_id=631662584]
 light_mask = 512
 visibility_layer = 512
-offset_left = -608.0
-offset_top = -68.0
-offset_right = -452.0
-offset_bottom = -27.0
+offset_left = -311.0
+offset_top = -46.0
+offset_right = -155.0
+offset_bottom = -5.0
 text = "Press \"F\" to attack!"
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
