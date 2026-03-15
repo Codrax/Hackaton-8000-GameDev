@@ -132,6 +132,7 @@ layout_mode = 2
 
 [node name="VBoxContainer" parent="." unique_id=1974735420 instance=ExtResource("3_1xao8")]
 layout_mode = 0
+script = null
 
 [node name="MainMenu" type="AudioStreamPlayer" parent="." unique_id=1769582693]
 stream = ExtResource("5_usm5j")
