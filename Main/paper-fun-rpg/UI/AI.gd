@@ -1,7 +1,17 @@
 extends Node
 
 const API_URL = "https://devsocket.025555.xyz/"
+const API_URL_LOCAL = "localhost:8010"
 const AUTH_TOKEN = "b8d4de9d-4c35-4143-b0c4-61c3776c0586"
+
+# Local LLM
+var useLocalLLM = false
+
+func getApiUrl():
+	if useLocalLLM:
+		return API_URL_LOCAL
+	else:
+		return API_URL
 
 # Send a message and get response text asynchronously
 # Returns String on success, null on failure
@@ -14,7 +24,7 @@ func reset_model() -> String:
 	var headers = ["Content-Type: application/json", "Authorization: Bearer " + AUTH_TOKEN]
 	var body = "{}"  # empty JSON
 
-	var err = http.request(API_URL + "/reset/", headers, HTTPClient.METHOD_POST, body)
+	var err = http.request(getApiUrl() + "/reset/", headers, HTTPClient.METHOD_POST, body)
 	if err != OK:
 		http.queue_free()
 		print("Response is not OK!")
@@ -50,7 +60,7 @@ func send_message(message: String) -> String:
 	var headers = ["Content-Type: application/json", "Authorization: Bearer " + AUTH_TOKEN]
 	var body = JSON.stringify({"message": message})
 
-	var err = http.request(API_URL, headers, HTTPClient.METHOD_POST, body)
+	var err = http.request(getApiUrl(), headers, HTTPClient.METHOD_POST, body)
 	if err != OK:
 		http.queue_free()
 		print("Response is not OK!")
