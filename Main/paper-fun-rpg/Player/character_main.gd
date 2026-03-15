@@ -9,6 +9,10 @@ extends CharacterBody2D
 var interactable_target = null
 
 func _physics_process(_delta):        
+	# If the user is typing in a TextEdit, don't move!
+	if get_viewport().gui_get_focus_owner() is Control:
+		return
+	
 	# 1. Get Input Vector (if not doing attack animation)
 	var input_vector = Vector2.ZERO
 	if anim_state.get_current_node() != "Attack":

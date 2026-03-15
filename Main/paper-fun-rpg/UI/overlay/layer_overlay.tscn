@@ -2,6 +2,25 @@
 
 [ext_resource type="Script" uid="uid://vj3tl48c3cj7" path="res://UI/overlay/layer_overlay.gd" id="1_k2s1m"]
 [ext_resource type="Texture2D" uid="uid://dpxhi0r6yt4fl" path="res://Images/UI/button_tile.png" id="1_rbpc5"]
+[ext_resource type="Texture2D" uid="uid://dtbbu3vu6ck7g" path="res://Images/panels.png" id="3_ttosf"]
+[ext_resource type="StyleBox" uid="uid://cvsuk1dxddoan" path="res://Styles/style_control_input.tres" id="4_k2s1m"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_85bka"]
+atlas = ExtResource("3_ttosf")
+region = Rect2(234, 214, 382, 197)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hk8rb"]
+atlas = ExtResource("3_ttosf")
+region = Rect2(246, 10, 357, 181)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jdgef"]
+atlas = ExtResource("1_rbpc5")
+region = Rect2(936, 344, 273, 292)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xsrj5"]
+atlas = ExtResource("1_rbpc5")
+region = Rect2(936, 344, 273, 292)
+margin = Rect2(10, 10, 10, 10)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rbpc5"]
 atlas = ExtResource("1_rbpc5")
@@ -29,27 +48,126 @@ scale = Vector2(0.4, 0.4)
 transform = Transform2D(0.4, 0, 0, 0.4, 0, 0)
 script = ExtResource("1_k2s1m")
 
+[node name="Contailer_Help" type="CenterContainer" parent="." unique_id=538803275]
+offset_left = 5000.0
+offset_top = -187.5
+offset_right = 6400.0
+offset_bottom = 2854.9998
+
+[node name="ColorRect" type="ColorRect" parent="Contailer_Help" unique_id=717584343]
+custom_minimum_size = Vector2(1400, 2800)
+layout_mode = 2
+color = Color(0, 0, 0, 0.39215687)
+
+[node name="CenterContainer" type="VBoxContainer" parent="Contailer_Help" unique_id=591945846]
+layout_mode = 2
+
+[node name="CenterContainer9" type="CenterContainer" parent="Contailer_Help/CenterContainer" unique_id=2050278486]
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="Contailer_Help/CenterContainer" unique_id=2029953133]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="Contailer_Help/CenterContainer/CenterContainer" unique_id=913295420]
+custom_minimum_size = Vector2(1200, 300)
+layout_mode = 2
+texture = SubResource("AtlasTexture_85bka")
+
+[node name="Label" type="Label" parent="Contailer_Help/CenterContainer/CenterContainer" unique_id=1849588899]
+layout_mode = 2
+theme_override_font_sizes/font_size = 70
+text = "Ajutor si suport"
+
+[node name="CenterContainer3" type="CenterContainer" parent="Contailer_Help/CenterContainer" unique_id=762264471]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+
+[node name="CenterContainer2" type="CenterContainer" parent="Contailer_Help/CenterContainer" unique_id=353097239]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="Contailer_Help/CenterContainer/CenterContainer2" unique_id=1897807410]
+custom_minimum_size = Vector2(1200, 700)
+layout_mode = 2
+texture = SubResource("AtlasTexture_hk8rb")
+
+[node name="Help_Input" type="TextEdit" parent="Contailer_Help/CenterContainer/CenterContainer2" unique_id=1115468038]
+custom_minimum_size = Vector2(1000, 400)
+layout_mode = 2
+theme_override_font_sizes/font_size = 70
+theme_override_styles/normal = ExtResource("4_k2s1m")
+theme_override_styles/focus = ExtResource("4_k2s1m")
+theme_override_styles/read_only = ExtResource("4_k2s1m")
+placeholder_text = "Intrebare de ajutor"
+
+[node name="CenterContainer4" type="CenterContainer" parent="Contailer_Help/CenterContainer" unique_id=1264600338]
+layout_mode = 2
+
+[node name="CenterContainer7" type="CenterContainer" parent="Contailer_Help/CenterContainer" unique_id=157665121]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+
+[node name="CenterContainer5" type="CenterContainer" parent="Contailer_Help/CenterContainer" unique_id=1404977136]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="Contailer_Help/CenterContainer/CenterContainer5" unique_id=369307841]
+custom_minimum_size = Vector2(1200, 300)
+layout_mode = 2
+texture = SubResource("AtlasTexture_85bka")
+
+[node name="Label" type="Label" parent="Contailer_Help/CenterContainer/CenterContainer5" unique_id=779038434]
+layout_mode = 2
+theme_override_font_sizes/font_size = 70
+text = "<< Raspuns >>         "
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Contailer_Help/CenterContainer/CenterContainer5" unique_id=1616121369]
+custom_minimum_size = Vector2(1000, 0)
+layout_mode = 2
+alignment = 2
+
+[node name="TextureButton" type="TextureButton" parent="Contailer_Help/CenterContainer/CenterContainer5/HBoxContainer" unique_id=634101775]
+layout_mode = 2
+texture_normal = SubResource("AtlasTexture_jdgef")
+texture_pressed = SubResource("AtlasTexture_xsrj5")
+
+[node name="CenterContainer6" type="CenterContainer" parent="Contailer_Help/CenterContainer" unique_id=284651385]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+
+[node name="CenterContainer8" type="CenterContainer" parent="Contailer_Help/CenterContainer" unique_id=1520387580]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="Contailer_Help/CenterContainer/CenterContainer8" unique_id=295434338]
+custom_minimum_size = Vector2(1200, 700)
+layout_mode = 2
+texture = SubResource("AtlasTexture_hk8rb")
+
+[node name="Help_Response" type="RichTextLabel" parent="Contailer_Help/CenterContainer/CenterContainer8" unique_id=984232948]
+custom_minimum_size = Vector2(1100, 600)
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 70
+text = "..."
+
 [node name="Button_Help" type="TextureButton" parent="." unique_id=1509821210]
-offset_left = 4475.0
-offset_top = 47.499992
-offset_right = 4747.0
-offset_bottom = 338.5
+offset_left = 4497.5
+offset_top = 25.000015
+offset_right = 4769.5
+offset_bottom = 316.0
 texture_normal = SubResource("AtlasTexture_ttosf")
 texture_pressed = SubResource("AtlasTexture_k2s1m")
 
 [node name="Button_Pause" type="TextureButton" parent="." unique_id=743322849]
-offset_left = 52.5
-offset_top = 47.5
-offset_right = 324.5
-offset_bottom = 336.5
+offset_left = 42.5
+offset_top = 30.000008
+offset_right = 314.5
+offset_bottom = 319.0
 texture_normal = SubResource("AtlasTexture_juwm5")
 texture_pressed = SubResource("AtlasTexture_ibwjw")
 
-[node name="TextEdit" type="TextEdit" parent="." unique_id=857173443]
-offset_left = 1892.4999
-offset_top = 542.49994
-offset_right = 2067.4998
-offset_bottom = 582.49994
+[node name="HTTPRequest" type="HTTPRequest" parent="." unique_id=76104801]
 
+[connection signal="pressed" from="Contailer_Help/CenterContainer/CenterContainer5/HBoxContainer/TextureButton" to="." method="_on_texture_button_pressed"]
 [connection signal="pressed" from="Button_Help" to="." method="_on_button_help_pressed"]
 [connection signal="pressed" from="Button_Pause" to="." method="_on_button_pause_pressed"]
+[connection signal="request_completed" from="HTTPRequest" to="." method="_on_http_request_request_completed"]

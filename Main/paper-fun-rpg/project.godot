@@ -11,14 +11,14 @@ config_version=5
 [application]
 
 config/name="PaperFunRPG"
-run/main_scene="uid://dai6m5oaffu17"
+run/main_scene="uid://dbf52ccu3mo7p"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://Images/icon.svg"
 
 [autoload]
 
-DisplayModeManager="*uid://d2wtbf4ncpmod"
-SettingsManager="*uid://cbri01xi53366"
+DisplayModeManager="*uid://cfmjdi5uqbmqh"
+SettingsManager="*uid://dimnevcl4qy16"
 
 [display]
 
