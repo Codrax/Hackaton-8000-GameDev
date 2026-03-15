@@ -1,4 +1,3 @@
-# QuestManager.gd — Autoload singleton
 extends Node
 
 signal quest_started(quest: Dictionary)
