@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://cuoki53uy6gy4"]
 
-[ext_resource type="Script" uid="uid://bapqgphu6l55k" path="res://Scenes/scene_battle.gd" id="1_6002h"]
+[ext_resource type="Script" uid="uid://bapqgphu6l55k" path="res://Chestii de de la Cata/scene_battle.gd" id="1_6002h"]
 [ext_resource type="PackedScene" uid="uid://c0lsnfct0maiq" path="res://Player/character_main.tscn" id="1_rsulo"]
 [ext_resource type="PackedScene" uid="uid://tpr6jwkkirof" path="res://UI/overlay/layer_overlay.tscn" id="2_263fg"]
 [ext_resource type="PackedScene" uid="uid://b7ty4i7kybeto" path="res://UI/PauseMenu/scenes/PauseMenu.tscn" id="3_ilcbh"]
 [ext_resource type="PackedScene" uid="uid://triuqh11jt7x" path="res://NPCs/Goblins/goblin_base.tscn" id="4_6pqdb"]
-[ext_resource type="Script" uid="uid://dou7j1djwm6qj" path="res://Scenes/battle_ui.gd" id="5_0pov8"]
+[ext_resource type="Script" uid="uid://dou7j1djwm6qj" path="res://Chestii de de la Cata/battle_ui.gd" id="5_0pov8"]
 
 [node name="SceneBattle" type="Node2D" unique_id=855124874]
 script = ExtResource("1_6002h")
@@ -49,7 +49,7 @@ max_value = 3.0
 value = 3.0
 
 [node name="QuestionPanel" type="Panel" parent="BattleUI" unique_id=1233712365]
-anchors_preset = -1
+anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0

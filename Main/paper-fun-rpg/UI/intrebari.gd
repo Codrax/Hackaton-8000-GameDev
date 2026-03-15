@@ -13,7 +13,6 @@ var index_curent: int = 0
 @onready var btn_d = $HBoxContainer/BtnD
 @onready var label_feedback = $LabelFeedback
 @onready var label_scor = $LabelScor
-
 func _ready() -> void:
 	visible=false
 	incarca_intrebari()
@@ -25,7 +24,6 @@ func _ready() -> void:
 func _process(_delta):
 	if player:
 		global_position = player.global_position + Vector2(0, 100)
-
 func incarca_intrebari() -> void:
 	var file = FileAccess.open("res://NPCs/intrebari_npc.json", FileAccess.READ)
 	if file == null:
@@ -42,7 +40,6 @@ func incarca_intrebari() -> void:
 	intrebari.shuffle()
 	total = intrebari.size()
 	arata_intrebare()
-
 func arata_intrebare() -> void:
 	if index_curent >= total:
 		sfarsit_quiz()
@@ -60,7 +57,6 @@ func arata_intrebare() -> void:
 		btn.show()
 	label_feedback.text = ""
 	label_scor.text = "Scor:  %d / %d" % [scor, index_curent]
-
 func verifica_raspuns(index: int) -> void:
 	if intrebare_curenta.is_empty():
 		return
@@ -96,7 +92,6 @@ func sfarsit_quiz() -> void:
 	label_scor.text = "Scor final: %d/%d (%d%%)" % [scor, total, procent]
 	for btn in [btn_a, btn_b, btn_c, btn_d]:
 		btn.hide()
-
 func start_quiz() -> void:
 	scor = 0
 	index_curent = 0

@@ -1,5 +1,6 @@
 [gd_scene format=4 uid="uid://i5vn6u5mce1j"]
 
+[ext_resource type="Script" uid="uid://btmsnd4iowawe" path="res://Dimensions/dimension_special.gd" id="1_0br6r"]
 [ext_resource type="Texture2D" uid="uid://qhf66jijip0w" path="res://Images/galaxy.png" id="1_wyqnh"]
 [ext_resource type="TileSet" uid="uid://ja7pfnosw06b" path="res://Tilemaps/tile_pre_64.tres" id="2_3ttbe"]
 [ext_resource type="Script" uid="uid://ku47tg73sa3q" path="res://Dimensions/black_hole_adv.gd" id="2_wyqnh"]
@@ -24,6 +25,7 @@ size = Vector2(565.5, 547.5)
 
 [node name="DimensionSpecial" type="Node2D" unique_id=407112639]
 y_sort_enabled = true
+script = ExtResource("1_0br6r")
 
 [node name="black_hole" type="Sprite2D" parent="." unique_id=660731039]
 z_index = -101

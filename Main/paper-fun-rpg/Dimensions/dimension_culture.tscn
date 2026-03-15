@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://dai6m5oaffu17"]
 
 [ext_resource type="TileSet" uid="uid://dfmqfrlltfrm4" path="res://Tilemaps/tile_128.tres" id="1_jejax"]
+[ext_resource type="Script" uid="uid://d1hi2ix7e3p61" path="res://Dimensions/dimension_culture.gd" id="1_octn7"]
 [ext_resource type="TileSet" uid="uid://ja7pfnosw06b" path="res://Tilemaps/tile_pre_64.tres" id="2_kauso"]
 [ext_resource type="PackedScene" uid="uid://c0lsnfct0maiq" path="res://Player/character_main.tscn" id="2_q6oif"]
 [ext_resource type="TileSet" uid="uid://cn2671iycwmg6" path="res://Tilemaps/tile_after_128.tres" id="3_q6oif"]
@@ -34,6 +35,7 @@ size = Vector2(305, 201)
 process_mode = 3
 y_sort_enabled = true
 scale = Vector2(1, 1.1)
+script = ExtResource("1_octn7")
 
 [node name="tile_world" type="TileMapLayer" parent="." unique_id=766393539]
 z_index = -100
@@ -100,6 +102,12 @@ visible = false
 
 [node name="GoblinBase" parent="." unique_id=1156250879 instance=ExtResource("15_guc8d")]
 position = Vector2(-364, -479.09088)
+
+[node name="GoblinBase2" parent="." unique_id=449112966 instance=ExtResource("15_guc8d")]
+position = Vector2(1100, -1967.2727)
+
+[node name="GoblinBase3" parent="." unique_id=370663866 instance=ExtResource("15_guc8d")]
+position = Vector2(2253, -262.72726)
 
 [node name="NpcLabirint(2)" type="Sprite2D" parent="." unique_id=1733006375]
 position = Vector2(-657, -1717.2727)

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://br73w6lpd0gi1"]
 
-[ext_resource type="Script" uid="uid://ds0tei8byt8f1" path="res://NPCs/intrebari.gd" id="1_vawmb"]
+[ext_resource type="Script" uid="uid://ds0tei8byt8f1" path="res://Chestii de de la Cata/intrebari.gd" id="1_vawmb"]
 
 [node name="Node2D" type="Node2D" unique_id=249054755]
 

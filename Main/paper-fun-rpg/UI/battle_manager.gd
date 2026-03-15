@@ -2,7 +2,9 @@ extends Node
 
 var player: Node2D
 var camera: Camera2D
-var battle_index: int = 0
+var battle_id: String = ""
+
+var defeated_enemies: Array[String] = []
 
 const SCENE_BATTLE = "res://Scenes/scene_battle.tscn"
 
@@ -11,6 +13,12 @@ var current_enemy = null
 var previous_scene_path: String = ""
 # ----------------------------------------------
 
+func cleanup_defeated_enemies():
+	for path in defeated_enemies:
+		if has_node(path):
+			get_node(path).queue_free()
+
+# Player
 func fetchPlayerInstance():
 	player = get_tree().get_first_node_in_group("Player")
 	if player:
@@ -22,12 +30,12 @@ func fetchPlayerInstance():
 
 # Parametrul a fost modificat pentru a primi referința inamicului.
 # index are valoare default 0 ca să nu strice eventuale apeluri vechi.
-func battle_start(enemy_node, index: int = 0):
+func battle_start(enemy_node, id = ""):
 	if not fetchPlayerInstance():
 		return
 		
 	current_enemy = enemy_node
-	battle_index = index
+	battle_id = id
 	
 	# Salvăm calea scenei de unde venim pentru a ne putea întoarce
 	previous_scene_path = get_tree().current_scene.scene_file_path
@@ -80,10 +88,11 @@ func _screen_fill():
 
 # --- FUNCȚIE NOUĂ PENTRU TERMINAREA LUPTEI ---
 func end_battle(player_won: bool):
-	if player_won and current_enemy != null:
-		current_enemy.queue_free() # Ștergem inamicul de pe hartă dacă jucătorul a câștigat
-		
+	print("Verificare daca player a castigat: ", player_won)
+	if player_won and battle_id != "":
+		defeated_enemies.append(str(battle_id))
+		print("Enemy defeated: ", battle_id)
+
+	print("Se reintoarce la scena")
 	current_enemy = null
-	
-	# Ne întoarcem în scena principală
 	get_tree().change_scene_to_file(previous_scene_path)

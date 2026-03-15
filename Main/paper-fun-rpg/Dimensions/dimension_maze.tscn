@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://bug673bd1jnq0"]
 
 [ext_resource type="TileSet" uid="uid://dfmqfrlltfrm4" path="res://Tilemaps/tile_128.tres" id="1_6mid2"]
+[ext_resource type="Script" uid="uid://c62e3yponbdnr" path="res://Dimensions/dimension_maze.gd" id="1_qnaq4"]
 [ext_resource type="TileSet" uid="uid://ja7pfnosw06b" path="res://Tilemaps/tile_pre_64.tres" id="2_tcmpw"]
 [ext_resource type="PackedScene" uid="uid://bp3dmn0ilbjle" path="res://Player/Pet/Pisica.tscn" id="3_g8bjb"]
 [ext_resource type="PackedScene" uid="uid://c0lsnfct0maiq" path="res://Player/character_main.tscn" id="4_qnaq4"]
@@ -13,6 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://tpr6jwkkirof" path="res://UI/overlay/layer_overlay.tscn" id="10_ir2ro"]
 [ext_resource type="PackedScene" uid="uid://b7ty4i7kybeto" path="res://UI/PauseMenu/scenes/PauseMenu.tscn" id="11_bfsld"]
 [ext_resource type="AudioStream" uid="uid://dpnfb3xdil5u8" path="res://Music/dimensions/maze/ambient.mp3" id="11_g8bjb"]
+[ext_resource type="PackedScene" uid="uid://triuqh11jt7x" path="res://NPCs/Goblins/goblin_base.tscn" id="15_b22dl"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_b22dl"]
 atlas = ExtResource("7_qnaq4")
@@ -23,6 +25,7 @@ size = Vector2(305, 272)
 
 [node name="DimensionMaze" type="Node2D" unique_id=1089708447]
 y_sort_enabled = true
+script = ExtResource("1_qnaq4")
 
 [node name="tile_world" type="TileMapLayer" parent="." unique_id=239390620]
 z_index = -100
@@ -79,3 +82,12 @@ visible = false
 
 [node name="Pause_Menu" parent="." unique_id=1790332088 instance=ExtResource("11_bfsld")]
 visible = false
+
+[node name="GoblinBase" parent="." unique_id=1156250879 instance=ExtResource("15_b22dl")]
+position = Vector2(-1935, -2311)
+
+[node name="GoblinBase" parent="GoblinBase" unique_id=1783474127 instance=ExtResource("15_b22dl")]
+position = Vector2(4716, 2394)
+
+[node name="GoblinBase" parent="GoblinBase/GoblinBase" unique_id=709548598 instance=ExtResource("15_b22dl")]
+position = Vector2(-4742, 1966)

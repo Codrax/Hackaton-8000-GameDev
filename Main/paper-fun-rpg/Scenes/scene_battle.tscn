@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://b7ty4i7kybeto" path="res://UI/PauseMenu/scenes/PauseMenu.tscn" id="3_ilcbh"]
 [ext_resource type="PackedScene" uid="uid://triuqh11jt7x" path="res://NPCs/Goblins/goblin_base.tscn" id="4_0pov8"]
 [ext_resource type="Texture2D" uid="uid://ptiy23tggi0b" path="res://Images/Untitled.jpeg" id="5_6002h"]
-[ext_resource type="PackedScene" uid="uid://br73w6lpd0gi1" path="res://Chestii de de la Cata/intrebari.tscn" id="6_qlwjo"]
+[ext_resource type="PackedScene" path="res://UI/intrebari.tscn" id="6_qlwjo"]
 [ext_resource type="Texture2D" uid="uid://cskr5v8cruib3" path="res://Images/UI/UI-Fight-removebg-preview.png" id="7_6fxs5"]
 
 [node name="SceneBattle" type="Node2D" unique_id=855124874]

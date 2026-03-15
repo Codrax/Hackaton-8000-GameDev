@@ -55,7 +55,7 @@ func _physics_process(_delta):
 		# Verificăm dacă ținta e un inamic
 		if interactable_target and interactable_target.get_parent().is_in_group("enemies"):
 			if has_node("/root/BattleManager"):
-				get_node("/root/BattleManager").battle_start(enemy_target, 1)
+				get_node("/root/BattleManager").battle_start(interactable_target.get_parent(), interactable_target.get_parent().get_path())
 
 func _input(event):
 	# Blochează interacțiunea cât timp jocul este în pauză
@@ -63,6 +63,7 @@ func _input(event):
 		return
 
 	if event.is_action_pressed("interact") and interactable_target:
+		print("INTERACTIUNE")
 		# Apelăm funcția de interact a NPC-ului
 		if interactable_target.has_method("interact"):
 			interactable_target.interact()
@@ -73,7 +74,7 @@ func _input(event):
 # --- CONECTEAZĂ ACESTE SEMNALE DIN EDITOR (Nodul Area2D al Player-ului) ---
 
 func _on_interaction_area_area_entered(area):
-
+	print("Interaction area entered!!")
 	# Când intrăm în raza unui NPC/Goblin
 	interactable_target = area
 	if area.has_node("InteractionLabel"):
