@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://br73w6lpd0gi1"]
+
+[ext_resource type="Script" uid="uid://ds0tei8byt8f1" path="res://NPCs/intrebari.gd" id="1_vawmb"]
+
+[node name="Node2D" type="Node2D" unique_id=249054755]
+
+[node name="Control" type="Control" parent="." unique_id=801705131]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control" unique_id=1299291918]
+layout_mode = 0
+offset_right = 44.0
+offset_bottom = 89.0
+script = ExtResource("1_vawmb")
+
+[node name="LabelIntrebare" type="Label" parent="Control/VBoxContainer" unique_id=1602424986]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/VBoxContainer" unique_id=1383841744]
+layout_mode = 2
+
+[node name="BtnA" type="Button" parent="Control/VBoxContainer/HBoxContainer" unique_id=1330972056]
+layout_mode = 2
+
+[node name="BtnB" type="Button" parent="Control/VBoxContainer/HBoxContainer" unique_id=1240365029]
+layout_mode = 2
+
+[node name="BtnC" type="Button" parent="Control/VBoxContainer/HBoxContainer" unique_id=1598949192]
+layout_mode = 2
+
+[node name="BtnD" type="Button" parent="Control/VBoxContainer/HBoxContainer" unique_id=81117705]
+layout_mode = 2
+
+[node name="LabelFeedback" type="Label" parent="Control/VBoxContainer" unique_id=1353639582]
+layout_mode = 2
+
+[node name="LabelScor" type="Label" parent="Control/VBoxContainer" unique_id=934284655]
+layout_mode = 2

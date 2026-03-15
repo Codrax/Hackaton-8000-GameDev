@@ -3,7 +3,6 @@
 [ext_resource type="Script" uid="uid://e5ckndcn08fs" path="res://UI/main_menu/main_menu.gd" id="1_script"]
 [ext_resource type="Texture2D" uid="uid://b47osf8urcedn" path="res://Images/UI/main_menu/background.png" id="2_qoqlk"]
 [ext_resource type="FontFile" uid="uid://bskte1qa7vhox" path="res://UI/PauseMenu/scenes/ui/GothicByte.ttf" id="3_qtoa1"]
-[ext_resource type="PackedScene" uid="uid://dai6m5oaffu17" path="res://Dimensions/dimension_culture.tscn" id="5_lib8g"]
 [ext_resource type="AudioStream" uid="uid://b4whqpkm2k5n7" path="res://Music/main_menu.mp3" id="5_usm5j"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_btn_normal"]
@@ -146,9 +145,3 @@ text = "✕  Quit to desktop"
 [node name="MainMenu" type="AudioStreamPlayer" parent="." unique_id=1769582693]
 stream = ExtResource("5_usm5j")
 autoplay = true
-
-[node name="Node2D" parent="." unique_id=1669356560 instance=ExtResource("5_lib8g")]
-position = Vector2(215, 136)
-
-[node name="Node2D2" parent="." unique_id=126307241 instance=ExtResource("5_lib8g")]
-position = Vector2(215, 136)
