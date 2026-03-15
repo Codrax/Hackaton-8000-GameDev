@@ -8,7 +8,7 @@ extends CharacterBody2D
 # --- ADAUGĂ ASTA: Variabilă pentru a ține minte NPC-ul de lângă tine ---
 var interactable_target = null
 
-func _physics_process(_delta):        
+func _physics_process(_delta):    
 	# If the user is typing in a TextEdit, don't move!
 	if get_viewport().gui_get_focus_owner() is Control:
 		return

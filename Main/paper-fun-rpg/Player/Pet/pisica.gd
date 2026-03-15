@@ -14,14 +14,18 @@ var random_timer: float = 0.0
 var is_resting: bool = false
 
 func _physics_process(delta):
-	# Caută jucătorul constant până îl găsește
+	 # <-- Adaugă asta
 	if not player:
 		player = get_tree().get_first_node_in_group("Player")
 		if not player:
-			return # Nu face nimic până nu există jucătorul
-
+			print("Nu gasesc grupul Player!") # <-- DEBUG 1
+			return
+		else:
+			print("Am gasit jucatorul cu succes!") # <-- DEBUG 2
 	var distance_to_player = global_position.distance_to(player.global_position)
 	var direction = global_position.direction_to(player.global_position)
+	
+	# print("Distanta fata de jucator: ", distance_to_player) # <-- DEBUG 3 (opțional)
 
 	if distance_to_player > follow_distance:
 		var dynamic_speed = clamp(distance_to_player * 1.5, min_speed, max_speed)
