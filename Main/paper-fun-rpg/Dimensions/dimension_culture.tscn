@@ -62,6 +62,7 @@ script = ExtResource("6_g03h1")
 visible = false
 
 [node name="Pause_Menu" parent="." unique_id=1790332088 instance=ExtResource("11_g03h1")]
+visible = false
 
 [node name="Npc1-beginner" parent="." unique_id=2125670543 instance=ExtResource("12_ngs5n")]
 position = Vector2(795, -434.18176)
