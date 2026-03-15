@@ -7,7 +7,7 @@
 [ext_resource type="AudioStream" uid="uid://1j40pik1wbgc" path="res://Music/dimensions/culture/ambient.mp3" id="4_s8o0v"]
 [ext_resource type="TileSet" uid="uid://gjjfbqjhnsw1" path="res://Tilemaps/tile_clouds.tres" id="5_6ramc"]
 [ext_resource type="Script" uid="uid://cgka7ek3csm22" path="res://Tilemaps/tile_clouds.gd" id="6_g03h1"]
-[ext_resource type="Script" uid="uid://dhbqx7tue1elu" path="res://Dimensions/return_portal_yellow.gd" id="7_301q4"]
+[ext_resource type="Script" path="res://Dimensions/return_portal_yellow.gd" id="7_301q4"]
 [ext_resource type="Texture2D" uid="uid://bf1klnfd72md7" path="res://Images/portals.png" id="8_eok0h"]
 [ext_resource type="TileSet" uid="uid://8qjqvrq3hifa" path="res://Tilemaps/tile_purple_128.tres" id="9_s8o0v"]
 [ext_resource type="PackedScene" uid="uid://tpr6jwkkirof" path="res://UI/overlay/layer_overlay.tscn" id="10_6ramc"]
@@ -39,11 +39,11 @@ z_index = -1
 tile_map_data = PackedByteArray("AAD7//P/AAATAAEAAAD9/+r/AAAUAAEAAAD9//n/AAATAAEAAAD///f/AAAYAAEAAAADAPX/AAATAAAAAAAJAPj/AAAXAAEAAAALAPf/AAAYAAAAAAAQAO//AAATAAEAAAASAOP/AAAXAAAAAAAVAO//AAATAAEAAAAYAP3/AAATAAAAAAAaAPb/AAAYAAAAAAAeAPT/AAAYAAEAAAAgAOv/AAATAAAAAAAHANj/AAAZAAEAAAAKANb/AAAUAAAAAAAPAN3/AAASAAAAAAARANn/AAAWAAEAAADz//z/AAASAAEAAADg/wYAAAASAAEAAADr/woAAAAUAAAAAADt/wYAAAAXAAAAAADv/wUAAAAVAAEAAADt//D/AAAUAAAAAADu/+//AAAXAAEAAADv//L/AAAYAAEAAAAAAP7/AAABAAMAAAD5//z/AAADAAMAAAD1/wAAAAAEAAMAAAAQAP3/AAACAAQAAADf//7/AAAAAAQAAADk//z/AAAAAAQAAADq/wYAAAACAAQAAADs/woAAAABAAQAAADw/wkAAAACAAQAAADy/wcAAAACAAQAAAD0/wwAAAACAAQAAAD2/wAAAAAAAAQAAAADAPD/AAAAAAQAAAAHAOX/AAAAAAQAAAAIAPD/AAAAAAQAAAARAPf/AAAAAAQAAAAVAOb/AAACAAQAAAAWAPX/AAAAAAQAAAAZAPD/AAAAAAQAAAD6/+X/AQAAAAQAAAAiAP//AAADAAMAAAAhAP//AAABAAMAAAAbAO//AAABAAQAAAA=")
 tile_set = ExtResource("2_kauso")
 
-[node name="Pisica" parent="." unique_id=238727010 instance=ExtResource("14_e4tka")]
-position = Vector2(310, -449.99997)
-
 [node name="Player" parent="." unique_id=1640696164 instance=ExtResource("2_q6oif")]
 position = Vector2(-1764, 615.4546)
+
+[node name="Pisica" parent="." unique_id=238727010 instance=ExtResource("14_e4tka")]
+position = Vector2(-1815, 634.5454)
 
 [node name="tile_after_128_auto" type="TileMapLayer" parent="." unique_id=1716514134]
 y_sort_enabled = true

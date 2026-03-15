@@ -38,7 +38,7 @@ func _physics_process(_delta):
 		
 		if enemy_target != null:
 			print("Inamic detectat în arie! Apelează BattleManager...")
-			BattleManager.battle_start(1)
+			BattleManager.battle_start(enemy_target.get_parent())
 		else:
 			print("Dau atac, dar nu văd niciun inamic lângă mine.")
 

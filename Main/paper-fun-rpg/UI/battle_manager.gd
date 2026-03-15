@@ -6,6 +6,11 @@ var battle_index: int = 0
 
 const SCENE_BATTLE = "res://Scenes/scene_battle.tscn"
 
+# --- VARIABILE NOI PENTRU SISTEMUL DE LUPTĂ ---
+var current_enemy = null
+var previous_scene_path: String = ""
+# ----------------------------------------------
+
 func fetchPlayerInstance():
 	player = get_tree().get_first_node_in_group("Player")
 	if player:
@@ -15,14 +20,21 @@ func fetchPlayerInstance():
 	print("PLAYER/CAMERA not found")
 	return false
 
-func battle_start(index: int):
+# Parametrul a fost modificat pentru a primi referința inamicului.
+# index are valoare default 0 ca să nu strice eventuale apeluri vechi.
+func battle_start(enemy_node, index: int = 0):
 	if not fetchPlayerInstance():
 		return
-	
+		
+	current_enemy = enemy_node
 	battle_index = index
+	
+	# Salvăm calea scenei de unde venim pentru a ne putea întoarce
+	previous_scene_path = get_tree().current_scene.scene_file_path
+	
 	print("Start lupta")
 	
-		# delete overlay
+	# delete overlay
 	var tmp = get_tree().root.get_node("Node2D/UI_Overlay")
 	if tmp:
 		tmp.hide()
@@ -65,3 +77,13 @@ func _screen_fill():
 	print("LOADING LEVEL")
 	get_tree().change_scene_to_file(SCENE_BATTLE)
 	layer.queue_free()  # remove the black layer
+
+# --- FUNCȚIE NOUĂ PENTRU TERMINAREA LUPTEI ---
+func end_battle(player_won: bool):
+	if player_won and current_enemy != null:
+		current_enemy.queue_free() # Ștergem inamicul de pe hartă dacă jucătorul a câștigat
+		
+	current_enemy = null
+	
+	# Ne întoarcem în scena principală
+	get_tree().change_scene_to_file(previous_scene_path)
