@@ -1,0 +1,99 @@
+[gd_scene format=3 uid="uid://cuoki53uy6gy4"]
+
+[ext_resource type="Script" uid="uid://bapqgphu6l55k" path="res://Scenes/scene_battle.gd" id="1_6002h"]
+[ext_resource type="PackedScene" uid="uid://c0lsnfct0maiq" path="res://Player/character_main.tscn" id="1_rsulo"]
+[ext_resource type="PackedScene" uid="uid://tpr6jwkkirof" path="res://UI/overlay/layer_overlay.tscn" id="2_263fg"]
+[ext_resource type="PackedScene" uid="uid://b7ty4i7kybeto" path="res://UI/PauseMenu/scenes/PauseMenu.tscn" id="3_ilcbh"]
+[ext_resource type="PackedScene" uid="uid://triuqh11jt7x" path="res://NPCs/Goblins/goblin_base.tscn" id="4_6pqdb"]
+[ext_resource type="Script" uid="uid://dou7j1djwm6qj" path="res://Scenes/battle_ui.gd" id="5_0pov8"]
+
+[node name="SceneBattle" type="Node2D" unique_id=855124874]
+script = ExtResource("1_6002h")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1887999490]
+
+[node name="Player" parent="." unique_id=1640696164 groups=["player"] instance=ExtResource("1_rsulo")]
+position = Vector2(657, 225)
+scale = Vector2(5, 5)
+script = null
+
+[node name="UI_Overlay" parent="." unique_id=853865014 instance=ExtResource("2_263fg")]
+visible = false
+
+[node name="Pause_Menu" parent="." unique_id=1790332088 instance=ExtResource("3_ilcbh")]
+visible = false
+
+[node name="GoblinBase" parent="." unique_id=1156250879 instance=ExtResource("4_6pqdb")]
+position = Vector2(159, -266)
+
+[node name="BattleUI" type="CanvasLayer" parent="." unique_id=2005369771]
+script = ExtResource("5_0pov8")
+
+[node name="HPPanel" type="Panel" parent="BattleUI" unique_id=82171468]
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+
+[node name="HPLabel" type="Panel" parent="BattleUI/HPPanel" unique_id=2124780663]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+tooltip_text = "Goblin HP
+"
+
+[node name="HPBar" type="ProgressBar" parent="BattleUI/HPPanel" unique_id=229960245]
+layout_mode = 0
+offset_right = 4.0
+offset_bottom = 27.0
+max_value = 3.0
+value = 3.0
+
+[node name="QuestionPanel" type="Panel" parent="BattleUI" unique_id=1233712365]
+anchors_preset = -1
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -286.0
+offset_top = -578.0
+offset_right = -246.0
+offset_bottom = -110.0
+
+[node name="QuestionLabel" type="Label" parent="BattleUI/QuestionPanel" unique_id=518082917]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 1964.0
+offset_bottom = 206.0
+
+[node name="AnswerContainer" type="VBoxContainer" parent="BattleUI/QuestionPanel" unique_id=1098310118]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.123
+anchor_top = 0.938
+anchor_right = 0.123
+anchor_bottom = 0.938
+offset_left = -255.08
+offset_top = -206.98404
+offset_right = 1708.92
+offset_bottom = 234.01599
+
+[node name="AnswerButton1" type="Button" parent="BattleUI/QuestionPanel/AnswerContainer" unique_id=350106361]
+layout_mode = 2
+
+[node name="AnswerButton2" type="Button" parent="BattleUI/QuestionPanel/AnswerContainer" unique_id=820613390]
+layout_mode = 2
+
+[node name="AnswerButton3" type="Button" parent="BattleUI/QuestionPanel/AnswerContainer" unique_id=824687538]
+layout_mode = 2
+
+[node name="AnswerButton4" type="Button" parent="BattleUI/QuestionPanel/AnswerContainer" unique_id=485951652]
+layout_mode = 2
+
+[node name="AskAIPopup" type="Panel" parent="BattleUI" unique_id=1597733972]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="PopupLabel" type="Label" parent="BattleUI/AskAIPopup" unique_id=280635065]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0

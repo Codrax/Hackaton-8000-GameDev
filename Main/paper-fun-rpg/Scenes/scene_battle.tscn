@@ -3,13 +3,18 @@
 [ext_resource type="PackedScene" uid="uid://c0lsnfct0maiq" path="res://Player/character_main.tscn" id="1_rsulo"]
 [ext_resource type="PackedScene" uid="uid://tpr6jwkkirof" path="res://UI/overlay/layer_overlay.tscn" id="2_263fg"]
 [ext_resource type="PackedScene" uid="uid://b7ty4i7kybeto" path="res://UI/PauseMenu/scenes/PauseMenu.tscn" id="3_ilcbh"]
+[ext_resource type="PackedScene" uid="uid://triuqh11jt7x" path="res://NPCs/Goblins/goblin_base.tscn" id="4_0pov8"]
+[ext_resource type="Texture2D" uid="uid://ptiy23tggi0b" path="res://Images/Untitled.jpeg" id="5_6002h"]
 
 [node name="SceneBattle" type="Node2D" unique_id=855124874]
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=1887999490]
+[node name="Camera2D2" type="Camera2D" parent="." unique_id=1887999490]
+position = Vector2(85, 107)
+scale = Vector2(0.99999994, 0.99999994)
+zoom = Vector2(0.8, 0.8)
 
 [node name="Player" parent="." unique_id=1640696164 instance=ExtResource("1_rsulo")]
-position = Vector2(657, 225)
+position = Vector2(590, 306)
 scale = Vector2(5, 5)
 script = null
 
@@ -18,3 +23,14 @@ visible = false
 
 [node name="Pause_Menu" parent="." unique_id=1790332088 instance=ExtResource("3_ilcbh")]
 visible = false
+
+[node name="GoblinBase" parent="." unique_id=1156250879 instance=ExtResource("4_0pov8")]
+position = Vector2(-231, -6.0000153)
+scale = Vector2(3.2, 3.2)
+
+[node name="Backround" type="Sprite2D" parent="." unique_id=1299027696]
+z_index = -1
+z_as_relative = false
+position = Vector2(93, 110.99982)
+scale = Vector2(1.6614583, 1.3916014)
+texture = ExtResource("5_6002h")
