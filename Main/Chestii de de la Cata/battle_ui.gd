@@ -2,6 +2,8 @@ extends CanvasLayer
 
 signal battle_finished
 
+@onready var player = $"Player"
+
 @onready var hp_panel = $HPPanel
 @onready var hp_label = $HPPanel/HPLabel
 @onready var hp_bar = $HPPanel/HPBar
@@ -85,7 +87,9 @@ func show_question() -> void:
 
 	ask_ai_popup.visible = false
 
+# mark as async so we can use await
 func _on_answer_pressed(button: Button) -> void:
+	print("Answer pressed")
 	if current_goblin == null:
 		return
 
@@ -93,10 +97,20 @@ func _on_answer_pressed(button: Button) -> void:
 	var selected_answer = button.text
 	var correct_answer = q["correct"]
 
+	print("CHECK")
 	if selected_answer == correct_answer:
+		print("CORRECT")
 		current_goblin.take_damage(1)
 		hp_bar.value = current_goblin.current_hp
-
+		
+		# FIX: Calculăm direcția către goblin pentru ca animația să fie corectă
+		var direction = (current_goblin.global_position - player.global_position).normalized()
+		player.animation_tree.set("parameters/Attack/blend_position", direction)
+		player.animation_tree.set("parameters/Idle/blend_position", direction) # Opțional, să rămână cu fața la el
+		
+		print(player.anim_state.get_current_node())
+		player.anim_state.travel("Attack")
+		
 		if current_goblin.current_hp <= 0:
 			end_battle()
 			return

@@ -1,6 +1,6 @@
 extends Node2D
 
-var json_file_path: String = "res://Chestii de de la Cata/intrebari_npc.json"
+var json_file_path: String = "res://Data/intrebari_npc.json"
 
 @onready var question_label = $QuestionLabel
 @onready var btn1 = $AnswersContainer/Button1
@@ -63,16 +63,21 @@ func _check_answer(selected_text: String):
 
 	if selected_text == current_question["raspuns_corect"]:
 		# Răspuns Corect
-		player_anim.travel("attack_up")
+		player_anim.travel("Attack")
+		
+		# Așteptăm să se termine animația de atac (ajustează timpul dacă e nevoie)
 		await get_tree().create_timer(0.5).timeout
 		
-		enemy_anim.play("hit")
+		# --- AICI E MODIFICAREA ---
+		player_anim.travel("Idle") # Îl trimitem înapoi la Idle 🏃‍♂️
+		# --------------------------
 		
+		enemy_anim.play("hit")
 		enemy_hp -= 1
 		update_ui()
 
 		if enemy_hp <= 0:
-			enemy_anim.play("death") # Asigură-te că ai și o animație de moarte, altfel poți șterge linia
+			enemy_anim.play("death")
 			await get_tree().create_timer(1.0).timeout 
 			BattleManager.end_battle(true) 
 			return
@@ -81,7 +86,6 @@ func _check_answer(selected_text: String):
 		enemy_anim.play("attack") 
 		await get_tree().create_timer(0.5).timeout
 		
-		# Playerul nu are animație de hit, deci doar îi scădem viața
 		player_hp -= 1
 		update_ui()
 
