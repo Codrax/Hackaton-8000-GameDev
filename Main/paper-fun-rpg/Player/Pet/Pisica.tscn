@@ -657,12 +657,14 @@ libraries/ = SubResource("AnimationLibrary_x4sh7")
 autoplay = &"loading"
 
 [node name="ControlLoading" type="Sprite2D" parent="Node2D" unique_id=1094082676]
+visible = false
 position = Vector2(-23, -34)
 scale = Vector2(1.9736842, 1.90625)
 texture = ExtResource("3_3l5c1")
 hframes = 3
 
 [node name="Control" type="Control" parent="Node2D" unique_id=1602903478]
+visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_left = 4.0
