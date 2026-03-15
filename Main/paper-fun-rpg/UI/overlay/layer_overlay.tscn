@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://vj3tl48c3cj7" path="res://UI/overlay/layer_overlay.gd" id="1_k2s1m"]
 [ext_resource type="Texture2D" uid="uid://dpxhi0r6yt4fl" path="res://Images/UI/button_tile.png" id="1_rbpc5"]
-[ext_resource type="Texture2D" uid="uid://dtbbu3vu6ck7g" path="res://Images/panels.png" id="3_ttosf"]
+[ext_resource type="Texture2D" uid="uid://dtbbu3vu6ck7g" path="res://Images/UI/panels.png" id="3_ttosf"]
 [ext_resource type="StyleBox" uid="uid://cvsuk1dxddoan" path="res://Styles/style_control_input.tres" id="4_k2s1m"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_85bka"]

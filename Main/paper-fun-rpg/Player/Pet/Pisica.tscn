@@ -1,7 +1,8 @@
-[gd_scene format=3 uid="uid://cle52dntl30ce"]
+[gd_scene format=3 uid="uid://c3faavbg87gwr"]
 
-[ext_resource type="Script" uid="uid://diq3pdigm4pwj" path="res://Player/Pet/pisica.gd" id="1_rtfn1"]
+[ext_resource type="Script" uid="uid://bexh5s131yc03" path="res://Player/Pet/pisica.gd" id="1_rtfn1"]
 [ext_resource type="Texture2D" uid="uid://ddkos8wax88un" path="res://Images/Sprites/PET/cat 1.6.png" id="1_rut3n"]
+[ext_resource type="Texture2D" uid="uid://bxjlvafxqv8ei" path="res://Images/cloudy.jpg" id="3_3l5c1"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3u3xv"]
 radius = 13.152946
@@ -605,3 +606,10 @@ parameters/Run/blend_position = Vector2(0, 0)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1298209060]
 libraries/ = SubResource("AnimationLibrary_fn06p")
+
+[node name="Node2D" type="Node2D" parent="." unique_id=1443785682]
+
+[node name="Cloudy" type="Sprite2D" parent="Node2D" unique_id=580647644]
+position = Vector2(141, -136.99994)
+scale = Vector2(0.075555556, 0.11666667)
+texture = ExtResource("3_3l5c1")

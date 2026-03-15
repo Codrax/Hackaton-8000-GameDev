@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://cuoki53uy6gy4"]
 
 [ext_resource type="PackedScene" uid="uid://c0lsnfct0maiq" path="res://Player/character_main.tscn" id="1_rsulo"]
+[ext_resource type="PackedScene" uid="uid://tpr6jwkkirof" path="res://UI/overlay/layer_overlay.tscn" id="2_263fg"]
+[ext_resource type="PackedScene" uid="uid://b7ty4i7kybeto" path="res://UI/PauseMenu/scenes/PauseMenu.tscn" id="3_ilcbh"]
 
 [node name="SceneBattle" type="Node2D" unique_id=855124874]
 
@@ -10,3 +12,9 @@
 position = Vector2(657, 225)
 scale = Vector2(5, 5)
 script = null
+
+[node name="UI_Overlay" parent="." unique_id=853865014 instance=ExtResource("2_263fg")]
+visible = false
+
+[node name="Pause_Menu" parent="." unique_id=1790332088 instance=ExtResource("3_ilcbh")]
+visible = false
