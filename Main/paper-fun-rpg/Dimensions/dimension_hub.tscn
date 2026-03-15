@@ -16,7 +16,7 @@
 [ext_resource type="Script" uid="uid://cgka7ek3csm22" path="res://Tilemaps/tile_clouds.gd" id="9_qn8vm"]
 [ext_resource type="Texture2D" uid="uid://bf1klnfd72md7" path="res://Images/portals.png" id="14_ghnmt"]
 [ext_resource type="PackedScene" uid="uid://deoconeatobfl" path="res://UI/UI.tscn" id="16_4ni5d"]
-[ext_resource type="PackedScene" uid="uid://c3faavbg87gwr" path="res://Player/Pet/Pisica.tscn" id="17_hmkhn"]
+[ext_resource type="PackedScene" uid="uid://cle52dntl30ce" path="res://Player/Pet/Pisica.tscn" id="17_hmkhn"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4ni5d"]
 atlas = ExtResource("14_ghnmt")
@@ -146,6 +146,9 @@ tile_map_data = PackedByteArray("AADV/+7/AAAOAAAAAADV////AAAOAAAAAADX/wwAAAAOAAA
 tile_set = ExtResource("8_g5fkf")
 script = ExtResource("9_qn8vm")
 
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1315084373]
+position = Vector2(267, 130)
+
 [node name="UI_Overlay" parent="." unique_id=853865014 instance=ExtResource("4_xpjkn")]
 visible = false
 
@@ -153,6 +156,3 @@ visible = false
 visible = false
 
 [node name="UI" parent="." unique_id=1979440047 instance=ExtResource("16_4ni5d")]
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1315084373]
-position = Vector2(267, 130)
