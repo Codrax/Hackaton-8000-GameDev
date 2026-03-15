@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dl1obkxrhnp0p" path="res://NPCs/npc_1_beginner.gd" id="1_fkj1y"]
 [ext_resource type="Texture2D" uid="uid://b65c4uqvycc83" path="res://Images/Sprites/NPC/NPC1.png" id="2_7f2xe"]
-[ext_resource type="Script" uid="uid://b4oxkcm01rf8f" path="res://UI/quests/QuestUI.gd" id="3_7f2xe"]
+[ext_resource type="Script" uid="uid://b4oxkcm01rf8f" path="res://QuestUI.gd" id="3_7f2xe"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_dte7o"]
 radius = 216.03703
@@ -132,9 +132,3 @@ layout_mode = 2
 
 [node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/PanelContainer/VBox" unique_id=73638717]
 layout_mode = 2
-
-[node name="ProgressBar" type="ProgressBar" parent="." unique_id=120539850]
-offset_left = 1620.0
-offset_top = 1011.0
-offset_right = 1920.0
-offset_bottom = 1038.0
