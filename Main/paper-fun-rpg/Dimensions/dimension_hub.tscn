@@ -1,6 +1,6 @@
 [gd_scene format=4 uid="uid://di52b8n3mmy86"]
 
-[ext_resource type="Script" uid="uid://p3i5qwiammq3" path="res://Dimensions/dimension_hub.gd" id="1_a1sdl"]
+[ext_resource type="Script" path="res://Dimensions/dimension_hub.gd" id="1_a1sdl"]
 [ext_resource type="Texture2D" uid="uid://bxjlvafxqv8ei" path="res://Images/cloudy.jpg" id="1_rl0p0"]
 [ext_resource type="AudioStream" uid="uid://belrhymkpkpfv" path="res://Music/dimensions/hub/ambient.mp3" id="2_lri0m"]
 [ext_resource type="TileSet" uid="uid://dfmqfrlltfrm4" path="res://Tilemaps/tile_128.tres" id="2_rl0p0"]
@@ -11,12 +11,16 @@
 [ext_resource type="Script" uid="uid://djtwoxygfqieq" path="res://Tilemaps/tile_after_128.gd" id="5_dtkbd"]
 [ext_resource type="PackedScene" uid="uid://c0lsnfct0maiq" path="res://Player/character_main.tscn" id="6_4ni5d"]
 [ext_resource type="TileSet" uid="uid://8qjqvrq3hifa" path="res://Tilemaps/tile_purple_128.tres" id="7_hmkhn"]
-[ext_resource type="Script" uid="uid://r5ia5aie8vnb" path="res://Dimensions/portal_yellow.gd" id="8_dtkbd"]
+[ext_resource type="Script" path="res://Dimensions/portal_yellow.gd" id="8_dtkbd"]
 [ext_resource type="TileSet" uid="uid://gjjfbqjhnsw1" path="res://Tilemaps/tile_clouds.tres" id="8_g5fkf"]
 [ext_resource type="Script" uid="uid://cgka7ek3csm22" path="res://Tilemaps/tile_clouds.gd" id="9_qn8vm"]
 [ext_resource type="Texture2D" uid="uid://bf1klnfd72md7" path="res://Images/portals.png" id="14_ghnmt"]
+<<<<<<< Updated upstream
 [ext_resource type="PackedScene" uid="uid://deoconeatobfl" path="res://UI/UI.tscn" id="16_4ni5d"]
 [ext_resource type="PackedScene" uid="uid://c3faavbg87gwr" path="res://Player/Pet/Pisica.tscn" id="17_hmkhn"]
+=======
+[ext_resource type="Script" uid="uid://b4oxkcm01rf8f" path="res://QuestUI.gd" id="16_4ni5d"]
+>>>>>>> Stashed changes
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4ni5d"]
 atlas = ExtResource("14_ghnmt")
@@ -217,7 +221,73 @@ visible = false
 [node name="Pause_Menu" parent="." unique_id=1790332088 instance=ExtResource("3_7hfs0")]
 visible = false
 
+<<<<<<< Updated upstream
 [node name="UI" parent="." unique_id=1979440047 instance=ExtResource("16_4ni5d")]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1315084373]
 position = Vector2(267, 130)
+=======
+[node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=814037960]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=736786926]
+layer = 10
+
+[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer" unique_id=1924978417]
+custom_minimum_size = Vector2(300, 150)
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -108.0
+grow_horizontal = 0
+grow_vertical = 0
+script = ExtResource("16_4ni5d")
+
+[node name="VBox" type="VBoxContainer" parent="CanvasLayer/PanelContainer" unique_id=974330955]
+layout_mode = 2
+
+[node name="LabelTitlu" type="Label" parent="CanvasLayer/PanelContainer/VBox" unique_id=1028845048]
+layout_mode = 2
+
+[node name="LabelDesc" type="Label" parent="CanvasLayer/PanelContainer/VBox" unique_id=276076320]
+layout_mode = 2
+
+[node name="LabelProgress" type="Label" parent="CanvasLayer/PanelContainer/VBox" unique_id=1581203371]
+layout_mode = 2
+
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/PanelContainer/VBox" unique_id=1776625868]
+layout_mode = 2
+
+[node name="CanvasLayer" type="CanvasLayer" parent="CanvasLayer" unique_id=285202675]
+layer = 10
+
+[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer/CanvasLayer" unique_id=930800021]
+custom_minimum_size = Vector2(300, 150)
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -108.0
+grow_horizontal = 0
+grow_vertical = 0
+script = ExtResource("16_4ni5d")
+
+[node name="VBox" type="VBoxContainer" parent="CanvasLayer/CanvasLayer/PanelContainer" unique_id=55412488]
+layout_mode = 2
+
+[node name="LabelTitlu" type="Label" parent="CanvasLayer/CanvasLayer/PanelContainer/VBox" unique_id=62305491]
+layout_mode = 2
+
+[node name="LabelDesc" type="Label" parent="CanvasLayer/CanvasLayer/PanelContainer/VBox" unique_id=1937434607]
+layout_mode = 2
+
+[node name="LabelProgress" type="Label" parent="CanvasLayer/CanvasLayer/PanelContainer/VBox" unique_id=1387074569]
+layout_mode = 2
+
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/CanvasLayer/PanelContainer/VBox" unique_id=1230502874]
+layout_mode = 2
+>>>>>>> Stashed changes

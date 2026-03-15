@@ -12,8 +12,13 @@
 [ext_resource type="PackedScene" uid="uid://tpr6jwkkirof" path="res://UI/overlay/layer_overlay.tscn" id="10_6ramc"]
 [ext_resource type="PackedScene" uid="uid://b7ty4i7kybeto" path="res://UI/PauseMenu/scenes/PauseMenu.tscn" id="11_g03h1"]
 [ext_resource type="PackedScene" uid="uid://cdwwaf1cxov4l" path="res://NPCs/npc_1_beginner.tscn" id="12_ngs5n"]
-[ext_resource type="PackedScene" uid="uid://c8qes1sjo7hlg" path="res://NPCs/v_box_container.tscn" id="13_gotnx"]
+<<<<<<< Updated upstream
+[ext_resource type="PackedScene" path="res://NPCs/v_box_container.tscn" id="13_gotnx"]
 [ext_resource type="PackedScene" uid="uid://c3faavbg87gwr" path="res://Player/Pet/Pisica.tscn" id="14_e4tka"]
+[ext_resource type="PackedScene" uid="uid://triuqh11jt7x" path="res://NPCs/Goblins/goblin_base.tscn" id="15_guc8d"]
+=======
+[ext_resource type="PackedScene" uid="uid://c8qes1sjo7hlg" path="res://NPCs/v_box_container.tscn" id="13_gotnx"]
+>>>>>>> Stashed changes
 
 [node name="Node2D" type="Node2D" unique_id=1669356560]
 process_mode = 3
@@ -69,3 +74,6 @@ position = Vector2(795, -434.18176)
 
 [node name="VBoxContainer" parent="." unique_id=1974735420 instance=ExtResource("13_gotnx")]
 visible = false
+
+[node name="GoblinBase" parent="." unique_id=1156250879 instance=ExtResource("15_guc8d")]
+position = Vector2(-364, -479.09088)

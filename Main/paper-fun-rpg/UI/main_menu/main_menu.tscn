@@ -1,9 +1,13 @@
 [gd_scene format=3 uid="uid://dbf52ccu3mo7p"]
 
 [ext_resource type="Script" uid="uid://e5ckndcn08fs" path="res://UI/main_menu/main_menu.gd" id="1_script"]
+<<<<<<< Updated upstream
 [ext_resource type="Texture2D" uid="uid://b47osf8urcedn" path="res://Images/UI/main_menu/background.png" id="2_qoqlk"]
 [ext_resource type="FontFile" uid="uid://bskte1qa7vhox" path="res://UI/PauseMenu/scenes/ui/GothicByte.ttf" id="3_qtoa1"]
 [ext_resource type="AudioStream" uid="uid://b4whqpkm2k5n7" path="res://Music/main_menu.mp3" id="5_usm5j"]
+=======
+[ext_resource type="Texture2D" uid="uid://cd8ev6d1tvvdj" path="res://Images/UI/main_menu/background.png" id="2_qoqlk"]
+>>>>>>> Stashed changes
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_btn_normal"]
 bg_color = Color(0.408, 0.408, 0.408, 1)
@@ -128,6 +132,7 @@ text = "🛈 HoodResearch Website"
 [node name="Spacer" type="Control" parent="CenterContainer" unique_id=812414883]
 custom_minimum_size = Vector2(0, 20)
 layout_mode = 2
+<<<<<<< Updated upstream
 
 [node name="QuitButton" type="Button" parent="CenterContainer" unique_id=953477019]
 custom_minimum_size = Vector2(550, 100)
@@ -145,3 +150,5 @@ text = "✕  Quit to desktop"
 [node name="MainMenu" type="AudioStreamPlayer" parent="." unique_id=1769582693]
 stream = ExtResource("5_usm5j")
 autoplay = true
+=======
+>>>>>>> Stashed changes
