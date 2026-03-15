@@ -9,19 +9,27 @@ var interactable_target = null
 var enemy_target = null
 
 func _physics_process(_delta):
-	
-	# 1. Blocare mișcare în UI
-	if get_viewport().gui_get_focus_owner() is Control:
+	# Oprește complet playerul când jocul este în pauză
+	if get_tree().paused:
+		velocity = Vector2.ZERO
+		move_and_slide()
 		return
-	
-	# 2. Input Mișcare
-	var input_vector = Vector2.ZERO
+
+	# If the user is typing in a TextEdit, don't move
+	if get_viewport().gui_get_focus_owner() is Control:
+		velocity = Vector2.ZERO
+		move_and_slide()
+		return
+
+	var input_vector := Vector2.ZERO
+
 	if anim_state.get_current_node() != "Attack":
 		input_vector.x = Input.get_action_strength("move_right") - Input.get_action_strength("move_left")
 		input_vector.y = Input.get_action_strength("move_down") - Input.get_action_strength("move_up")
+
 	input_vector = input_vector.normalized()
 
-	var current_speed = speed
+	var current_speed := speed
 	if Input.is_action_pressed("sprint"):
 		current_speed *= sprint_multiplier
 	if input_vector.length() > 0.1:
@@ -37,12 +45,7 @@ func _physics_process(_delta):
 
 	if Input.is_action_just_pressed("attack"):
 		anim_state.travel("Attack")
-		
-		if enemy_target != null:
-			print("Inamic detectat în arie! Apelează BattleManager...")
-			BattleManager.battle_start(enemy_target.get_parent(), enemy_target.get_parent().get_path())
-		else:
-			print("Dau atac, dar nu văd niciun inamic lângă mine.")
+		BattleManager.battle_start(1)
 
 	move_and_slide()
 
@@ -55,7 +58,10 @@ func _physics_process(_delta):
 				get_node("/root/BattleManager").battle_start(interactable_target.get_parent(), interactable_target.get_parent().get_path())
 
 func _input(event):
-	# 5. Interacțiune (Tasta E)
+	# Blochează interacțiunea cât timp jocul este în pauză
+	if get_tree().paused:
+		return
+
 	if event.is_action_pressed("interact") and interactable_target:
 		print("INTERACTIUNE")
 		# Apelăm funcția de interact a NPC-ului
