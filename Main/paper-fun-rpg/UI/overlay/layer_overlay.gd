@@ -71,34 +71,28 @@ func _on_button_pause_pressed() -> void:
 
 var is_requesting = false
 func _on_texture_button_pressed() -> void:
-	# 0. Check if a request is already running
-	if is_requesting:
-		return 
-		
-	var user_message = help_input.text
-	if user_message.is_empty():
+	var message = help_input.text.strip_edges()
+	if message == "":
 		return
-
-	# 1. Lock the request and set loading state
-	is_requesting = true
+	
+	# Disable UI visually
+	var gray_tween = create_tween()
+	gray_tween.tween_property(ui_container, "modulate", Color(0.5,0.5,0.5,0.75), 0.2)
 	help_response.text = "Loading..."
 	
-	# 2. Visual "Gray out" effect (0.5 opacity, grayish)
-	var gray_tween = create_tween()
-	gray_tween.tween_property(ui_container, "modulate", Color(0.5, 0.5, 0.5, 0.75), 0.2)
+	# Await AI response
+	var response = await AI.send_message(message)
 	
-	# 3. Prepare Headers and Body
-	var headers = ["Content-Type: application/json", "Authorization: Bearer " + AUTH_TOKEN]
-	var body = JSON.stringify({"message": user_message})
+	# Reset UI visuals
+	var reset_tween = create_tween()
+	reset_tween.tween_property(ui_container, "modulate", Color(1,1,1,1), 0.2)
 	
-	# 4. Send request
-	var error = http_request.request(API_URL, headers, HTTPClient.METHOD_POST, body)
-	
-	if error != OK:
-		is_requesting = false # Unlock if we couldn't even send it
-		help_response.text = "Network error"
-		ui_container.modulate = Color.WHITE # Reset color instantly on error
-
+	# Show response or error if empty
+	if response == null or response.strip_edges() == "":
+		help_response.text = "Eroare retea"
+	else:
+		help_response.text = response
+		
 func _on_http_request_request_completed(result: int, response_code: int, headers: PackedStringArray, body: PackedByteArray) -> void:
 	# ALWAYS unlock the request when finished
 	is_requesting = false

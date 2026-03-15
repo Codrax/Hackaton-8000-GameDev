@@ -22,6 +22,7 @@ BattleManager="*uid://ddncruxhyd0dt"
 DisplayModeManager="*uid://d2wtbf4ncpmod"
 SettingsManager="*uid://cbri01xi53366"
 LoadingScreenData="*uid://dw41qtwjwju56"
+AI="*uid://df1ess1luyd3d"
 
 [display]
 
