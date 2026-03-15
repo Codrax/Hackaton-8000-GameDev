@@ -207,7 +207,7 @@ shape = SubResource("RectangleShape2D_dtkbd")
 [node name="Ambient" type="AudioStreamPlayer" parent="Area2D_2" unique_id=428647985]
 stream = ExtResource("2_lri0m")
 autoplay = true
-parameters/looping = false
+parameters/looping = true
 
 [node name="tile_invisiblewall" type="TileMapLayer" parent="." unique_id=1660053097]
 visible = false

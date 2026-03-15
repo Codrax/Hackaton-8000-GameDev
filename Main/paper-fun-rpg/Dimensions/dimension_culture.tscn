@@ -89,7 +89,7 @@ visible = false
 [node name="MusicDimensionHub" type="AudioStreamPlayer" parent="." unique_id=27103067]
 stream = ExtResource("4_s8o0v")
 autoplay = true
-parameters/looping = false
+parameters/looping = true
 
 [node name="Npc1-beginner" parent="." unique_id=2125670543 instance=ExtResource("12_ngs5n")]
 position = Vector2(795, -434.18176)
