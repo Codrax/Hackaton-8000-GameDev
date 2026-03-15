@@ -51,7 +51,7 @@ func _physics_process(_delta):
 		# Verificăm dacă ținta e un inamic
 		if interactable_target and interactable_target.get_parent().is_in_group("enemies"):
 			if has_node("/root/BattleManager"):
-				get_node("/root/BattleManager").battle_start(1)
+				get_node("/root/BattleManager").battle_start(enemy_target, 1)
 
 func _input(event):
 	# 5. Interacțiune (Tasta E)
