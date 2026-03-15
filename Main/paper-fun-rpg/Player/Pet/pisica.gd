@@ -17,42 +17,37 @@ func _physics_process(delta):
 	if not player:
 		player = get_tree().get_first_node_in_group("Player")
 		if not player:
-			print("Nu gasesc grupul Player!") # <-- DEBUG 1
+			print("Nu gasesc grupul Player!")
 			return
 		else:
-			print("Am gasit jucatorul cu succes!") # <-- DEBUG 2
+			print("Am gasit jucatorul cu succes!")
 
 	var distance_to_player = global_position.distance_to(player.global_position)
 	var direction = global_position.direction_to(player.global_position)
-	
-	# print("Distanta fata de jucator: ", distance_to_player) # <-- DEBUG 3 (opțional)
 
 	if distance_to_player > follow_distance:
 		var dynamic_speed = clamp(distance_to_player * 1.5, min_speed, max_speed)
 		velocity = velocity.lerp(direction * dynamic_speed, 6.0 * delta)
-		
+
 		idle_timer = 0.0
 		random_timer = 0.0
-		is_resting = false 
-		
-		# ATENȚIE: Numele "Idle", "Run", "HeadDown" de aici trebuie să fie EXACT 
-		# la fel ca denumirile nodurilor din panoul tău AnimationTree.
+		is_resting = false
+
 		animation_tree.set("parameters/Idle/blend_position", direction)
 		animation_tree.set("parameters/Run/blend_position", direction)
 		animation_tree.set("parameters/HeadDown/blend_position", direction)
-		
+
 		anim_state.travel("Run")
-		
+
 	else:
 		velocity = velocity.lerp(Vector2.ZERO, 15.0 * delta)
-		
-		# Oprește micro-oscilațiile
+
 		if velocity.length() < 5.0:
 			velocity = Vector2.ZERO
-		
+
 		idle_timer += delta
 		random_timer -= delta
-		
+
 		if idle_timer >= time_to_sit:
 			if not is_resting:
 				anim_state.travel("sit")
@@ -60,17 +55,27 @@ func _physics_process(delta):
 			else:
 				if anim_state.get_current_node() == "LayDown":
 					if random_timer <= 0.0:
-						random_timer = 2.0 
+						random_timer = 2.0
 						if randf() < 0.2:
 							anim_state.travel("moan")
 		else:
 			if anim_state.get_current_node() != "HeadDown":
 				anim_state.travel("Idle")
-				
+
 				if random_timer <= 0.0:
-					random_timer = 1.0 
+					random_timer = 1.0
 					if randf() < 0.2:
 						anim_state.travel("HeadDown")
 
-	# Funcția asta trebuie să fie aici, aliniată la nivelul lui "if/else"
+	# --- Z sorting relative to player ---
+	var new_z := 0
+	if player:
+		if global_position.y < player.global_position.y:
+			new_z = 0
+		else:
+			new_z = 1
+
+	if z_index != new_z:
+		z_index = new_z
+
 	move_and_slide()
