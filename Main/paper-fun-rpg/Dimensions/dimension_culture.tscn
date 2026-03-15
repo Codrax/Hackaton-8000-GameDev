@@ -11,8 +11,8 @@
 [ext_resource type="TileSet" uid="uid://8qjqvrq3hifa" path="res://Tilemaps/tile_purple_128.tres" id="9_s8o0v"]
 [ext_resource type="PackedScene" uid="uid://tpr6jwkkirof" path="res://UI/overlay/layer_overlay.tscn" id="10_6ramc"]
 [ext_resource type="PackedScene" uid="uid://b7ty4i7kybeto" path="res://UI/PauseMenu/scenes/PauseMenu.tscn" id="11_g03h1"]
-[ext_resource type="PackedScene" uid="uid://cdwwaf1cxov4l" path="res://NPCs/npc_1_beginner.tscn" id="12_ngs5n"]
-[ext_resource type="PackedScene" uid="uid://b6vgapu1u7xw0" path="res://NPCs/v_box_container.tscn" id="13_gotnx"]
+[ext_resource type="PackedScene" path="res://NPCs/npc_1_beginner.tscn" id="12_ngs5n"]
+[ext_resource type="PackedScene" path="res://NPCs/v_box_container.tscn" id="13_gotnx"]
 
 [node name="Node2D" type="Node2D" unique_id=1669356560]
 scale = Vector2(1, 1.1)
@@ -57,12 +57,9 @@ script = ExtResource("6_g03h1")
 visible = false
 
 [node name="Pause_Menu" parent="." unique_id=1790332088 instance=ExtResource("11_g03h1")]
-<<<<<<< HEAD
 
 [node name="Npc1-beginner" parent="." unique_id=2125670543 instance=ExtResource("12_ngs5n")]
 position = Vector2(795, -434.18176)
 
 [node name="VBoxContainer" parent="." unique_id=1974735420 instance=ExtResource("13_gotnx")]
-=======
 visible = false
->>>>>>> 9ccbc67565bd336440da3a4024c5bad0272ccfdb

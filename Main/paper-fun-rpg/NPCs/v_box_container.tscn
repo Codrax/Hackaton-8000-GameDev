@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://b6vgapu1u7xw0"]
+[gd_scene format=3 uid="uid://c8qes1sjo7hlg"]
 
 [ext_resource type="Script" uid="uid://ds0tei8byt8f1" path="res://NPCs/intrebari.gd" id="1_pl0ll"]
 
@@ -9,21 +9,30 @@ script = ExtResource("1_pl0ll")
 
 [node name="LabelIntrebare" type="Label" parent="." unique_id=278078004]
 layout_mode = 2
+theme_override_font_sizes/font_size = 24
 
 [node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=2025826347]
 layout_mode = 2
 
 [node name="BtnA" type="Button" parent="HBoxContainer" unique_id=198414967]
+custom_minimum_size = Vector2(50, 20)
 layout_mode = 2
+theme_override_font_sizes/font_size = 24
 
 [node name="BtnB" type="Button" parent="HBoxContainer" unique_id=528453717]
+custom_minimum_size = Vector2(50, 20)
 layout_mode = 2
+theme_override_font_sizes/font_size = 24
 
 [node name="BtnC" type="Button" parent="HBoxContainer" unique_id=941261665]
+custom_minimum_size = Vector2(50, 20)
 layout_mode = 2
+theme_override_font_sizes/font_size = 24
 
 [node name="BtnD" type="Button" parent="HBoxContainer" unique_id=1439396759]
+custom_minimum_size = Vector2(50, 20)
 layout_mode = 2
+theme_override_font_sizes/font_size = 24
 
 [node name="LabelFeedback" type="Label" parent="." unique_id=1544833178]
 layout_mode = 2

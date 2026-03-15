@@ -6,6 +6,9 @@ var scor: int = 0
 var total: int = 0
 var index_curent: int = 0
 
+@onready var player = $"../Player"
+@onready var camera = $"../Player/Camera2D"
+
 @onready var label_intrebare = $LabelIntrebare
 @onready var btn_a = $HBoxContainer/BtnA
 @onready var btn_b = $HBoxContainer/BtnB
@@ -21,6 +24,10 @@ func _ready() -> void:
 	btn_b.pressed.connect(func(): verifica_raspuns(1))
 	btn_c.pressed.connect(func(): verifica_raspuns(2))
 	btn_d.pressed.connect(func(): verifica_raspuns(3))
+	
+func _process(_delta):
+	if player:
+		global_position = player.global_position + Vector2(0, 100)
 
 func incarca_intrebari() -> void:
 	var file = FileAccess.open("res://NPCs/intrebari_npc.json", FileAccess.READ)
