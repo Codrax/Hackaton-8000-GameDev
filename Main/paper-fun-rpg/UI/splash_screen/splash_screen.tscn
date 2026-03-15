@@ -1,0 +1,157 @@
+[gd_scene format=3 uid="uid://b6jycmnvcleqx"]
+
+[ext_resource type="Script" uid="uid://n7pgerk76r1m" path="res://UI/splash_screen.gd" id="1_eo72v"]
+[ext_resource type="Texture2D" uid="uid://db0gxy8volaky" path="res://Images/UI/splash_screen/splash.jpeg" id="1_oclqc"]
+[ext_resource type="Texture2D" uid="uid://cvjri6p76u11k" path="res://Images/UI/splash_screen/fade.png" id="2_20jiu"]
+[ext_resource type="Texture2D" uid="uid://b2fimbhuwilp" path="res://Images/UI/splash_screen/camera_slash.png" id="3_xaoxa"]
+[ext_resource type="Texture2D" uid="uid://fmjwr23qfi04" path="res://Images/UI/loader.png" id="4_h85r7"]
+[ext_resource type="Script" uid="uid://unka1q8kwmt3" path="res://UI/loader.gd" id="5_h85r7"]
+[ext_resource type="FontFile" uid="uid://cxhhljnsr7weh" path="res://Fonts/Gothic.ttf" id="7_cphjs"]
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=1455500146]
+script = ExtResource("1_eo72v")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=915312972]
+offset_left = 2.0
+offset_top = 1.0
+offset_right = 1919.0
+offset_bottom = 1079.0
+color = Color(0, 0, 0, 1)
+
+[node name="splash_1" type="Control" parent="." unique_id=1150515621]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_left = -106.0
+offset_top = -83.0
+offset_right = 2190.0
+offset_bottom = 1293.0
+
+[node name="TextureRect" type="TextureRect" parent="splash_1" unique_id=256797863]
+layout_mode = 0
+offset_left = 277.0
+offset_top = 285.0
+offset_right = 1877.0
+offset_bottom = 1157.0
+texture = ExtResource("1_oclqc")
+
+[node name="Label" type="Label" parent="splash_1" unique_id=1259794810]
+layout_mode = 0
+offset_left = 111.0
+offset_top = 130.0
+offset_right = 2016.0
+offset_bottom = 213.0
+theme_override_fonts/font = ExtResource("7_cphjs")
+theme_override_font_sizes/font_size = 60
+text = "A game developed by"
+horizontal_alignment = 1
+
+[node name="Fade" type="Sprite2D" parent="splash_1" unique_id=590934630]
+position = Vector2(1080.1826, 465.78702)
+rotation = 3.1415927
+scale = Vector2(1.6715436, 0.61315525)
+texture = ExtResource("2_20jiu")
+
+[node name="splash_2" type="Control" parent="." unique_id=998484848]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_left = -106.0
+offset_top = -83.0
+offset_right = 2190.0
+offset_bottom = 1293.0
+
+[node name="Label" type="Label" parent="splash_2" unique_id=1598373073]
+layout_mode = 0
+offset_left = 115.0
+offset_top = 143.0
+offset_right = 2026.0
+offset_bottom = 226.0
+theme_override_fonts/font = ExtResource("7_cphjs")
+theme_override_font_sizes/font_size = 60
+text = "Important Health Information"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="splash_2" unique_id=1027822159]
+layout_mode = 0
+offset_left = 480.0
+offset_top = 749.0
+offset_right = 1840.0
+offset_bottom = 918.0
+theme_override_font_sizes/font_size = 30
+text = "This game does not use an autosave system
+feel free to close the game whenever you'd like"
+horizontal_alignment = 1
+
+[node name="CameraSlash" type="Sprite2D" parent="splash_2" unique_id=56691779]
+position = Vector2(1137, 557)
+scale = Vector2(0.6054688, 0.6054688)
+texture = ExtResource("3_xaoxa")
+
+[node name="Fade" type="Sprite2D" parent="splash_2" unique_id=2107237103]
+position = Vector2(1080.1826, 465.78702)
+rotation = -3.1415925
+scale = Vector2(1.6715436, 0.61315525)
+texture = ExtResource("2_20jiu")
+
+[node name="splash_3" type="Control" parent="." unique_id=155313592]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -106.0
+offset_top = -83.0
+offset_right = 2190.0
+offset_bottom = 1293.0
+
+[node name="loader" type="Sprite2D" parent="splash_3" unique_id=1335065068]
+position = Vector2(1028, 754)
+scale = Vector2(5.297593, 5.297593)
+texture = ExtResource("4_h85r7")
+hframes = 5
+vframes = 27
+frame = 10
+script = ExtResource("5_h85r7")
+
+[node name="Label" type="Label" parent="splash_3" unique_id=1360982332]
+layout_mode = 0
+offset_left = 115.0
+offset_top = 143.0
+offset_right = 2026.0
+offset_bottom = 226.0
+theme_override_fonts/font = ExtResource("7_cphjs")
+theme_override_font_sizes/font_size = 60
+text = "Preparing your experience..."
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="splash_3" unique_id=725316974]
+layout_mode = 0
+offset_left = 123.0
+offset_top = 980.0
+offset_right = 1040.0
+offset_bottom = 1146.0
+theme_override_font_sizes/font_size = 20
+text = "This is a game developed by team \"ZeroCatz\",
+also known as \"Hood Research Department Timisoara\",
+which consists of Petculescu Codrut, Olariu Alex,
+Catalin Popica and Pop Alexandru"
+vertical_alignment = 2
+
+[node name="Fade" type="Sprite2D" parent="splash_3" unique_id=485758266]
+position = Vector2(1080.1826, 465.78702)
+rotation = -3.1415925
+scale = Vector2(1.6715436, 0.61315525)
+texture = ExtResource("2_20jiu")
+
+[node name="Label3" type="Label" parent="splash_3" unique_id=1040622255]
+layout_mode = 0
+offset_left = 1094.0
+offset_top = 971.0
+offset_right = 2011.0
+offset_bottom = 1137.0
+theme_override_font_sizes/font_size = 20
+text = "Find more at
+https://hoodie-research.025555.xyz/
+
+
+Copyright (c) 2026, Hood Research Department"
+horizontal_alignment = 2
+vertical_alignment = 2
