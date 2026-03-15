@@ -13,13 +13,6 @@ func _ready():
 	anim_player.play("idle")
 	schedule_next_flip()
 
-func _physics_process(delta):
-	if current_state == "dead":
-		return
-		
-	# Păstrăm move_and_slide() în caz că vei adăuga knockback la atacuri mai târziu
-	move_and_slide()
-
 func schedule_next_flip():
 	if current_state == "dead":
 		return
@@ -34,6 +27,5 @@ func _on_timer_timeout():
 
 func die():
 	current_state = "dead"
-	velocity = Vector2.ZERO
 	state_timer.stop()
 	anim_player.play("death")
