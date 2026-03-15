@@ -1,10 +1,6 @@
 extends Area2D
 
 @export var npc_id: String = "npc_beginner"
-@onready var label = $InteractionLabel
-
-func _ready():
-	if label: label.hide()
 
 func interact() -> void:
 	print("[NPC] interact() apelat!")

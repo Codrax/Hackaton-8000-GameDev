@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="PaperFunRPG"
-run/main_scene="uid://dbf52ccu3mo7p"
+run/main_scene="uid://b6jycmnvcleqx"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://Images/icon.svg"
 

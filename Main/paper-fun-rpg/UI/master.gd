@@ -16,6 +16,7 @@ func _input(event: InputEvent) -> void:
 		get_tree().change_scene_to_file(SCENE_TEST2)
 	if event.is_action_pressed("action_f3"):
 		get_tree().change_scene_to_file(SCENE_TEST3)
+	return
 
 func toggle_fullscreen() -> void:
 	var current_mode := DisplayServer.window_get_mode()

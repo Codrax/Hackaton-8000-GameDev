@@ -25,9 +25,6 @@ func update_text_loop() -> void:
 		container_loading.visible = true
 		container.visible = false
 		
-		# Reset AI
-		# await AI.reset_model()
-		
 		# Call AI API (replace AI.send_message with your function)
 		const prompt = "You are a cat. Always speak like a clever, mischievous cat. Include meows, purrs, or playful cat behavior in every reply"
 		var response_text = await AI.send_message(prompt)
@@ -42,5 +39,5 @@ func update_text_loop() -> void:
 			print("Response is empty!!")
 		
 		# Wait random 30-300 seconds
-		var wait_time = randi() % 100 + 30  # 30..300
+		var wait_time = randi() % 70 + 30  # 30..100
 		await get_tree().create_timer(wait_time).timeout

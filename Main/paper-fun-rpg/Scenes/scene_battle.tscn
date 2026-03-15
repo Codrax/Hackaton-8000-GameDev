@@ -1,15 +1,24 @@
 [gd_scene format=3 uid="uid://cuoki53uy6gy4"]
 
+[ext_resource type="Script" uid="uid://d2afygwak6xby" path="res://Scenes/scene_battle.gd" id="1_p07yp"]
 [ext_resource type="PackedScene" uid="uid://c0lsnfct0maiq" path="res://Player/character_main.tscn" id="1_rsulo"]
 [ext_resource type="PackedScene" uid="uid://tpr6jwkkirof" path="res://UI/overlay/layer_overlay.tscn" id="2_263fg"]
 [ext_resource type="PackedScene" uid="uid://b7ty4i7kybeto" path="res://UI/PauseMenu/scenes/PauseMenu.tscn" id="3_ilcbh"]
+[ext_resource type="PackedScene" uid="uid://triuqh11jt7x" path="res://NPCs/Goblins/goblin_base.tscn" id="4_0pov8"]
+[ext_resource type="Texture2D" uid="uid://ptiy23tggi0b" path="res://Images/Untitled.jpeg" id="5_6002h"]
+[ext_resource type="PackedScene" uid="uid://br73w6lpd0gi1" path="res://Chestii de de la Cata/intrebari.tscn" id="6_qlwjo"]
+[ext_resource type="Texture2D" uid="uid://cskr5v8cruib3" path="res://Images/UI/UI-Fight-removebg-preview.png" id="7_6fxs5"]
 
 [node name="SceneBattle" type="Node2D" unique_id=855124874]
+script = ExtResource("1_p07yp")
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=1887999490]
+[node name="Camera2D2" type="Camera2D" parent="." unique_id=1887999490]
+position = Vector2(85, 107)
+scale = Vector2(0.99999994, 0.99999994)
+zoom = Vector2(0.8, 0.8)
 
 [node name="Player" parent="." unique_id=1640696164 instance=ExtResource("1_rsulo")]
-position = Vector2(657, 225)
+position = Vector2(590, 306)
 scale = Vector2(5, 5)
 script = null
 
@@ -18,3 +27,77 @@ visible = false
 
 [node name="Pause_Menu" parent="." unique_id=1790332088 instance=ExtResource("3_ilcbh")]
 visible = false
+
+[node name="GoblinBase" parent="." unique_id=1156250879 instance=ExtResource("4_0pov8")]
+position = Vector2(-272, -16)
+scale = Vector2(3.2, 3.2)
+
+[node name="Intrebari" parent="." unique_id=249054755 instance=ExtResource("6_qlwjo")]
+position = Vector2(-1012.00006, -150)
+scale = Vector2(24, 24)
+
+[node name="UiFightRemovebgPreview" type="Sprite2D" parent="." unique_id=1630846191]
+visibility_layer = 4
+position = Vector2(-354.99994, 560.00006)
+scale = Vector2(3.7971, 2.2251337)
+texture = ExtResource("7_6fxs5")
+
+[node name="Backround" type="Sprite2D" parent="." unique_id=1299027696]
+z_index = -1
+z_as_relative = false
+position = Vector2(69, 86.999756)
+scale = Vector2(1.6614583, 1.3916014)
+texture = ExtResource("5_6002h")
+
+[node name="QuestionLabel" type="Label" parent="." unique_id=1456097539]
+offset_left = -989.0
+offset_top = 388.0
+offset_right = -253.0
+offset_bottom = 514.0
+theme_override_font_sizes/font_size = 38
+
+[node name="AnswersContainer" type="HBoxContainer" parent="." unique_id=1605650349]
+offset_left = -891.0
+offset_top = 551.0
+offset_right = 65.0
+offset_bottom = 679.0
+theme_override_constants/separation = 100
+alignment = 1
+
+[node name="Button1" type="Button" parent="AnswersContainer" unique_id=485626571]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+theme_override_font_sizes/font_size = 38
+text = "Varianta"
+
+[node name="Button2" type="Button" parent="AnswersContainer" unique_id=1955521989]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+theme_override_font_sizes/font_size = 38
+text = "Varianta"
+
+[node name="Button3" type="Button" parent="AnswersContainer" unique_id=997949395]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+theme_override_font_sizes/font_size = 38
+text = "Varianta"
+
+[node name="Button4" type="Button" parent="AnswersContainer" unique_id=1206341280]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+theme_override_font_sizes/font_size = 38
+text = "Varianta"
+
+[node name="PlayerHP" type="Label" parent="." unique_id=1396569118]
+offset_left = 768.0
+offset_top = -451.0
+offset_right = 1152.0
+offset_bottom = -329.0
+theme_override_font_sizes/font_size = 38
+
+[node name="EnemyHP" type="Label" parent="." unique_id=1632702712]
+offset_left = -764.0
+offset_top = -554.0
+offset_right = -449.0
+offset_bottom = -486.0
+theme_override_font_sizes/font_size = 38

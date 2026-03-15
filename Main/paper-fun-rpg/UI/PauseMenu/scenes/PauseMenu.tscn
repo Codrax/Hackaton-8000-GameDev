@@ -125,7 +125,6 @@ ignore_texture_size = true
 stretch_mode = 0
 
 [node name="SettingsPanel" type="NinePatchRect" parent="." unique_id=144510988]
-visible = false
 offset_left = 503.0
 offset_top = 216.0
 offset_right = 1363.0
@@ -181,6 +180,7 @@ offset_right = 820.0
 offset_bottom = 530.0
 
 [node name="AudioPage" type="Control" parent="SettingsPanel/Pages" unique_id=1226976843]
+visible = false
 anchors_preset = 0
 offset_left = 67.0
 offset_top = 16.0
@@ -239,20 +239,21 @@ offset_right = 101.0
 offset_bottom = 251.0
 text = "Windowed"
 
+[node name="LocalLLMButton" type="CheckButton" parent="SettingsPanel/Pages/GraphicsPage" unique_id=681047112]
+layout_mode = 0
+offset_left = 246.0
+offset_top = 44.0
+offset_right = 488.0
+offset_bottom = 75.0
+text = "Use local LLM (Port 8010)"
+
 [node name="KeybindsPage" type="Control" parent="SettingsPanel/Pages" unique_id=232076197]
+visible = false
 anchors_preset = 0
 offset_top = -2.0
 offset_right = 740.0
 offset_bottom = 358.0
 script = ExtResource("9_rs4t4")
-
-[node name="KeybindsTitle" type="Label" parent="SettingsPanel/Pages/KeybindsPage" unique_id=454782463]
-layout_mode = 0
-offset_left = 53.0
-offset_top = 31.0
-offset_right = 253.0
-offset_bottom = 61.0
-text = "Controls"
 
 [node name="ScrollContainer" type="ScrollContainer" parent="SettingsPanel/Pages/KeybindsPage" unique_id=1160504677]
 layout_mode = 0
@@ -260,6 +261,10 @@ offset_left = 52.0
 offset_top = 50.0
 offset_right = 672.0
 offset_bottom = 300.0
+
+[node name="KeybindsTitle" type="Label" parent="SettingsPanel/Pages/KeybindsPage/ScrollContainer" unique_id=454782463]
+layout_mode = 2
+text = "Controls"
 
 [node name="KeybindList" type="VBoxContainer" parent="SettingsPanel/Pages/KeybindsPage/ScrollContainer" unique_id=1001555094]
 custom_minimum_size = Vector2(600, 250)

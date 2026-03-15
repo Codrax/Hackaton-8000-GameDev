@@ -5,6 +5,7 @@ const SETTINGS_PATH := "user://settings.cfg"
 var master_volume: float = 1.0
 var master_muted: bool = false
 var window_mode: String = "fullscreen"
+var local_llm: bool = false
 
 func _ready() -> void:
 	load_settings()
@@ -21,12 +22,15 @@ func load_settings() -> void:
 	master_volume = float(config.get_value("audio", "master_volume", 1.0))
 	master_muted = bool(config.get_value("audio", "master_muted", false))
 	window_mode = str(config.get_value("graphics", "window_mode", "fullscreen"))
+	local_llm = bool(config.get_value("gameplay", "local_llm", false))
+	AI.useLocalLLM = local_llm
 
 func save_settings() -> void:
 	var config := ConfigFile.new()
 	config.set_value("audio", "master_volume", master_volume)
 	config.set_value("audio", "master_muted", master_muted)
 	config.set_value("graphics", "window_mode", window_mode)
+	config.set_value("gameplay", "local_llm", local_llm)
 	config.save(SETTINGS_PATH)
 
 func apply_settings() -> void:

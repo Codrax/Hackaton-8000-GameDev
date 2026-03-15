@@ -42,29 +42,9 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_script")
 
-[node name="Background" type="ColorRect" parent="." unique_id=318652236]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0.22, 0.22, 0.22, 1)
-
-[node name="DiamondOverlay" type="ColorRect" parent="." unique_id=718470042]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_top = 2.0
-offset_bottom = 2.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0, 0, 0, 0.35)
-
-[node name="Background2" type="Sprite2D" parent="." unique_id=1667430353]
-position = Vector2(966, 623)
-scale = Vector2(1.248, 1.25)
+[node name="Background2" type="Sprite2D" parent="." unique_id=1011347737]
+position = Vector2(948.76794, 625.5)
+scale = Vector2(1.2685312, 1.2666016)
 texture = ExtResource("2_qoqlk")
 
 [node name="TitleLabel" type="Label" parent="." unique_id=326050736]
