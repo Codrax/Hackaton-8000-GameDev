@@ -1,604 +1,604 @@
 {
   "intrebari": [
-    {
-      "id": 1,
-      "intrebare": "Care este cea mai mare planetă din sistemul solar?",
-      "raspuns_corect": "Jupiter",
-      "variante": ["Saturn", "Jupiter", "Neptun", "Uranus"]
-    },
-    {
-      "id": 2,
-      "intrebare": "Câte continente are Pământul?",
-      "raspuns_corect": "7",
-      "variante": ["5", "6", "7", "8"]
-    },
-    {
-      "id": 3,
-      "intrebare": "Care este cel mai lung râu din lume?",
-      "raspuns_corect": "Nilul",
-      "variante": ["Amazon", "Nilul", "Yangtze", "Mississippi"]
-    },
-    {
-      "id": 4,
-      "intrebare": "Care este capitala Franței?",
-      "raspuns_corect": "Paris",
-      "variante": ["Lyon", "Marseille", "Paris", "Bordeaux"]
-    },
-    {
-      "id": 5,
-      "intrebare": "Din ce element chimic este alcătuit Soarele în cea mai mare parte?",
-      "raspuns_corect": "Hidrogen",
-      "variante": ["Heliu", "Hidrogen", "Oxigen", "Carbon"]
-    },
-    {
-      "id": 6,
-      "intrebare": "Câte oase are corpul uman adult?",
-      "raspuns_corect": "206",
-      "variante": ["186", "196", "206", "216"]
-    },
-    {
-      "id": 7,
-      "intrebare": "Care este cel mai mic continent?",
-      "raspuns_corect": "Australia",
-      "variante": ["Europa", "Antarctica", "Australia", "America de Sud"]
-    },
-    {
-      "id": 8,
-      "intrebare": "Cine a pictat Mona Lisa?",
-      "raspuns_corect": "Leonardo da Vinci",
-      "variante": ["Michelangelo", "Rafael", "Leonardo da Vinci", "Botticelli"]
-    },
-    {
-      "id": 9,
-      "intrebare": "Care este formula chimică a apei?",
-      "raspuns_corect": "H2O",
-      "variante": ["CO2", "H2O", "NaCl", "O2"]
-    },
-    {
-      "id": 10,
-      "intrebare": "Câte culori are curcubeul?",
-      "raspuns_corect": "7",
-      "variante": ["5", "6", "7", "8"]
-    },
-    {
-      "id": 11,
-      "intrebare": "Care este cel mai mare ocean din lume?",
-      "raspuns_corect": "Oceanul Pacific",
-      "variante": ["Oceanul Atlantic", "Oceanul Indian", "Oceanul Pacific", "Oceanul Arctic"]
-    },
-    {
-      "id": 12,
-      "intrebare": "Cine a scris Romeo și Julieta?",
-      "raspuns_corect": "William Shakespeare",
-      "variante": ["Charles Dickens", "William Shakespeare", "Jane Austen", "Victor Hugo"]
-    },
-    {
-      "id": 13,
-      "intrebare": "Care este cel mai rapid animal terestru?",
-      "raspuns_corect": "Ghepardul",
-      "variante": ["Leul", "Ghepardul", "Calul", "Struțul"]
-    },
-    {
-      "id": 14,
-      "intrebare": "Câte planete are sistemul solar?",
-      "raspuns_corect": "8",
-      "variante": ["7", "8", "9", "10"]
-    },
-    {
-      "id": 15,
-      "intrebare": "Care este capitala Japoniei?",
-      "raspuns_corect": "Tokyo",
-      "variante": ["Osaka", "Kyoto", "Tokyo", "Hiroshima"]
-    },
-    {
-      "id": 16,
-      "intrebare": "Ce gaz respirăm cel mai mult din aer?",
-      "raspuns_corect": "Azot",
-      "variante": ["Oxigen", "Azot", "Dioxid de carbon", "Argon"]
-    },
-    {
-      "id": 17,
-      "intrebare": "Care este cel mai înalt munte din lume?",
-      "raspuns_corect": "Everest",
-      "variante": ["K2", "Kilimanjaro", "Everest", "Mont Blanc"]
-    },
-    {
-      "id": 18,
-      "intrebare": "Câte note are gama muzicală?",
-      "raspuns_corect": "7",
-      "variante": ["5", "6", "7", "8"]
-    },
-    {
-      "id": 19,
-      "intrebare": "Care este cel mai mare deșert din lume?",
-      "raspuns_corect": "Sahara",
-      "variante": ["Gobi", "Sahara", "Atacama", "Arabia"]
-    },
-    {
-      "id": 20,
-      "intrebare": "Cine a inventat telefonul?",
-      "raspuns_corect": "Alexander Graham Bell",
-      "variante": ["Thomas Edison", "Nikola Tesla", "Alexander Graham Bell", "Guglielmo Marconi"]
-    },
-    {
-      "id": 21,
-      "intrebare": "Care este simbolul chimic al aurului?",
-      "raspuns_corect": "Au",
-      "variante": ["Ag", "Au", "Fe", "Cu"]
-    },
-    {
-      "id": 22,
-      "intrebare": "Câți ani are un secol?",
-      "raspuns_corect": "100",
-      "variante": ["10", "50", "100", "1000"]
-    },
-    {
-      "id": 23,
-      "intrebare": "Care este capitala Australiei?",
-      "raspuns_corect": "Canberra",
-      "variante": ["Sydney", "Melbourne", "Canberra", "Brisbane"]
-    },
-    {
-      "id": 24,
-      "intrebare": "Câte luni are un an?",
-      "raspuns_corect": "12",
-      "variante": ["10", "11", "12", "13"]
-    },
-    {
-      "id": 25,
-      "intrebare": "Care este cel mai greu metal?",
-      "raspuns_corect": "Osmiu",
-      "variante": ["Plumb", "Uraniu", "Osmiu", "Platină"]
-    },
-    {
-      "id": 26,
-      "intrebare": "Cine a fost primul om pe Lună?",
-      "raspuns_corect": "Neil Armstrong",
-      "variante": ["Buzz Aldrin", "Yuri Gagarin", "Neil Armstrong", "John Glenn"]
-    },
-    {
-      "id": 27,
-      "intrebare": "Care este capitala Braziliei?",
-      "raspuns_corect": "Brasilia",
-      "variante": ["Rio de Janeiro", "São Paulo", "Brasilia", "Salvador"]
-    },
-    {
-      "id": 28,
-      "intrebare": "Câte fețe are un cub?",
-      "raspuns_corect": "6",
-      "variante": ["4", "5", "6", "8"]
-    },
-    {
-      "id": 29,
-      "intrebare": "Care este cel mai mare organ al corpului uman?",
-      "raspuns_corect": "Pielea",
-      "variante": ["Ficatul", "Plămânii", "Pielea", "Intestinul"]
-    },
-    {
-      "id": 30,
-      "intrebare": "Cine a compus Simfonia a 5-a?",
-      "raspuns_corect": "Beethoven",
-      "variante": ["Mozart", "Bach", "Beethoven", "Chopin"]
-    },
-    {
-      "id": 31,
-      "intrebare": "Care este capitala Canadei?",
-      "raspuns_corect": "Ottawa",
-      "variante": ["Toronto", "Vancouver", "Ottawa", "Montreal"]
-    },
-    {
-      "id": 32,
-      "intrebare": "Câte degete are o mână umană?",
-      "raspuns_corect": "5",
-      "variante": ["4", "5", "6", "7"]
-    },
-    {
-      "id": 33,
-      "intrebare": "Care este cel mai mic os din corpul uman?",
-      "raspuns_corect": "Scărița (din ureche)",
-      "variante": ["Coccisul", "Scărița (din ureche)", "Falanga", "Sesamoidul"]
-    },
-    {
-      "id": 34,
-      "intrebare": "Cine a descoperit America?",
-      "raspuns_corect": "Cristofor Columb",
-      "variante": ["Amerigo Vespucci", "Cristofor Columb", "Vasco da Gama", "Magellan"]
-    },
-    {
-      "id": 35,
-      "intrebare": "Care este viteza luminii?",
-      "raspuns_corect": "300.000 km/s",
-      "variante": ["150.000 km/s", "300.000 km/s", "500.000 km/s", "1.000.000 km/s"]
-    },
-    {
-      "id": 36,
-      "intrebare": "Câte cărți are Biblia (Vechiul și Noul Testament)?",
-      "raspuns_corect": "66",
-      "variante": ["52", "60", "66", "72"]
-    },
-    {
-      "id": 37,
-      "intrebare": "Care este cel mai populat oraș din lume?",
-      "raspuns_corect": "Tokyo",
-      "variante": ["Shanghai", "Mumbai", "Tokyo", "Mexico City"]
-    },
-    {
-      "id": 38,
-      "intrebare": "Din ce material este făcut diamantul?",
-      "raspuns_corect": "Carbon",
-      "variante": ["Siliciu", "Carbon", "Aluminiu", "Cristal"]
-    },
-    {
-      "id": 39,
-      "intrebare": "Cine a scris Iliada și Odiseea?",
-      "raspuns_corect": "Homer",
-      "variante": ["Platon", "Aristotel", "Homer", "Socrate"]
-    },
-    {
-      "id": 40,
-      "intrebare": "Care este simbolul chimic al fierului?",
-      "raspuns_corect": "Fe",
-      "variante": ["Fi", "Fr", "Fe", "Fo"]
-    },
-    {
-      "id": 41,
-      "intrebare": "Câte ore are o zi?",
-      "raspuns_corect": "24",
-      "variante": ["20", "22", "24", "26"]
-    },
-    {
-      "id": 42,
-      "intrebare": "Care este cel mai scurt anotimp astronomic?",
-      "raspuns_corect": "Iarna (în emisfera nordică)",
-      "variante": ["Primăvara", "Vara", "Toamna", "Iarna (în emisfera nordică)"]
-    },
-    {
-      "id": 43,
-      "intrebare": "Cine a inventat becul electric?",
-      "raspuns_corect": "Thomas Edison",
-      "variante": ["Nikola Tesla", "Thomas Edison", "Benjamin Franklin", "James Watt"]
-    },
-    {
-      "id": 44,
-      "intrebare": "Care este capitala Germaniei?",
-      "raspuns_corect": "Berlin",
-      "variante": ["München", "Hamburg", "Berlin", "Frankfurt"]
-    },
-    {
-      "id": 45,
-      "intrebare": "Câți dinți are un adult cu dentiția completă?",
-      "raspuns_corect": "32",
-      "variante": ["28", "30", "32", "34"]
-    },
-    {
-      "id": 46,
-      "intrebare": "Care este cel mai mare animal de pe Pământ?",
-      "raspuns_corect": "Balena albastră",
-      "variante": ["Elefantul african", "Rechinul balenă", "Balena albastră", "Girafă"]
-    },
-    {
-      "id": 47,
-      "intrebare": "Cine a formulat teoria relativității?",
-      "raspuns_corect": "Albert Einstein",
-      "variante": ["Isaac Newton", "Niels Bohr", "Albert Einstein", "Max Planck"]
-    },
-    {
-      "id": 48,
-      "intrebare": "Care este capitala Chinei?",
-      "raspuns_corect": "Beijing",
-      "variante": ["Shanghai", "Hong Kong", "Beijing", "Guangzhou"]
-    },
-    {
-      "id": 49,
-      "intrebare": "Câte litere are alfabetul latin clasic?",
-      "raspuns_corect": "23",
-      "variante": ["21", "23", "25", "26"]
-    },
-    {
-      "id": 50,
-      "intrebare": "Care este cel mai adânc lac din lume?",
-      "raspuns_corect": "Lacul Baikal",
-      "variante": ["Lacul Superior", "Marea Caspică", "Lacul Baikal", "Lacul Tanganyika"]
-    },
-    {
-      "id": 51,
-      "intrebare": "Cine a scris Don Quijote?",
-      "raspuns_corect": "Miguel de Cervantes",
-      "variante": ["Lope de Vega", "Miguel de Cervantes", "Francisco de Quevedo", "Calderón de la Barca"]
-    },
-    {
-      "id": 52,
-      "intrebare": "Care este capitala Rusiei?",
-      "raspuns_corect": "Moscova",
-      "variante": ["Sankt Petersburg", "Moscova", "Novosibirsk", "Kazan"]
-    },
-    {
-      "id": 53,
-      "intrebare": "Câte secunde are un minut?",
-      "raspuns_corect": "60",
-      "variante": ["30", "45", "60", "100"]
-    },
-    {
-      "id": 54,
-      "intrebare": "Care este elementul chimic cu numărul atomic 1?",
-      "raspuns_corect": "Hidrogenul",
-      "variante": ["Heliul", "Hidrogenul", "Litiul", "Carbonul"]
-    },
-    {
-      "id": 55,
-      "intrebare": "Cine a inventat avionul?",
-      "raspuns_corect": "Frații Wright",
-      "variante": ["Henry Ford", "Frații Wright", "Thomas Edison", "Nikola Tesla"]
-    },
-    {
-      "id": 56,
-      "intrebare": "Care este cel mai mare lac din lume?",
-      "raspuns_corect": "Marea Caspică",
-      "variante": ["Lacul Superior", "Lacul Victoria", "Marea Caspică", "Lacul Baikal"]
-    },
-    {
-      "id": 57,
-      "intrebare": "Câți cromozomi are celula umană normală?",
-      "raspuns_corect": "46",
-      "variante": ["23", "44", "46", "48"]
-    },
-    {
-      "id": 58,
-      "intrebare": "Care este capitala Italiei?",
-      "raspuns_corect": "Roma",
-      "variante": ["Milano", "Napoli", "Roma", "Florența"]
-    },
-    {
-      "id": 59,
-      "intrebare": "Cine a scris Infernul din Divina Comedie?",
-      "raspuns_corect": "Dante Alighieri",
-      "variante": ["Petrarca", "Boccaccio", "Dante Alighieri", "Ariosto"]
-    },
-    {
-      "id": 60,
-      "intrebare": "Care este cel mai vechi sport olimpic?",
-      "raspuns_corect": "Alergarea (stadionul)",
-      "variante": ["Lupte", "Disc", "Alergarea (stadionul)", "Pentatlon"]
-    },
-    {
-      "id": 61,
-      "intrebare": "Câți metri are un kilometru?",
-      "raspuns_corect": "1000",
-      "variante": ["100", "500", "1000", "10000"]
-    },
-    {
-      "id": 62,
-      "intrebare": "Care este capitala Spaniei?",
-      "raspuns_corect": "Madrid",
-      "variante": ["Barcelona", "Sevilla", "Madrid", "Valencia"]
-    },
-    {
-      "id": 63,
-      "intrebare": "Cine a descoperit penicilina?",
-      "raspuns_corect": "Alexander Fleming",
-      "variante": ["Louis Pasteur", "Marie Curie", "Alexander Fleming", "Robert Koch"]
-    },
-    {
-      "id": 64,
-      "intrebare": "Care este cel mai scurt os din corpul uman?",
-      "raspuns_corect": "Scărița",
-      "variante": ["Claviculă", "Scărița", "Falangă", "Coccis"]
-    },
-    {
-      "id": 65,
-      "intrebare": "Câte fuse orare are Pământul?",
-      "raspuns_corect": "24",
-      "variante": ["12", "18", "24", "36"]
-    },
-    {
-      "id": 66,
-      "intrebare": "Care este capitala Argentinei?",
-      "raspuns_corect": "Buenos Aires",
-      "variante": ["Montevideo", "Santiago", "Buenos Aires", "Lima"]
-    },
-    {
-      "id": 67,
-      "intrebare": "Cine a scris Război și Pace?",
-      "raspuns_corect": "Lev Tolstoi",
-      "variante": ["Dostoievski", "Cehov", "Lev Tolstoi", "Turgheniev"]
-    },
-    {
-      "id": 68,
-      "intrebare": "Care este cel mai dens metal?",
-      "raspuns_corect": "Osmiu",
-      "variante": ["Plumb", "Aur", "Osmiu", "Platină"]
-    },
-    {
-      "id": 69,
-      "intrebare": "Câte vertebre are coloana vertebrală umană?",
-      "raspuns_corect": "33",
-      "variante": ["26", "30", "33", "36"]
-    },
-    {
-      "id": 70,
-      "intrebare": "Care este capitala Mexicului?",
-      "raspuns_corect": "Ciudad de México",
-      "variante": ["Guadalajara", "Monterrey", "Ciudad de México", "Cancún"]
-    },
-    {
-      "id": 71,
-      "intrebare": "Cine a inventat tiparul?",
-      "raspuns_corect": "Johannes Gutenberg",
-      "variante": ["Leonardo da Vinci", "Johannes Gutenberg", "Galileo Galilei", "Copernic"]
-    },
-    {
-      "id": 72,
-      "intrebare": "Care este cel mai mare continent?",
-      "raspuns_corect": "Asia",
-      "variante": ["Africa", "Asia", "America de Nord", "Europa"]
-    },
-    {
-      "id": 73,
-      "intrebare": "Câte minute are o oră?",
-      "raspuns_corect": "60",
-      "variante": ["30", "45", "60", "100"]
-    },
-    {
-      "id": 74,
-      "intrebare": "Care este capitala Egiptului?",
-      "raspuns_corect": "Cairo",
-      "variante": ["Alexandria", "Luxor", "Cairo", "Aswan"]
-    },
-    {
-      "id": 75,
-      "intrebare": "Cine a scris Hamlet?",
-      "raspuns_corect": "William Shakespeare",
-      "variante": ["Christopher Marlowe", "Ben Jonson", "William Shakespeare", "John Milton"]
-    },
-    {
-      "id": 76,
-      "intrebare": "Care este cel mai mic planet din sistemul solar?",
-      "raspuns_corect": "Mercur",
-      "variante": ["Marte", "Venus", "Mercur", "Pluton"]
-    },
-    {
-      "id": 77,
-      "intrebare": "Câți litri de sânge are corpul uman?",
-      "raspuns_corect": "5-6 litri",
-      "variante": ["2-3 litri", "4-5 litri", "5-6 litri", "8-10 litri"]
-    },
-    {
-      "id": 78,
-      "intrebare": "Care este capitala Indiei?",
-      "raspuns_corect": "New Delhi",
-      "variante": ["Mumbai", "Kolkata", "New Delhi", "Chennai"]
-    },
-    {
-      "id": 79,
-      "intrebare": "Cine a formulat legea gravitației universale?",
-      "raspuns_corect": "Isaac Newton",
-      "variante": ["Galileo Galilei", "Albert Einstein", "Isaac Newton", "Johannes Kepler"]
-    },
-    {
-      "id": 80,
-      "intrebare": "Care este cel mai lung os din corpul uman?",
-      "raspuns_corect": "Femurul",
-      "variante": ["Tibia", "Humerusul", "Femurul", "Radiusul"]
-    },
-    {
-      "id": 81,
-      "intrebare": "Câte picioare are un păianjen?",
-      "raspuns_corect": "8",
-      "variante": ["6", "8", "10", "12"]
-    },
-    {
-      "id": 82,
-      "intrebare": "Care este capitala Greciei?",
-      "raspuns_corect": "Atena",
-      "variante": ["Salonic", "Atena", "Corint", "Sparta"]
-    },
-    {
-      "id": 83,
-      "intrebare": "Cine a pictat Capela Sixtină?",
-      "raspuns_corect": "Michelangelo",
-      "variante": ["Leonardo da Vinci", "Rafael", "Michelangelo", "Botticelli"]
-    },
-    {
-      "id": 84,
-      "intrebare": "Care este cel mai vechi material de scris folosit de oameni?",
-      "raspuns_corect": "Papirusul",
-      "variante": ["Pergamentul", "Papirusul", "Hârtia", "Tăblițele de lut"]
-    },
-    {
-      "id": 85,
-      "intrebare": "Câți ochi are un octopus?",
-      "raspuns_corect": "2",
-      "variante": ["2", "4", "6", "8"]
-    },
-    {
-      "id": 86,
-      "intrebare": "Care este capitala României?",
-      "raspuns_corect": "București",
-      "variante": ["Cluj-Napoca", "Timișoara", "București", "Iași"]
-    },
-    {
-      "id": 87,
-      "intrebare": "Cine a scris Mihai Viteazul (drama)?",
-      "raspuns_corect": "Alexandru Davila",
-      "variante": ["Ion Luca Caragiale", "Mihail Eminescu", "Alexandru Davila", "Vasile Alecsandri"]
-    },
-    {
-      "id": 88,
-      "intrebare": "Care este cel mai abundent metal din scoarța terestră?",
-      "raspuns_corect": "Aluminiul",
-      "variante": ["Fierul", "Calciul", "Aluminiul", "Siliciul"]
-    },
-    {
-      "id": 89,
-      "intrebare": "Câți ani a durat Războiul de 100 de Ani?",
-      "raspuns_corect": "116 ani",
-      "variante": ["100 ani", "106 ani", "116 ani", "120 ani"]
-    },
-    {
-      "id": 90,
-      "intrebare": "Care este capitala Turciei?",
-      "raspuns_corect": "Ankara",
-      "variante": ["Istanbul", "Izmir", "Ankara", "Antalya"]
-    },
-    {
-      "id": 91,
-      "intrebare": "Cine a inventat calculatorul electronic?",
-      "raspuns_corect": "Alan Turing",
-      "variante": ["Bill Gates", "Steve Jobs", "Alan Turing", "John von Neumann"]
-    },
-    {
-      "id": 92,
-      "intrebare": "Care este cel mai sărat ocean?",
-      "raspuns_corect": "Oceanul Atlantic",
-      "variante": ["Oceanul Pacific", "Oceanul Indian", "Oceanul Atlantic", "Oceanul Arctic"]
-    },
-    {
-      "id": 93,
-      "intrebare": "Câte camere are inima umană?",
-      "raspuns_corect": "4",
-      "variante": ["2", "3", "4", "5"]
-    },
-    {
-      "id": 94,
-      "intrebare": "Care este capitala Portugaliei?",
-      "raspuns_corect": "Lisabona",
-      "variante": ["Porto", "Braga", "Lisabona", "Coimbra"]
-    },
-    {
-      "id": 95,
-      "intrebare": "Cine a scris Luceafărul?",
-      "raspuns_corect": "Mihai Eminescu",
-      "variante": ["Ion Creangă", "George Coșbuc", "Mihai Eminescu", "Vasile Alecsandri"]
-    },
-    {
-      "id": 96,
-      "intrebare": "Care este cel mai mic continent ca populație?",
-      "raspuns_corect": "Antarctica",
-      "variante": ["Australia", "Europa", "Antarctica", "America de Nord"]
-    },
-    {
-      "id": 97,
-      "intrebare": "Câte laturi are un hexagon?",
-      "raspuns_corect": "6",
-      "variante": ["5", "6", "7", "8"]
-    },
-    {
-      "id": 98,
-      "intrebare": "Care este capitala Suediei?",
-      "raspuns_corect": "Stockholm",
-      "variante": ["Oslo", "Copenhaga", "Stockholm", "Helsinki"]
-    },
-    {
-      "id": 99,
-      "intrebare": "Cine a compus Cele Patru Anotimpuri?",
-      "raspuns_corect": "Antonio Vivaldi",
-      "variante": ["Bach", "Handel", "Antonio Vivaldi", "Haydn"]
-    },
-    {
-      "id": 100,
-      "intrebare": "Care este cel mai mare imperiu din istorie ca suprafață?",
-      "raspuns_corect": "Imperiul Mongol",
-      "variante": ["Imperiul Roman", "Imperiul Britanic", "Imperiul Mongol", "Imperiul Otoman"]
-    }
+	{
+	  "id": 1,
+	  "intrebare": "Care este cea mai mare planetă din sistemul solar?",
+	  "raspuns_corect": "Jupiter",
+	  "variante": ["Saturn", "Jupiter", "Neptun", "Uranus"]
+	},
+	{
+	  "id": 2,
+	  "intrebare": "Câte continente are Pământul?",
+	  "raspuns_corect": "7",
+	  "variante": ["5", "6", "7", "8"]
+	},
+	{
+	  "id": 3,
+	  "intrebare": "Care este cel mai lung râu din lume?",
+	  "raspuns_corect": "Nilul",
+	  "variante": ["Amazon", "Nilul", "Yangtze", "Mississippi"]
+	},
+	{
+	  "id": 4,
+	  "intrebare": "Care este capitala Franței?",
+	  "raspuns_corect": "Paris",
+	  "variante": ["Lyon", "Marseille", "Paris", "Bordeaux"]
+	},
+	{
+	  "id": 5,
+	  "intrebare": "Din ce element chimic este alcătuit Soarele în cea mai mare parte?",
+	  "raspuns_corect": "Hidrogen",
+	  "variante": ["Heliu", "Hidrogen", "Oxigen", "Carbon"]
+	},
+	{
+	  "id": 6,
+	  "intrebare": "Câte oase are corpul uman adult?",
+	  "raspuns_corect": "206",
+	  "variante": ["186", "196", "206", "216"]
+	},
+	{
+	  "id": 7,
+	  "intrebare": "Care este cel mai mic continent?",
+	  "raspuns_corect": "Australia",
+	  "variante": ["Europa", "Antarctica", "Australia", "America de Sud"]
+	},
+	{
+	  "id": 8,
+	  "intrebare": "Cine a pictat Mona Lisa?",
+	  "raspuns_corect": "Leonardo da Vinci",
+	  "variante": ["Michelangelo", "Rafael", "Leonardo da Vinci", "Botticelli"]
+	},
+	{
+	  "id": 9,
+	  "intrebare": "Care este formula chimică a apei?",
+	  "raspuns_corect": "H2O",
+	  "variante": ["CO2", "H2O", "NaCl", "O2"]
+	},
+	{
+	  "id": 10,
+	  "intrebare": "Câte culori are curcubeul?",
+	  "raspuns_corect": "7",
+	  "variante": ["5", "6", "7", "8"]
+	},
+	{
+	  "id": 11,
+	  "intrebare": "Care este cel mai mare ocean din lume?",
+	  "raspuns_corect": "Oceanul Pacific",
+	  "variante": ["Oceanul Atlantic", "Oceanul Indian", "Oceanul Pacific", "Oceanul Arctic"]
+	},
+	{
+	  "id": 12,
+	  "intrebare": "Cine a scris Romeo și Julieta?",
+	  "raspuns_corect": "William Shakespeare",
+	  "variante": ["Charles Dickens", "William Shakespeare", "Jane Austen", "Victor Hugo"]
+	},
+	{
+	  "id": 13,
+	  "intrebare": "Care este cel mai rapid animal terestru?",
+	  "raspuns_corect": "Ghepardul",
+	  "variante": ["Leul", "Ghepardul", "Calul", "Struțul"]
+	},
+	{
+	  "id": 14,
+	  "intrebare": "Câte planete are sistemul solar?",
+	  "raspuns_corect": "8",
+	  "variante": ["7", "8", "9", "10"]
+	},
+	{
+	  "id": 15,
+	  "intrebare": "Care este capitala Japoniei?",
+	  "raspuns_corect": "Tokyo",
+	  "variante": ["Osaka", "Kyoto", "Tokyo", "Hiroshima"]
+	},
+	{
+	  "id": 16,
+	  "intrebare": "Ce gaz respirăm cel mai mult din aer?",
+	  "raspuns_corect": "Azot",
+	  "variante": ["Oxigen", "Azot", "Dioxid de carbon", "Argon"]
+	},
+	{
+	  "id": 17,
+	  "intrebare": "Care este cel mai înalt munte din lume?",
+	  "raspuns_corect": "Everest",
+	  "variante": ["K2", "Kilimanjaro", "Everest", "Mont Blanc"]
+	},
+	{
+	  "id": 18,
+	  "intrebare": "Câte note are gama muzicală?",
+	  "raspuns_corect": "7",
+	  "variante": ["5", "6", "7", "8"]
+	},
+	{
+	  "id": 19,
+	  "intrebare": "Care este cel mai mare deșert din lume?",
+	  "raspuns_corect": "Sahara",
+	  "variante": ["Gobi", "Sahara", "Atacama", "Arabia"]
+	},
+	{
+	  "id": 20,
+	  "intrebare": "Cine a inventat telefonul?",
+	  "raspuns_corect": "Alexander Graham Bell",
+	  "variante": ["Thomas Edison", "Nikola Tesla", "Alexander Graham Bell", "Guglielmo Marconi"]
+	},
+	{
+	  "id": 21,
+	  "intrebare": "Care este simbolul chimic al aurului?",
+	  "raspuns_corect": "Au",
+	  "variante": ["Ag", "Au", "Fe", "Cu"]
+	},
+	{
+	  "id": 22,
+	  "intrebare": "Câți ani are un secol?",
+	  "raspuns_corect": "100",
+	  "variante": ["10", "50", "100", "1000"]
+	},
+	{
+	  "id": 23,
+	  "intrebare": "Care este capitala Australiei?",
+	  "raspuns_corect": "Canberra",
+	  "variante": ["Sydney", "Melbourne", "Canberra", "Brisbane"]
+	},
+	{
+	  "id": 24,
+	  "intrebare": "Câte luni are un an?",
+	  "raspuns_corect": "12",
+	  "variante": ["10", "11", "12", "13"]
+	},
+	{
+	  "id": 25,
+	  "intrebare": "Care este cel mai greu metal?",
+	  "raspuns_corect": "Osmiu",
+	  "variante": ["Plumb", "Uraniu", "Osmiu", "Platină"]
+	},
+	{
+	  "id": 26,
+	  "intrebare": "Cine a fost primul om pe Lună?",
+	  "raspuns_corect": "Neil Armstrong",
+	  "variante": ["Buzz Aldrin", "Yuri Gagarin", "Neil Armstrong", "John Glenn"]
+	},
+	{
+	  "id": 27,
+	  "intrebare": "Care este capitala Braziliei?",
+	  "raspuns_corect": "Brasilia",
+	  "variante": ["Rio de Janeiro", "São Paulo", "Brasilia", "Salvador"]
+	},
+	{
+	  "id": 28,
+	  "intrebare": "Câte fețe are un cub?",
+	  "raspuns_corect": "6",
+	  "variante": ["4", "5", "6", "8"]
+	},
+	{
+	  "id": 29,
+	  "intrebare": "Care este cel mai mare organ al corpului uman?",
+	  "raspuns_corect": "Pielea",
+	  "variante": ["Ficatul", "Plămânii", "Pielea", "Intestinul"]
+	},
+	{
+	  "id": 30,
+	  "intrebare": "Cine a compus Simfonia a 5-a?",
+	  "raspuns_corect": "Beethoven",
+	  "variante": ["Mozart", "Bach", "Beethoven", "Chopin"]
+	},
+	{
+	  "id": 31,
+	  "intrebare": "Care este capitala Canadei?",
+	  "raspuns_corect": "Ottawa",
+	  "variante": ["Toronto", "Vancouver", "Ottawa", "Montreal"]
+	},
+	{
+	  "id": 32,
+	  "intrebare": "Câte degete are o mână umană?",
+	  "raspuns_corect": "5",
+	  "variante": ["4", "5", "6", "7"]
+	},
+	{
+	  "id": 33,
+	  "intrebare": "Care este cel mai mic os din corpul uman?",
+	  "raspuns_corect": "Scărița (din ureche)",
+	  "variante": ["Coccisul", "Scărița (din ureche)", "Falanga", "Sesamoidul"]
+	},
+	{
+	  "id": 34,
+	  "intrebare": "Cine a descoperit America?",
+	  "raspuns_corect": "Cristofor Columb",
+	  "variante": ["Amerigo Vespucci", "Cristofor Columb", "Vasco da Gama", "Magellan"]
+	},
+	{
+	  "id": 35,
+	  "intrebare": "Care este viteza luminii?",
+	  "raspuns_corect": "300.000 km/s",
+	  "variante": ["150.000 km/s", "300.000 km/s", "500.000 km/s", "1.000.000 km/s"]
+	},
+	{
+	  "id": 36,
+	  "intrebare": "Câte cărți are Biblia (Vechiul și Noul Testament)?",
+	  "raspuns_corect": "66",
+	  "variante": ["52", "60", "66", "72"]
+	},
+	{
+	  "id": 37,
+	  "intrebare": "Care este cel mai populat oraș din lume?",
+	  "raspuns_corect": "Tokyo",
+	  "variante": ["Shanghai", "Mumbai", "Tokyo", "Mexico City"]
+	},
+	{
+	  "id": 38,
+	  "intrebare": "Din ce material este făcut diamantul?",
+	  "raspuns_corect": "Carbon",
+	  "variante": ["Siliciu", "Carbon", "Aluminiu", "Cristal"]
+	},
+	{
+	  "id": 39,
+	  "intrebare": "Cine a scris Iliada și Odiseea?",
+	  "raspuns_corect": "Homer",
+	  "variante": ["Platon", "Aristotel", "Homer", "Socrate"]
+	},
+	{
+	  "id": 40,
+	  "intrebare": "Care este simbolul chimic al fierului?",
+	  "raspuns_corect": "Fe",
+	  "variante": ["Fi", "Fr", "Fe", "Fo"]
+	},
+	{
+	  "id": 41,
+	  "intrebare": "Câte ore are o zi?",
+	  "raspuns_corect": "24",
+	  "variante": ["20", "22", "24", "26"]
+	},
+	{
+	  "id": 42,
+	  "intrebare": "Care este cel mai scurt anotimp astronomic?",
+	  "raspuns_corect": "Iarna (în emisfera nordică)",
+	  "variante": ["Primăvara", "Vara", "Toamna", "Iarna (în emisfera nordică)"]
+	},
+	{
+	  "id": 43,
+	  "intrebare": "Cine a inventat becul electric?",
+	  "raspuns_corect": "Thomas Edison",
+	  "variante": ["Nikola Tesla", "Thomas Edison", "Benjamin Franklin", "James Watt"]
+	},
+	{
+	  "id": 44,
+	  "intrebare": "Care este capitala Germaniei?",
+	  "raspuns_corect": "Berlin",
+	  "variante": ["München", "Hamburg", "Berlin", "Frankfurt"]
+	},
+	{
+	  "id": 45,
+	  "intrebare": "Câți dinți are un adult cu dentiția completă?",
+	  "raspuns_corect": "32",
+	  "variante": ["28", "30", "32", "34"]
+	},
+	{
+	  "id": 46,
+	  "intrebare": "Care este cel mai mare animal de pe Pământ?",
+	  "raspuns_corect": "Balena albastră",
+	  "variante": ["Elefantul african", "Rechinul balenă", "Balena albastră", "Girafă"]
+	},
+	{
+	  "id": 47,
+	  "intrebare": "Cine a formulat teoria relativității?",
+	  "raspuns_corect": "Albert Einstein",
+	  "variante": ["Isaac Newton", "Niels Bohr", "Albert Einstein", "Max Planck"]
+	},
+	{
+	  "id": 48,
+	  "intrebare": "Care este capitala Chinei?",
+	  "raspuns_corect": "Beijing",
+	  "variante": ["Shanghai", "Hong Kong", "Beijing", "Guangzhou"]
+	},
+	{
+	  "id": 49,
+	  "intrebare": "Câte litere are alfabetul latin clasic?",
+	  "raspuns_corect": "23",
+	  "variante": ["21", "23", "25", "26"]
+	},
+	{
+	  "id": 50,
+	  "intrebare": "Care este cel mai adânc lac din lume?",
+	  "raspuns_corect": "Lacul Baikal",
+	  "variante": ["Lacul Superior", "Marea Caspică", "Lacul Baikal", "Lacul Tanganyika"]
+	},
+	{
+	  "id": 51,
+	  "intrebare": "Cine a scris Don Quijote?",
+	  "raspuns_corect": "Miguel de Cervantes",
+	  "variante": ["Lope de Vega", "Miguel de Cervantes", "Francisco de Quevedo", "Calderón de la Barca"]
+	},
+	{
+	  "id": 52,
+	  "intrebare": "Care este capitala Rusiei?",
+	  "raspuns_corect": "Moscova",
+	  "variante": ["Sankt Petersburg", "Moscova", "Novosibirsk", "Kazan"]
+	},
+	{
+	  "id": 53,
+	  "intrebare": "Câte secunde are un minut?",
+	  "raspuns_corect": "60",
+	  "variante": ["30", "45", "60", "100"]
+	},
+	{
+	  "id": 54,
+	  "intrebare": "Care este elementul chimic cu numărul atomic 1?",
+	  "raspuns_corect": "Hidrogenul",
+	  "variante": ["Heliul", "Hidrogenul", "Litiul", "Carbonul"]
+	},
+	{
+	  "id": 55,
+	  "intrebare": "Cine a inventat avionul?",
+	  "raspuns_corect": "Frații Wright",
+	  "variante": ["Henry Ford", "Frații Wright", "Thomas Edison", "Nikola Tesla"]
+	},
+	{
+	  "id": 56,
+	  "intrebare": "Care este cel mai mare lac din lume?",
+	  "raspuns_corect": "Marea Caspică",
+	  "variante": ["Lacul Superior", "Lacul Victoria", "Marea Caspică", "Lacul Baikal"]
+	},
+	{
+	  "id": 57,
+	  "intrebare": "Câți cromozomi are celula umană normală?",
+	  "raspuns_corect": "46",
+	  "variante": ["23", "44", "46", "48"]
+	},
+	{
+	  "id": 58,
+	  "intrebare": "Care este capitala Italiei?",
+	  "raspuns_corect": "Roma",
+	  "variante": ["Milano", "Napoli", "Roma", "Florența"]
+	},
+	{
+	  "id": 59,
+	  "intrebare": "Cine a scris Infernul din Divina Comedie?",
+	  "raspuns_corect": "Dante Alighieri",
+	  "variante": ["Petrarca", "Boccaccio", "Dante Alighieri", "Ariosto"]
+	},
+	{
+	  "id": 60,
+	  "intrebare": "Care este cel mai vechi sport olimpic?",
+	  "raspuns_corect": "Alergarea (stadionul)",
+	  "variante": ["Lupte", "Disc", "Alergarea (stadionul)", "Pentatlon"]
+	},
+	{
+	  "id": 61,
+	  "intrebare": "Câți metri are un kilometru?",
+	  "raspuns_corect": "1000",
+	  "variante": ["100", "500", "1000", "10000"]
+	},
+	{
+	  "id": 62,
+	  "intrebare": "Care este capitala Spaniei?",
+	  "raspuns_corect": "Madrid",
+	  "variante": ["Barcelona", "Sevilla", "Madrid", "Valencia"]
+	},
+	{
+	  "id": 63,
+	  "intrebare": "Cine a descoperit penicilina?",
+	  "raspuns_corect": "Alexander Fleming",
+	  "variante": ["Louis Pasteur", "Marie Curie", "Alexander Fleming", "Robert Koch"]
+	},
+	{
+	  "id": 64,
+	  "intrebare": "Care este cel mai scurt os din corpul uman?",
+	  "raspuns_corect": "Scărița",
+	  "variante": ["Claviculă", "Scărița", "Falangă", "Coccis"]
+	},
+	{
+	  "id": 65,
+	  "intrebare": "Câte fuse orare are Pământul?",
+	  "raspuns_corect": "24",
+	  "variante": ["12", "18", "24", "36"]
+	},
+	{
+	  "id": 66,
+	  "intrebare": "Care este capitala Argentinei?",
+	  "raspuns_corect": "Buenos Aires",
+	  "variante": ["Montevideo", "Santiago", "Buenos Aires", "Lima"]
+	},
+	{
+	  "id": 67,
+	  "intrebare": "Cine a scris Război și Pace?",
+	  "raspuns_corect": "Lev Tolstoi",
+	  "variante": ["Dostoievski", "Cehov", "Lev Tolstoi", "Turgheniev"]
+	},
+	{
+	  "id": 68,
+	  "intrebare": "Care este cel mai dens metal?",
+	  "raspuns_corect": "Osmiu",
+	  "variante": ["Plumb", "Aur", "Osmiu", "Platină"]
+	},
+	{
+	  "id": 69,
+	  "intrebare": "Câte vertebre are coloana vertebrală umană?",
+	  "raspuns_corect": "33",
+	  "variante": ["26", "30", "33", "36"]
+	},
+	{
+	  "id": 70,
+	  "intrebare": "Care este capitala Mexicului?",
+	  "raspuns_corect": "Ciudad de México",
+	  "variante": ["Guadalajara", "Monterrey", "Ciudad de México", "Cancún"]
+	},
+	{
+	  "id": 71,
+	  "intrebare": "Cine a inventat tiparul?",
+	  "raspuns_corect": "Johannes Gutenberg",
+	  "variante": ["Leonardo da Vinci", "Johannes Gutenberg", "Galileo Galilei", "Copernic"]
+	},
+	{
+	  "id": 72,
+	  "intrebare": "Care este cel mai mare continent?",
+	  "raspuns_corect": "Asia",
+	  "variante": ["Africa", "Asia", "America de Nord", "Europa"]
+	},
+	{
+	  "id": 73,
+	  "intrebare": "Câte minute are o oră?",
+	  "raspuns_corect": "60",
+	  "variante": ["30", "45", "60", "100"]
+	},
+	{
+	  "id": 74,
+	  "intrebare": "Care este capitala Egiptului?",
+	  "raspuns_corect": "Cairo",
+	  "variante": ["Alexandria", "Luxor", "Cairo", "Aswan"]
+	},
+	{
+	  "id": 75,
+	  "intrebare": "Cine a scris Hamlet?",
+	  "raspuns_corect": "William Shakespeare",
+	  "variante": ["Christopher Marlowe", "Ben Jonson", "William Shakespeare", "John Milton"]
+	},
+	{
+	  "id": 76,
+	  "intrebare": "Care este cel mai mic planet din sistemul solar?",
+	  "raspuns_corect": "Mercur",
+	  "variante": ["Marte", "Venus", "Mercur", "Pluton"]
+	},
+	{
+	  "id": 77,
+	  "intrebare": "Câți litri de sânge are corpul uman?",
+	  "raspuns_corect": "5-6 litri",
+	  "variante": ["2-3 litri", "4-5 litri", "5-6 litri", "8-10 litri"]
+	},
+	{
+	  "id": 78,
+	  "intrebare": "Care este capitala Indiei?",
+	  "raspuns_corect": "New Delhi",
+	  "variante": ["Mumbai", "Kolkata", "New Delhi", "Chennai"]
+	},
+	{
+	  "id": 79,
+	  "intrebare": "Cine a formulat legea gravitației universale?",
+	  "raspuns_corect": "Isaac Newton",
+	  "variante": ["Galileo Galilei", "Albert Einstein", "Isaac Newton", "Johannes Kepler"]
+	},
+	{
+	  "id": 80,
+	  "intrebare": "Care este cel mai lung os din corpul uman?",
+	  "raspuns_corect": "Femurul",
+	  "variante": ["Tibia", "Humerusul", "Femurul", "Radiusul"]
+	},
+	{
+	  "id": 81,
+	  "intrebare": "Câte picioare are un păianjen?",
+	  "raspuns_corect": "8",
+	  "variante": ["6", "8", "10", "12"]
+	},
+	{
+	  "id": 82,
+	  "intrebare": "Care este capitala Greciei?",
+	  "raspuns_corect": "Atena",
+	  "variante": ["Salonic", "Atena", "Corint", "Sparta"]
+	},
+	{
+	  "id": 83,
+	  "intrebare": "Cine a pictat Capela Sixtină?",
+	  "raspuns_corect": "Michelangelo",
+	  "variante": ["Leonardo da Vinci", "Rafael", "Michelangelo", "Botticelli"]
+	},
+	{
+	  "id": 84,
+	  "intrebare": "Care este cel mai vechi material de scris folosit de oameni?",
+	  "raspuns_corect": "Papirusul",
+	  "variante": ["Pergamentul", "Papirusul", "Hârtia", "Tăblițele de lut"]
+	},
+	{
+	  "id": 85,
+	  "intrebare": "Câți ochi are un octopus?",
+	  "raspuns_corect": "2",
+	  "variante": ["2", "4", "6", "8"]
+	},
+	{
+	  "id": 86,
+	  "intrebare": "Care este capitala României?",
+	  "raspuns_corect": "București",
+	  "variante": ["Cluj-Napoca", "Timișoara", "București", "Iași"]
+	},
+	{
+	  "id": 87,
+	  "intrebare": "Cine a scris Mihai Viteazul (drama)?",
+	  "raspuns_corect": "Alexandru Davila",
+	  "variante": ["Ion Luca Caragiale", "Mihail Eminescu", "Alexandru Davila", "Vasile Alecsandri"]
+	},
+	{
+	  "id": 88,
+	  "intrebare": "Care este cel mai abundent metal din scoarța terestră?",
+	  "raspuns_corect": "Aluminiul",
+	  "variante": ["Fierul", "Calciul", "Aluminiul", "Siliciul"]
+	},
+	{
+	  "id": 89,
+	  "intrebare": "Câți ani a durat Războiul de 100 de Ani?",
+	  "raspuns_corect": "116 ani",
+	  "variante": ["100 ani", "106 ani", "116 ani", "120 ani"]
+	},
+	{
+	  "id": 90,
+	  "intrebare": "Care este capitala Turciei?",
+	  "raspuns_corect": "Ankara",
+	  "variante": ["Istanbul", "Izmir", "Ankara", "Antalya"]
+	},
+	{
+	  "id": 91,
+	  "intrebare": "Cine a inventat calculatorul electronic?",
+	  "raspuns_corect": "Alan Turing",
+	  "variante": ["Bill Gates", "Steve Jobs", "Alan Turing", "John von Neumann"]
+	},
+	{
+	  "id": 92,
+	  "intrebare": "Care este cel mai sărat ocean?",
+	  "raspuns_corect": "Oceanul Atlantic",
+	  "variante": ["Oceanul Pacific", "Oceanul Indian", "Oceanul Atlantic", "Oceanul Arctic"]
+	},
+	{
+	  "id": 93,
+	  "intrebare": "Câte camere are inima umană?",
+	  "raspuns_corect": "4",
+	  "variante": ["2", "3", "4", "5"]
+	},
+	{
+	  "id": 94,
+	  "intrebare": "Care este capitala Portugaliei?",
+	  "raspuns_corect": "Lisabona",
+	  "variante": ["Porto", "Braga", "Lisabona", "Coimbra"]
+	},
+	{
+	  "id": 95,
+	  "intrebare": "Cine a scris Luceafărul?",
+	  "raspuns_corect": "Mihai Eminescu",
+	  "variante": ["Ion Creangă", "George Coșbuc", "Mihai Eminescu", "Vasile Alecsandri"]
+	},
+	{
+	  "id": 96,
+	  "intrebare": "Care este cel mai mic continent ca populație?",
+	  "raspuns_corect": "Antarctica",
+	  "variante": ["Australia", "Europa", "Antarctica", "America de Nord"]
+	},
+	{
+	  "id": 97,
+	  "intrebare": "Câte laturi are un hexagon?",
+	  "raspuns_corect": "6",
+	  "variante": ["5", "6", "7", "8"]
+	},
+	{
+	  "id": 98,
+	  "intrebare": "Care este capitala Suediei?",
+	  "raspuns_corect": "Stockholm",
+	  "variante": ["Oslo", "Copenhaga", "Stockholm", "Helsinki"]
+	},
+	{
+	  "id": 99,
+	  "intrebare": "Cine a compus Cele Patru Anotimpuri?",
+	  "raspuns_corect": "Antonio Vivaldi",
+	  "variante": ["Bach", "Handel", "Antonio Vivaldi", "Haydn"]
+	},
+	{
+	  "id": 100,
+	  "intrebare": "Care este cel mai mare imperiu din istorie ca suprafață?",
+	  "raspuns_corect": "Imperiul Mongol",
+	  "variante": ["Imperiul Roman", "Imperiul Britanic", "Imperiul Mongol", "Imperiul Otoman"]
+	}
   ]
 }
