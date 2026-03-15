@@ -99,6 +99,7 @@ theme_override_styles/normal = ExtResource("4_k2s1m")
 theme_override_styles/focus = ExtResource("4_k2s1m")
 theme_override_styles/read_only = ExtResource("4_k2s1m")
 placeholder_text = "Intrebare de ajutor"
+wrap_mode = 1
 
 [node name="CenterContainer4" type="CenterContainer" parent="Contailer_Help/CenterContainer" unique_id=1264600338]
 layout_mode = 2
