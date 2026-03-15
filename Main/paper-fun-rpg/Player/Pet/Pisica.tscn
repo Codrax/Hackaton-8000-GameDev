@@ -1,4 +1,3 @@
-
 [gd_scene format=3 uid="uid://bp3dmn0ilbjle"]
 
 [ext_resource type="Script" uid="uid://bexh5s131yc03" path="res://Player/Pet/pisica.gd" id="1_rtfn1"]
@@ -594,18 +593,6 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-
-
-
-
-
-
-
-
-
-
-
-
 "values": [0]
 }
 
@@ -621,18 +608,6 @@ tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0.033333335, 0.6, 1.2333333),
-
-
-
-
-
-
-
-
-
-
-
-
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
 "values": [0, 1, 2]
@@ -709,3 +684,10 @@ offset_right = 3.0
 offset_bottom = 49.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
+theme_override_font_sizes/normal_font_size = 18
+text = "HELLO WORLD"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
