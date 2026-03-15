@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://dbf52ccu3mo7p"]
 
-[ext_resource type="Script" path="res://UI/main_menu/main_menu.gd" id="1_script"]
+[ext_resource type="Script" uid="uid://e5ckndcn08fs" path="res://UI/main_menu/main_menu.gd" id="1_script"]
 [ext_resource type="Texture2D" uid="uid://cd8ev6d1tvvdj" path="res://Images/UI/main_menu/background.png" id="2_qoqlk"]
-[ext_resource type="PackedScene" uid="uid://b6vgapu1u7xw0" path="res://NPCs/v_box_container.tscn" id="3_1xao8"]
+[ext_resource type="PackedScene" uid="uid://c8qes1sjo7hlg" path="res://NPCs/v_box_container.tscn" id="3_1xao8"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_btn_normal"]
 bg_color = Color(0.408, 0.408, 0.408, 1)
