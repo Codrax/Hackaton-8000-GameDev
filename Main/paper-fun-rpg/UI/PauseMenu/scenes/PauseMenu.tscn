@@ -5,6 +5,7 @@
 [ext_resource type="FontFile" uid="uid://bskte1qa7vhox" path="res://UI/PauseMenu/scenes/ui/GothicByte.ttf" id="2_schy6"]
 [ext_resource type="Texture2D" uid="uid://btcpbeqy0hs4c" path="res://UI/PauseMenu/scenes/ui/SETTINGS.png" id="3_83mwt"]
 [ext_resource type="Texture2D" uid="uid://yqaw55p72nin" path="res://UI/PauseMenu/scenes/ui/QUIT.png" id="4_q4okv"]
+[ext_resource type="Texture2D" uid="uid://dpxhi0r6yt4fl" path="res://Images/UI/button_tile.png" id="5_fqk8w"]
 [ext_resource type="Texture2D" uid="uid://1ib7ylj1uy6x" path="res://UI/PauseMenu/scenes/ui/bakpa1el.png" id="6_8a8ug"]
 [ext_resource type="Script" uid="uid://30s8qhh3arcy" path="res://UI/PauseMenu/scenes/audio_settings.gd" id="7_fqk8w"]
 [ext_resource type="Script" uid="uid://c8escj65jjgrl" path="res://UI/PauseMenu/scenes/graphics_page.gd" id="8_ns6jn"]
@@ -17,9 +18,17 @@ atlas = ExtResource("2_2q77i")
 atlas = ExtResource("2_2q77i")
 margin = Rect2(10, 10, 10, 0)
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_fqk8w"]
+load_path = "res://.godot/imported/SETTINGS.png-142b81eaba14f5709da81bad8749663c.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rs4t4"]
+atlas = ExtResource("5_fqk8w")
+region = Rect2(632, 23, 272, 288)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_fqk8w"]
-atlas = ExtResource("3_83mwt")
-margin = Rect2(10, 10, 10, 0)
+atlas = ExtResource("5_fqk8w")
+region = Rect2(632, 23, 272, 288)
+margin = Rect2(10, 10, 10, 10)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jsupi"]
 atlas = ExtResource("4_q4okv")
@@ -90,6 +99,19 @@ stretch_mode = 0
 custom_minimum_size = Vector2(300, 150)
 layout_mode = 2
 texture_normal = ExtResource("3_83mwt")
+texture_pressed = SubResource("CompressedTexture2D_fqk8w")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="ResetAIButton" type="TextureButton" parent="MainPanel/Mainbuttons/SettingsButton" unique_id=260702026]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 0
+offset_left = 477.0
+offset_top = 8.0
+offset_right = 627.0
+offset_bottom = 158.0
+scale = Vector2(0.8, 0.8)
+texture_normal = SubResource("AtlasTexture_rs4t4")
 texture_pressed = SubResource("AtlasTexture_fqk8w")
 ignore_texture_size = true
 stretch_mode = 0
@@ -103,6 +125,7 @@ ignore_texture_size = true
 stretch_mode = 0
 
 [node name="SettingsPanel" type="NinePatchRect" parent="." unique_id=144510988]
+visible = false
 offset_left = 503.0
 offset_top = 216.0
 offset_right = 1363.0
@@ -249,3 +272,5 @@ offset_top = 481.0
 offset_right = 750.0
 offset_bottom = 521.0
 text = "Back"
+
+[connection signal="pressed" from="MainPanel/Mainbuttons/SettingsButton/ResetAIButton" to="." method="_on_reset_ai_button_pressed"]
