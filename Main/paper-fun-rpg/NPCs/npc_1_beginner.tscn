@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cdwwaf1cxov4l"]
 
-[ext_resource type="Script" uid="uid://dl1obkxrhnp0p" path="res://NPCs/npc_1_beginner.gd" id="1_fkj1y"]
+[ext_resource type="Script" uid="uid://dl1obkxrhnp0p" path="res://NPCs/npc_1_beginner.gd" id="1_7f2xe"]
 [ext_resource type="Texture2D" uid="uid://b65c4uqvycc83" path="res://Images/Sprites/NPC/NPC1.png" id="2_7f2xe"]
 [ext_resource type="Script" uid="uid://b4oxkcm01rf8f" path="res://UI/quests/QuestUI.gd" id="3_7f2xe"]
 
@@ -80,10 +80,10 @@ position = Vector2(940, 514)
 position = Vector2(-118, 13)
 collision_layer = 512
 collision_mask = 0
-script = ExtResource("1_fkj1y")
+script = ExtResource("1_7f2xe")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea" unique_id=1216093223]
-position = Vector2(118, -12)
+position = Vector2(205, 8)
 shape = SubResource("CircleShape2D_dte7o")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=487404256]
@@ -91,7 +91,7 @@ libraries/ = SubResource("AnimationLibrary_ejl5a")
 autoplay = &"Idle"
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1750397465]
-position = Vector2(2, 5)
+position = Vector2(86, 19)
 scale = Vector2(4, 3.834)
 texture = ExtResource("2_7f2xe")
 hframes = 8
@@ -138,3 +138,8 @@ offset_left = 1620.0
 offset_top = 1011.0
 offset_right = 1920.0
 offset_bottom = 1038.0
+
+[node name="InteractionLabel" type="Label" parent="." unique_id=1133631474]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Press \"E\" to interact!"

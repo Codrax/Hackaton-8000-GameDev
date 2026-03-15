@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://bexh5s131yc03" path="res://Player/Pet/pisica.gd" id="1_rtfn1"]
 [ext_resource type="Texture2D" uid="uid://ddkos8wax88un" path="res://Images/Sprites/PET/cat 1.6.png" id="1_rut3n"]
 [ext_resource type="Texture2D" uid="uid://bv47p7bs1v72p" path="res://Images/UI/bubble.png" id="3_3l5c1"]
-[ext_resource type="Script" path="res://Player/Pet/textbubble_control.gd" id="4_x4sh7"]
+[ext_resource type="Script" uid="uid://dfhg0bkh1b5ut" path="res://Player/Pet/textbubble_control.gd" id="4_x4sh7"]
 [ext_resource type="Texture2D" uid="uid://dyukwnxjbd1x7" path="res://Images/UI/Text Dialogue.png" id="5_xws84"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3u3xv"]
