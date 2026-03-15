@@ -1,0 +1,7 @@
+In order to run this server (on linux), execute:
+start.sh
+
+This will set up your python envoroment
+
+You need the file "Gemmasutra-Mini-2B-v1-IQ3_M.gguf", with that exact filename, download it from
+https://huggingface.co/bartowski/Gemmasutra-Mini-2B-v1-GGUF
