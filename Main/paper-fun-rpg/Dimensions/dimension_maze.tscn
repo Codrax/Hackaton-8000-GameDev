@@ -72,7 +72,7 @@ tile_set = ExtResource("8_tqvom")
 [node name="Ambient" type="AudioStreamPlayer" parent="." unique_id=458984700]
 stream = ExtResource("11_g8bjb")
 autoplay = true
-parameters/looping = false
+parameters/looping = true
 
 [node name="UI_Overlay" parent="." unique_id=853865014 instance=ExtResource("10_ir2ro")]
 visible = false
