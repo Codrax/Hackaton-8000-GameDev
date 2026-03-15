@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@export var follow_distance: float = 0
+@export var follow_distance: float = 150.0
 @export var min_speed: float = 120.0
 @export var max_speed: float = 500.0
 @export var time_to_sit: float = 4.0
@@ -22,7 +22,7 @@ func _physics_process(delta):
 			return
 		else:
 			print("Am gasit jucatorul cu succes!") # <-- DEBUG 2
-print("Fizica ruleaza!")
+	print("Fizica ruleaza!")
 	var distance_to_player = global_position.distance_to(player.global_position)
 	var direction = global_position.direction_to(player.global_position)
 	
