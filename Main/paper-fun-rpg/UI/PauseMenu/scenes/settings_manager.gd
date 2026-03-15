@@ -30,6 +30,10 @@ func save_settings() -> void:
 	config.save(SETTINGS_PATH)
 
 func apply_settings() -> void:
+	_apply_audio_settings()
+	_apply_window_mode()
+
+func _apply_audio_settings() -> void:
 	var master_bus_index := AudioServer.get_bus_index("Master")
 
 	var db := linear_to_db(master_volume)
@@ -39,30 +43,42 @@ func apply_settings() -> void:
 	AudioServer.set_bus_volume_db(master_bus_index, db)
 	AudioServer.set_bus_mute(master_bus_index, master_muted)
 
-	if window_mode == "fullscreen":
-		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN)
-	else:
-		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)
+func _apply_window_mode() -> void:
+	match window_mode:
+		"fullscreen":
+			DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN)
+		"windowed":
+			DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)
+			DisplayServer.window_set_size(Vector2i(1280, 720))
+		_:
+			window_mode = "windowed"
+			DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)
+			DisplayServer.window_set_size(Vector2i(1280, 720))
 
 func set_master_volume(value: float) -> void:
 	master_volume = clamp(value, 0.0, 1.0)
+
 	if master_volume > 0.001:
 		master_muted = false
-	apply_settings()
+
+	_apply_audio_settings()
 	save_settings()
 
 func set_master_muted(value: bool) -> void:
 	master_muted = value
-	apply_settings()
+	_apply_audio_settings()
 	save_settings()
 
 func set_window_mode(mode: String) -> void:
+	if mode != "fullscreen" and mode != "windowed":
+		return
+
 	window_mode = mode
-	apply_settings()
+	_apply_window_mode()
 	save_settings()
 
 func toggle_fullscreen() -> void:
-	if window_mode == "fullscreen":
+	if DisplayServer.window_get_mode() == DisplayServer.WINDOW_MODE_FULLSCREEN:
 		set_window_mode("windowed")
 	else:
 		set_window_mode("fullscreen")

@@ -1,0 +1,102 @@
+[gd_scene format=3 uid="uid://bawhge3x2eeaj"]
+
+[ext_resource type="Script" uid="uid://wexrnd2f7cp4" path="res://UI/loading_screen/loading_screen.gd" id="1_5b7bi"]
+[ext_resource type="Texture2D" uid="uid://cvarw88p2t42j" path="res://UI/loading_screen/BAckgroundimage.png" id="1_yl1ey"]
+
+[node name="LoadingScreen" type="Control" unique_id=474803124]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5b7bi")
+
+[node name="Background" type="TextureRect" parent="." unique_id=2140134152]
+layout_mode = 0
+offset_left = 6.0
+offset_top = -3.0
+offset_right = 1926.0
+offset_bottom = 1077.0
+texture = ExtResource("1_yl1ey")
+expand_mode = 1
+
+[node name="BottomPanelButton" type="Button" parent="." unique_id=869125823]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 38.0
+offset_top = -11.0
+offset_right = 38.0
+offset_bottom = -11.0
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+
+[node name="PanelColor" type="ColorRect" parent="BottomPanelButton" unique_id=277919939]
+layout_mode = 0
+offset_left = 146.0
+offset_top = 448.0
+offset_right = 186.0
+offset_bottom = 488.0
+color = Color(0, 0, 0, 0.003921569)
+
+[node name="MarginContainer" type="MarginContainer" parent="BottomPanelButton" unique_id=754870306]
+layout_mode = 0
+offset_left = 37.0
+offset_top = 739.0
+offset_right = 1797.0
+offset_bottom = 1157.0
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="BottomPanelButton/MarginContainer" unique_id=55953016]
+layout_mode = 2
+theme_override_constants/separation = 18
+
+[node name="TipPanel" type="Panel" parent="BottomPanelButton/MarginContainer/VBoxContainer" unique_id=496802462]
+custom_minimum_size = Vector2(1700, 150)
+layout_mode = 2
+
+[node name="ColorRect" type="ColorRect" parent="BottomPanelButton/MarginContainer/VBoxContainer/TipPanel" unique_id=1478179955]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -3.0
+offset_bottom = -3.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0)
+
+[node name="TipLabel" type="Label" parent="BottomPanelButton/MarginContainer/VBoxContainer/TipPanel" unique_id=1919581641]
+custom_minimum_size = Vector2(0, 140)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 36
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="ProgressBar" type="ProgressBar" parent="BottomPanelButton/MarginContainer/VBoxContainer/TipPanel" unique_id=2024977231]
+custom_minimum_size = Vector2(1700, 36)
+layout_mode = 0
+offset_top = -54.0
+offset_right = 1700.0
+offset_bottom = -18.0
+
+[node name="LoadingLabel" type="Label" parent="." unique_id=490482224]
+custom_minimum_size = Vector2(500, 50)
+layout_mode = 0
+offset_left = 123.0
+offset_top = 719.0
+offset_right = 623.0
+offset_bottom = 769.0
+text = "Loading . . ."

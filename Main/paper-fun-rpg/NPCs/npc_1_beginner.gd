@@ -1,4 +1,7 @@
 extends Area2D
 
-func interact():
-	print("Salut! Interacțiunea cu NPC-ul funcționează perfect!")
+func interact() -> void:
+	var quiz = get_tree().get_root().find_child("VBoxContainer", true, false)
+	if quiz:
+		quiz.visible = true
+		quiz.start_quiz()
