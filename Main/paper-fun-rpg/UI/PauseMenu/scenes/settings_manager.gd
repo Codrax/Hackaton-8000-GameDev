@@ -4,7 +4,7 @@ const SETTINGS_PATH := "user://settings.cfg"
 
 var master_volume: float = 1.0
 var master_muted: bool = false
-var window_mode: String = "windowed"
+var window_mode: String = "fullscreen"
 
 func _ready() -> void:
 	load_settings()
@@ -20,7 +20,7 @@ func load_settings() -> void:
 
 	master_volume = float(config.get_value("audio", "master_volume", 1.0))
 	master_muted = bool(config.get_value("audio", "master_muted", false))
-	window_mode = str(config.get_value("graphics", "window_mode", "windowed"))
+	window_mode = str(config.get_value("graphics", "window_mode", "fullscreen"))
 
 func save_settings() -> void:
 	var config := ConfigFile.new()
@@ -51,9 +51,7 @@ func _apply_window_mode() -> void:
 			DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)
 			DisplayServer.window_set_size(Vector2i(1280, 720))
 		_:
-			window_mode = "windowed"
-			DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)
-			DisplayServer.window_set_size(Vector2i(1280, 720))
+			set_window_mode("fullscreen")
 
 func set_master_volume(value: float) -> void:
 	master_volume = clamp(value, 0.0, 1.0)
