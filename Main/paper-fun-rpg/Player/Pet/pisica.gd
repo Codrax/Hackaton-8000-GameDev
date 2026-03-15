@@ -22,7 +22,6 @@ func _physics_process(delta):
 			return
 		else:
 			print("Am gasit jucatorul cu succes!") # <-- DEBUG 2
-	print("Fizica ruleaza!")
 	var distance_to_player = global_position.distance_to(player.global_position)
 	var direction = global_position.direction_to(player.global_position)
 	
