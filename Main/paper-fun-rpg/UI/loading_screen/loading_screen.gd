@@ -1,7 +1,7 @@
 extends Control
 
-const TOTAL_LOADING_TIME: float = 8.0
-const TIP_CHANGE_TIME: float = 4.0
+const TOTAL_LOADING_TIME: float = 6.0
+const TIP_CHANGE_TIME: float = 3.0
 
 @onready var progress_bar: ProgressBar = $BottomPanelButton/MarginContainer/VBoxContainer/TipPanel/ProgressBar
 @onready var loading_label: Label = $LoadingLabel
@@ -11,11 +11,12 @@ const TIP_CHANGE_TIME: float = 4.0
 var progress_value: float = 0.0
 var elapsed_time: float = 0.0
 var tip_timer: float = 0.0
-var current_tip_index: int = 0
+var current_tip_index: int = -1
 var tips: Array[String] = []
 
 func _ready() -> void:
 	print("READY")
+	randomize()
 
 	progress_bar.min_value = 0
 	progress_bar.max_value = 100
@@ -49,7 +50,7 @@ func _show_initial_tip() -> void:
 		tip_label.text = ""
 		return
 
-	current_tip_index = 0
+	current_tip_index = _get_random_tip_index(-1)
 	tip_label.text = tips[current_tip_index]
 
 func _show_next_tip() -> void:
@@ -57,12 +58,19 @@ func _show_next_tip() -> void:
 		tip_label.text = ""
 		return
 
-	current_tip_index += 1
-
-	if current_tip_index >= tips.size():
-		current_tip_index = 0
-
+	current_tip_index = _get_random_tip_index(current_tip_index)
 	tip_label.text = tips[current_tip_index]
+
+func _get_random_tip_index(previous_index: int) -> int:
+	if tips.size() == 1:
+		return 0
+
+	var new_index: int = randi_range(0, tips.size() - 1)
+
+	while new_index == previous_index:
+		new_index = randi_range(0, tips.size() - 1)
+
+	return new_index
 
 func _on_bottom_panel_pressed() -> void:
 	_show_next_tip()
