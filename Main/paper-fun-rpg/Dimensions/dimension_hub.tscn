@@ -15,6 +15,8 @@
 [ext_resource type="TileSet" uid="uid://gjjfbqjhnsw1" path="res://Tilemaps/tile_clouds.tres" id="8_g5fkf"]
 [ext_resource type="Script" uid="uid://cgka7ek3csm22" path="res://Tilemaps/tile_clouds.gd" id="9_qn8vm"]
 [ext_resource type="Texture2D" uid="uid://bf1klnfd72md7" path="res://Images/portals.png" id="14_ghnmt"]
+[ext_resource type="PackedScene" uid="uid://deoconeatobfl" path="res://UI/UI.tscn" id="16_4ni5d"]
+[ext_resource type="SpriteFrames" uid="uid://qjcxtcupjow1" path="res://Animations/waterfall.png" id="17_hmkhn"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4ni5d"]
 atlas = ExtResource("14_ghnmt")
@@ -37,6 +39,9 @@ load_path = "res://.godot/imported/portals.png-cf8767896e62c73e8e09934dc30f2f28.
 [sub_resource type="AtlasTexture" id="AtlasTexture_hmkhn"]
 atlas = SubResource("CompressedTexture2D_4ni5d")
 region = Rect2(432, 820, 336, 380)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dtkbd"]
+size = Vector2(347, 370)
 
 [node name="Node2D" type="Node2D" unique_id=411654325]
 script = ExtResource("1_a1sdl")
@@ -103,6 +108,27 @@ position = Vector2(2.5, -81.5)
 shape = SubResource("RectangleShape2D_ghnmt")
 
 [node name="Player" parent="." unique_id=1146817872 instance=ExtResource("6_4ni5d")]
+position = Vector2(375, 459)
+
+[node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=814037960]
+
+[node name="Area2D_1" type="Area2D" parent="." unique_id=595521028]
+position = Vector2(-825, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D_1" unique_id=786534614]
+position = Vector2(29.5, 136)
+shape = SubResource("RectangleShape2D_dtkbd")
+
+[node name="Area2D_2" type="Area2D" parent="." unique_id=1770131278]
+position = Vector2(336, -1040)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D_2" unique_id=1107330433]
+position = Vector2(29.5, 136)
+shape = SubResource("RectangleShape2D_dtkbd")
+
+[node name="Ambient" type="AudioStreamPlayer" parent="Area2D_2" unique_id=428647985]
+stream = ExtResource("2_lri0m")
+autoplay = true
 
 [node name="tile_invisiblewall" type="TileMapLayer" parent="." unique_id=1660053097]
 visible = false
@@ -117,14 +143,14 @@ tile_map_data = PackedByteArray("AADV/+7/AAAOAAAAAADV////AAAOAAAAAADX/wwAAAAOAAA
 tile_set = ExtResource("8_g5fkf")
 script = ExtResource("9_qn8vm")
 
-[node name="Ambient" type="AudioStreamPlayer" parent="." unique_id=428647985]
-stream = ExtResource("2_lri0m")
-autoplay = true
-
 [node name="UI_Overlay" parent="." unique_id=853865014 instance=ExtResource("4_xpjkn")]
 visible = false
 
 [node name="Pause_Menu" parent="." unique_id=1790332088 instance=ExtResource("3_7hfs0")]
 visible = false
 
-[node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=814037960]
+[node name="UI" parent="." unique_id=1979440047 instance=ExtResource("16_4ni5d")]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1315084373]
+position = Vector2(267, 130)
+sprite_frames = ExtResource("17_hmkhn")
