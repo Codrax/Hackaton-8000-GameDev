@@ -7431,6 +7431,7 @@ texture_region_size = Vector2i(128, 128)
 12:13/0/physics_layer_0/polygon_0/points = PackedVector2Array(-40, 31, 65.88451, 111.27162, -86.3819, 90.774216, -81.9896, 21.961502)
 12:13/0/physics_layer_0/polygon_1/points = PackedVector2Array(-36.602493, 43.923004, 47, 109, 103.951126, 114.19981, 96.6306, 36.6025)
 10:11/size_in_atlas = Vector2i(2, 2)
+10:11/animation_columns = 2
 10:11/0 = 0
 2:0/size_in_atlas = Vector2i(2, 2)
 2:0/0 = 0

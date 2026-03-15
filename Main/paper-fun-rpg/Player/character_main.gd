@@ -39,6 +39,10 @@ func _physics_process(_delta):
 	# 4. Handle Attack
 	if Input.is_action_just_pressed("attack"):
 		anim_state.travel("Attack")
+		
+		# is in range of enemy?
+		# ... WRITE CODE HERE
+		BattleManager.battle_start(1)
 
 	move_and_slide()
 
