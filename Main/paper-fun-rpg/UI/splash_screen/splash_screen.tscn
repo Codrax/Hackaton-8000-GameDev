@@ -42,7 +42,7 @@ offset_top = 130.0
 offset_right = 2016.0
 offset_bottom = 213.0
 theme_override_fonts/font = ExtResource("7_cphjs")
-theme_override_font_sizes/font_size = 60
+theme_override_font_sizes/font_size = 100
 text = "A game developed by"
 horizontal_alignment = 1
 
@@ -68,7 +68,7 @@ offset_top = 143.0
 offset_right = 2026.0
 offset_bottom = 226.0
 theme_override_fonts/font = ExtResource("7_cphjs")
-theme_override_font_sizes/font_size = 60
+theme_override_font_sizes/font_size = 100
 text = "Important Health Information"
 horizontal_alignment = 1
 
@@ -118,7 +118,7 @@ offset_top = 143.0
 offset_right = 2026.0
 offset_bottom = 226.0
 theme_override_fonts/font = ExtResource("7_cphjs")
-theme_override_font_sizes/font_size = 60
+theme_override_font_sizes/font_size = 100
 text = "Preparing your experience..."
 horizontal_alignment = 1
 
