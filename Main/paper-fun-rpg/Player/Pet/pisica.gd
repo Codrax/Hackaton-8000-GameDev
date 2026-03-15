@@ -67,15 +67,4 @@ func _physics_process(delta):
 					if randf() < 0.2:
 						anim_state.travel("HeadDown")
 
-	# --- Z sorting relative to player ---
-	var new_z := 0
-	if player:
-		if global_position.y < player.global_position.y:
-			new_z = 0
-		else:
-			new_z = 1
-
-	if z_index != new_z:
-		z_index = new_z
-
 	move_and_slide()
