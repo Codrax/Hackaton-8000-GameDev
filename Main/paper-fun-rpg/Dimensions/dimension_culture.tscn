@@ -40,7 +40,7 @@ tile_map_data = PackedByteArray("AAD7//P/AAATAAEAAAD9/+r/AAAUAAEAAAD9//n/AAATAAE
 tile_set = ExtResource("2_kauso")
 
 [node name="Pisica" parent="." unique_id=238727010 instance=ExtResource("14_e4tka")]
-position = Vector2(310, -449.99997)
+position = Vector2(-1861, 623.63635)
 
 [node name="Player" parent="." unique_id=1640696164 instance=ExtResource("2_q6oif")]
 position = Vector2(-1764, 615.4546)
