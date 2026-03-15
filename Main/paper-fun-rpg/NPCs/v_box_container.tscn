@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://b6vgapu1u7xw0"]
+
+[ext_resource type="Script" uid="uid://ds0tei8byt8f1" path="res://NPCs/intrebari.gd" id="1_pl0ll"]
+
+[node name="VBoxContainer" type="VBoxContainer" unique_id=1974735420]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_pl0ll")
+
+[node name="LabelIntrebare" type="Label" parent="." unique_id=278078004]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=2025826347]
+layout_mode = 2
+
+[node name="BtnA" type="Button" parent="HBoxContainer" unique_id=198414967]
+layout_mode = 2
+
+[node name="BtnB" type="Button" parent="HBoxContainer" unique_id=528453717]
+layout_mode = 2
+
+[node name="BtnC" type="Button" parent="HBoxContainer" unique_id=941261665]
+layout_mode = 2
+
+[node name="BtnD" type="Button" parent="HBoxContainer" unique_id=1439396759]
+layout_mode = 2
+
+[node name="LabelFeedback" type="Label" parent="." unique_id=1544833178]
+layout_mode = 2
+
+[node name="LabelScor" type="Label" parent="." unique_id=1643679897]
+layout_mode = 2

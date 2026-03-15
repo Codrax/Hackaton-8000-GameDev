@@ -553,7 +553,7 @@ editor_draw_drag_margin = true
 
 [node name="InteractionArea" type="Area2D" parent="." unique_id=1041272765]
 disable_mode = 2
-collision_layer = 0
+collision_layer = 512
 collision_mask = 512
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea" unique_id=749522038]
