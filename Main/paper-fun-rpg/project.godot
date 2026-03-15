@@ -18,16 +18,13 @@ config/icon="res://Images/icon.svg"
 [autoload]
 
 Master="*uid://b7lgqf7st0lb0"
+BattleManager="*uid://ddncruxhyd0dt"
 DisplayModeManager="*uid://d2wtbf4ncpmod"
 SettingsManager="*uid://cbri01xi53366"
 LoadingScreenData="*uid://dw41qtwjwju56"
-<<<<<<< Updated upstream
-BattleManager="*uid://ddncruxhyd0dt"
 AI="*uid://df1ess1luyd3d"
 TransitionManager="*uid://dpr6bldtb80bw"
-=======
 QuestManager="*uid://bc5atxo2g5em6"
->>>>>>> Stashed changes
 
 [display]
 
