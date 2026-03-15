@@ -5,7 +5,7 @@
 [ext_resource type="FontFile" uid="uid://bskte1qa7vhox" path="res://UI/PauseMenu/scenes/ui/GothicByte.ttf" id="2_schy6"]
 [ext_resource type="Texture2D" uid="uid://btcpbeqy0hs4c" path="res://UI/PauseMenu/scenes/ui/SETTINGS.png" id="3_83mwt"]
 [ext_resource type="Texture2D" uid="uid://yqaw55p72nin" path="res://UI/PauseMenu/scenes/ui/QUIT.png" id="4_q4okv"]
-[ext_resource type="Texture2D" uid="uid://cv8oufuyw7ah5" path="res://UI/PauseMenu/scenes/ui/Adobe Express - file (2).png" id="6_h82un"]
+[ext_resource type="Texture2D" uid="uid://1ib7ylj1uy6x" path="res://UI/PauseMenu/scenes/ui/bakpa1el.png" id="6_8a8ug"]
 [ext_resource type="Script" uid="uid://30s8qhh3arcy" path="res://UI/PauseMenu/scenes/audio_settings.gd" id="7_fqk8w"]
 [ext_resource type="Script" uid="uid://c8escj65jjgrl" path="res://UI/PauseMenu/scenes/graphics_page.gd" id="8_ns6jn"]
 [ext_resource type="Script" uid="uid://cp3q5udbj3rnh" path="res://UI/PauseMenu/scenes/keybinds_menu.gd" id="9_rs4t4"]
@@ -13,8 +13,20 @@
 [sub_resource type="AtlasTexture" id="AtlasTexture_c4xau"]
 atlas = ExtResource("2_2q77i")
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_8a8ug"]
+atlas = ExtResource("2_2q77i")
+margin = Rect2(10, 10, 10, 0)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fqk8w"]
+atlas = ExtResource("3_83mwt")
+margin = Rect2(10, 10, 10, 0)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_jsupi"]
 atlas = ExtResource("4_q4okv")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ns6jn"]
+atlas = ExtResource("4_q4okv")
+margin = Rect2(10, 10, 10, 0)
 
 [node name="Pause_Menu" type="CanvasLayer" unique_id=1790332088]
 process_mode = 3
@@ -30,7 +42,7 @@ offset_right = 2.0
 offset_bottom = 6.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0, 0, 0, 0.21176471)
+color = Color(0, 0, 0, 0.2627451)
 
 [node name="MainPanel" type="NinePatchRect" parent="." unique_id=1565258397]
 custom_minimum_size = Vector2(520, 420)
@@ -70,6 +82,7 @@ offset_bottom = 804.0
 custom_minimum_size = Vector2(300, 150)
 layout_mode = 2
 texture_normal = SubResource("AtlasTexture_c4xau")
+texture_pressed = SubResource("AtlasTexture_8a8ug")
 ignore_texture_size = true
 stretch_mode = 0
 
@@ -77,6 +90,7 @@ stretch_mode = 0
 custom_minimum_size = Vector2(300, 150)
 layout_mode = 2
 texture_normal = ExtResource("3_83mwt")
+texture_pressed = SubResource("AtlasTexture_fqk8w")
 ignore_texture_size = true
 stretch_mode = 0
 
@@ -84,34 +98,37 @@ stretch_mode = 0
 custom_minimum_size = Vector2(300, 150)
 layout_mode = 2
 texture_normal = SubResource("AtlasTexture_jsupi")
+texture_pressed = SubResource("AtlasTexture_ns6jn")
 ignore_texture_size = true
 stretch_mode = 0
 
 [node name="SettingsPanel" type="NinePatchRect" parent="." unique_id=144510988]
-offset_left = 512.0
-offset_top = 222.0
-offset_right = 1372.0
-offset_bottom = 868.0
-texture = ExtResource("6_h82un")
+offset_left = 503.0
+offset_top = 216.0
+offset_right = 1363.0
+offset_bottom = 862.0
+texture = ExtResource("6_8a8ug")
 
 [node name="SettingsTitle" type="Label" parent="SettingsPanel" unique_id=110163283]
 layout_mode = 0
-offset_left = 262.0
-offset_top = 47.0
-offset_right = 598.0
-offset_bottom = 155.0
+offset_left = 283.0
+offset_top = 96.0
+offset_right = 619.0
+offset_bottom = 204.0
 theme_override_colors/font_color = Color(0.07683582, 0.07683582, 0.07683582, 1)
-theme_override_font_sizes/font_size = 27
-text = "SETTINGS"
+theme_override_fonts/font = ExtResource("2_schy6")
+theme_override_font_sizes/font_size = 26
+text = "SETTINGS
+"
 horizontal_alignment = 1
 
 [node name="TabButtons" type="HBoxContainer" parent="SettingsPanel" unique_id=1291597682]
 layout_mode = 1
 anchors_preset = -1
-offset_left = 110.0
-offset_top = 90.0
-offset_right = 790.0
-offset_bottom = 140.0
+offset_left = 133.0
+offset_top = 145.0
+offset_right = 813.0
+offset_bottom = 195.0
 
 [node name="AudioTabButton" type="Button" parent="SettingsPanel/TabButtons" unique_id=1349146252]
 custom_minimum_size = Vector2(210, 48)
@@ -142,16 +159,18 @@ offset_bottom = 530.0
 
 [node name="AudioPage" type="Control" parent="SettingsPanel/Pages" unique_id=1226976843]
 anchors_preset = 0
-offset_right = 740.0
-offset_bottom = 360.0
+offset_left = 67.0
+offset_top = 16.0
+offset_right = 807.0
+offset_bottom = 376.0
 script = ExtResource("7_fqk8w")
 
-[node name="MuteButton" type="Button" parent="SettingsPanel/Pages/AudioPage" unique_id=1853152302]
+[node name="MuteButton" type="CheckButton" parent="SettingsPanel/Pages/AudioPage" unique_id=126231913]
 layout_mode = 0
-offset_left = 40.0
-offset_top = 40.0
-offset_right = 240.0
-offset_bottom = 90.0
+offset_left = 344.0
+offset_top = 91.0
+offset_right = 544.0
+offset_bottom = 141.0
 text = "Mute Game"
 
 [node name="VolumeLabel" type="Label" parent="SettingsPanel/Pages/AudioPage" unique_id=23148319]
@@ -165,10 +184,10 @@ text = "Master Volume:
 
 [node name="MasterSlider" type="HSlider" parent="SettingsPanel/Pages/AudioPage" unique_id=878552674]
 layout_mode = 0
-offset_left = 40.0
-offset_top = 170.0
-offset_right = 540.0
-offset_bottom = 200.0
+offset_left = 43.0
+offset_top = 180.0
+offset_right = 543.0
+offset_bottom = 210.0
 max_value = 1.0
 step = 0.01
 value = 1.0
@@ -181,42 +200,43 @@ script = ExtResource("8_ns6jn")
 
 [node name="FullscreenButton" type="Button" parent="SettingsPanel/Pages/GraphicsPage" unique_id=906188156]
 layout_mode = 0
-offset_left = 40.0
-offset_top = 40.0
-offset_right = 260.0
-offset_bottom = 90.0
+offset_left = 251.0
+offset_top = 106.0
+offset_right = 471.0
+offset_bottom = 156.0
 text = "Fullscreen"
 
 [node name="WindowedButton" type="Button" parent="SettingsPanel/Pages/GraphicsPage" unique_id=1083748869]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 0.5
-offset_left = 40.0
-offset_top = 110.0
-offset_right = -110.0
-offset_bottom = 160.0
+offset_left = 251.0
+offset_top = 201.0
+offset_right = 101.0
+offset_bottom = 251.0
 text = "Windowed"
 
 [node name="KeybindsPage" type="Control" parent="SettingsPanel/Pages" unique_id=232076197]
 anchors_preset = 0
+offset_top = -2.0
 offset_right = 740.0
-offset_bottom = 360.0
+offset_bottom = 358.0
 script = ExtResource("9_rs4t4")
 
 [node name="KeybindsTitle" type="Label" parent="SettingsPanel/Pages/KeybindsPage" unique_id=454782463]
 layout_mode = 0
-offset_left = 40.0
-offset_top = 20.0
-offset_right = 240.0
-offset_bottom = 50.0
+offset_left = 53.0
+offset_top = 31.0
+offset_right = 253.0
+offset_bottom = 61.0
 text = "Controls"
 
 [node name="ScrollContainer" type="ScrollContainer" parent="SettingsPanel/Pages/KeybindsPage" unique_id=1160504677]
 layout_mode = 0
-offset_left = 40.0
-offset_top = 60.0
-offset_right = 660.0
-offset_bottom = 310.0
+offset_left = 52.0
+offset_top = 50.0
+offset_right = 672.0
+offset_bottom = 300.0
 
 [node name="KeybindList" type="VBoxContainer" parent="SettingsPanel/Pages/KeybindsPage/ScrollContainer" unique_id=1001555094]
 custom_minimum_size = Vector2(600, 250)
@@ -224,8 +244,8 @@ layout_mode = 2
 
 [node name="BackButton" type="Button" parent="SettingsPanel" unique_id=983012200]
 layout_mode = 0
-offset_left = 632.0
-offset_top = 528.0
-offset_right = 772.0
-offset_bottom = 568.0
+offset_left = 610.0
+offset_top = 481.0
+offset_right = 750.0
+offset_bottom = 521.0
 text = "Back"

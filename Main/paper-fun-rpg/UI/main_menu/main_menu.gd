@@ -1,6 +1,7 @@
 extends Control
 
 const GAME_SCENE = "res://Dimensions/dimension_hub.tscn"
+const LOADING_SCENE = "res://UI/loading_screen/loading_screen.tscn"
 
 func _ready() -> void:
 	await get_tree().process_frame
@@ -17,7 +18,8 @@ func _ready() -> void:
 	$CenterContainer/QuitButton.mouse_exited.connect(_on_quit_unhover)
 
 func _on_play_pressed() -> void:
-	get_tree().change_scene_to_file(GAME_SCENE)
+	LoadingScreenData.target_scene_path = GAME_SCENE
+	get_tree().change_scene_to_file(LOADING_SCENE)
 
 func _on_quit_pressed() -> void:
 	get_tree().quit()

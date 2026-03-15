@@ -515,7 +515,7 @@ _data = {
 [sub_resource type="CircleShape2D" id="CircleShape2D_sm6kc"]
 radius = 93.50535
 
-[node name="Player" type="CharacterBody2D" unique_id=1640696164]
+[node name="Player" type="CharacterBody2D" unique_id=1640696164 groups=["Player"]]
 position = Vector2(359, 146)
 scale = Vector2(2, 2)
 slide_on_ceiling = false
