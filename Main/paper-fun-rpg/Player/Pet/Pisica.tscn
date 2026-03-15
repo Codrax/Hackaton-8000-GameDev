@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://c3faavbg87gwr"]
+[gd_scene format=3 uid="uid://bp3dmn0ilbjle"]
 
 [ext_resource type="Script" uid="uid://bexh5s131yc03" path="res://Player/Pet/pisica.gd" id="1_rtfn1"]
 [ext_resource type="Texture2D" uid="uid://ddkos8wax88un" path="res://Images/Sprites/PET/cat 1.6.png" id="1_rut3n"]
