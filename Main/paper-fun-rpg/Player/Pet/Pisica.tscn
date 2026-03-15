@@ -3,7 +3,8 @@
 [ext_resource type="Script" uid="uid://bexh5s131yc03" path="res://Player/Pet/pisica.gd" id="1_rtfn1"]
 [ext_resource type="Texture2D" uid="uid://ddkos8wax88un" path="res://Images/Sprites/PET/cat 1.6.png" id="1_rut3n"]
 [ext_resource type="Texture2D" uid="uid://bv47p7bs1v72p" path="res://Images/UI/bubble.png" id="3_3l5c1"]
-[ext_resource type="Texture2D" uid="uid://3sxj7wd2ahsx" path="res://Images/UI/button_large.png" id="4_n62j6"]
+[ext_resource type="Script" uid="uid://dfhg0bkh1b5ut" path="res://Player/Pet/textbubble_control.gd" id="4_x4sh7"]
+[ext_resource type="Texture2D" uid="uid://dyukwnxjbd1x7" path="res://Images/UI/Text Dialogue.png" id="5_xws84"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3u3xv"]
 radius = 13.152946
@@ -674,31 +675,47 @@ libraries/ = SubResource("AnimationLibrary_fn06p")
 position = Vector2(-54, -25)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Node2D" unique_id=1091474230]
-root_node = NodePath("../Sprite2D")
+root_node = NodePath("../ControlLoading")
 libraries/ = SubResource("AnimationLibrary_x4sh7")
 autoplay = &"loading"
 
-[node name="Sprite2D" type="Sprite2D" parent="Node2D" unique_id=1094082676]
-position = Vector2(-72, -56.000008)
+[node name="ControlLoading" type="Sprite2D" parent="Node2D" unique_id=1094082676]
+visible = false
+position = Vector2(-23, -34)
 scale = Vector2(1.9736842, 1.90625)
 texture = ExtResource("3_3l5c1")
 hframes = 3
 
 [node name="Control" type="Control" parent="Node2D" unique_id=1602903478]
+visible = false
 layout_mode = 3
 anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = 4.0
+offset_top = -83.0
+offset_right = 44.0
+offset_bottom = -43.0
+script = ExtResource("4_x4sh7")
 
-[node name="NinePatchRect" type="NinePatchRect" parent="Node2D/Control" unique_id=100858068]
+[node name="Background" type="NinePatchRect" parent="Node2D/Control" unique_id=100858068]
 layout_mode = 0
-offset_left = -77.0
-offset_right = 40.0
-offset_bottom = 71.0
-texture = ExtResource("4_n62j6")
+offset_left = -181.0
+offset_top = -22.0
+offset_right = 29.0
+offset_bottom = 87.0
+texture = ExtResource("5_xws84")
 
-[node name="Label" type="Label" parent="Node2D/Control" unique_id=327086353]
+[node name="Label" type="RichTextLabel" parent="Node2D/Control" unique_id=170795461]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
-text = "SKIBIDI"
+offset_left = -171.0
+offset_top = -9.0
+offset_right = 18.0
+offset_bottom = 67.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
+theme_override_font_sizes/normal_font_size = 14
+text = "HELLO WORLD"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1

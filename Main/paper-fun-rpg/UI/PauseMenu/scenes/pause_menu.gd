@@ -6,6 +6,7 @@ extends CanvasLayer
 @onready var resume_button = $MainPanel/Mainbuttons/ResumeButton
 @onready var settings_button = $MainPanel/Mainbuttons/SettingsButton
 @onready var quit_button = $MainPanel/Mainbuttons/QuitButton
+@onready var resetai_button = $MainPanel/Mainbuttons/SettingsButton/ResetAIButton
 
 @onready var audio_tab_button = $SettingsPanel/TabButtons/AudioTabButton
 @onready var graphics_tab_button = $SettingsPanel/TabButtons/GraphicsTabButton
@@ -78,3 +79,16 @@ func open_pause_menu() -> void:
 	visible = true
 	main_panel.visible = true
 	settings_panel.visible = false
+
+
+func _on_reset_ai_button_pressed() -> void:
+	# Disable the button and make it semi-transparent
+	resetai_button.disabled = true
+	resetai_button.modulate = Color(1, 1, 1, 0.5)  # opacity 50%
+	
+	# Call the async reset
+	await AI.reset_model()
+	
+	# Re-enable the button and restore opacity
+	resetai_button.disabled = false
+	resetai_button.modulate = Color(1, 1, 1, 1)
