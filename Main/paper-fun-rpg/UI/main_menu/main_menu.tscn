@@ -145,3 +145,6 @@ text = "✕  Quit to desktop"
 [node name="MainMenu" type="AudioStreamPlayer" parent="." unique_id=1769582693]
 stream = ExtResource("5_usm5j")
 autoplay = true
+
+parameters/looping = true
+
