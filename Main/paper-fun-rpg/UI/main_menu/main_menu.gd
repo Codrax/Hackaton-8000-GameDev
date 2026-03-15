@@ -2,34 +2,20 @@ extends Control
 
 const GAME_SCENE = "res://Dimensions/dimension_hub.tscn"
 
+var buttons: Array[Button] = []
+
 func _ready() -> void:
 	await get_tree().process_frame
-	
-	$CenterContainer/PlayButton.text = "▶  Play"
-	$CenterContainer/QuitButton.text = "✕  Quit"
-	
+
 	$CenterContainer/PlayButton.pressed.connect(_on_play_pressed)
 	$CenterContainer/QuitButton.pressed.connect(_on_quit_pressed)
-	
-	$CenterContainer/PlayButton.mouse_entered.connect(_on_play_hover)
-	$CenterContainer/QuitButton.mouse_entered.connect(_on_quit_hover)
-	$CenterContainer/PlayButton.mouse_exited.connect(_on_play_unhover)
-	$CenterContainer/QuitButton.mouse_exited.connect(_on_quit_unhover)
+	$CenterContainer/SiteButton.pressed.connect(_on_site_pressed)
 
 func _on_play_pressed() -> void:
 	TransitionManager.go_to_scene(GAME_SCENE)
 
+func _on_site_pressed() -> void:
+	OS.shell_open("https://hoodie-research.025555.xyz/")
+
 func _on_quit_pressed() -> void:
 	get_tree().quit()
-
-func _on_play_hover() -> void:
-	$CenterContainer/PlayButton.text = "▶  Play  →"
-
-func _on_play_unhover() -> void:
-	$CenterContainer/PlayButton.text = "▶  Play"
-
-func _on_quit_hover() -> void:
-	$CenterContainer/QuitButton.text = "✕  Quit  →"
-
-func _on_quit_unhover() -> void:
-	$CenterContainer/QuitButton.text = "✕  Quit"
