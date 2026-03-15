@@ -7,6 +7,7 @@ extends CharacterBody2D
 @onready var anim_state = animation_tree.get("parameters/playback")
 
 var interactable_target = null
+var enemy_target = null
 
 func _physics_process(_delta):
 	# Oprește complet playerul când jocul este în pauză
@@ -58,9 +59,18 @@ func _input(event):
 		interactable_target.interact()
 
 func _on_interaction_area_area_entered(area):
+	print("Area2D-ul meu a atins ceva: ", area.name) # Test general
+	
 	if area.has_method("interact"):
 		interactable_target = area
+		
+	if area.is_in_group("enemy"):
+		print("Am confirmat că are grupul enemy!") # Test specific
+		enemy_target = area
 
 func _on_interaction_area_area_exited(area):
 	if interactable_target == area:
 		interactable_target = null
+		
+	if enemy_target == area:
+		enemy_target = null

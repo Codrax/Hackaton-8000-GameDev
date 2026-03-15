@@ -24,11 +24,9 @@ func _ready() -> void:
 		print("🎥 Camera zooming in...")
 	
 	# Connect signals for both areas
-	$Area2D_1.body_entered.connect(_on_player_entered)
 	$Area2D_2.body_entered.connect(_on_player_entered)
 	
 	# Optional: If you want it to disappear when leaving
-	$Area2D_1.body_exited.connect(_on_player_exited)
 	$Area2D_2.body_exited.connect(_on_player_exited)
 
 
