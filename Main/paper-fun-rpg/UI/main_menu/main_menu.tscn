@@ -1,8 +1,9 @@
 [gd_scene format=3 uid="uid://dbf52ccu3mo7p"]
 
 [ext_resource type="Script" uid="uid://e5ckndcn08fs" path="res://UI/main_menu/main_menu.gd" id="1_script"]
-[ext_resource type="Texture2D" uid="uid://cd8ev6d1tvvdj" path="res://Images/UI/main_menu/background.png" id="2_qoqlk"]
-[ext_resource type="PackedScene" uid="uid://c8qes1sjo7hlg" path="res://NPCs/v_box_container.tscn" id="3_1xao8"]
+[ext_resource type="Texture2D" uid="uid://b47osf8urcedn" path="res://Images/UI/main_menu/background.png" id="2_qoqlk"]
+[ext_resource type="PackedScene" path="res://NPCs/v_box_container.tscn" id="3_1xao8"]
+[ext_resource type="FontFile" uid="uid://bskte1qa7vhox" path="res://UI/PauseMenu/scenes/ui/GothicByte.ttf" id="3_qtoa1"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_btn_normal"]
 bg_color = Color(0.408, 0.408, 0.408, 1)
@@ -35,6 +36,8 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 6.0
+offset_right = 6.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_script")
@@ -60,21 +63,22 @@ grow_vertical = 2
 color = Color(0, 0, 0, 0.35)
 
 [node name="Background2" type="Sprite2D" parent="." unique_id=1667430353]
-position = Vector2(963, 543.00006)
-scale = Vector2(2.0020833, 2.0074077)
+position = Vector2(966, 623)
+scale = Vector2(1.248, 1.25)
 texture = ExtResource("2_qoqlk")
 
 [node name="TitleLabel" type="Label" parent="." unique_id=326050736]
 layout_mode = 0
-offset_left = 488.0
-offset_top = 201.0
-offset_right = 1537.0
-offset_bottom = 441.0
+offset_left = 31.0
+offset_top = 135.0
+offset_right = 1080.0
+offset_bottom = 375.0
 size_flags_horizontal = 4
-theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(0.13319638, 0.13319644, 0.13319626, 1)
 theme_override_colors/font_shadow_color = Color(0.2, 0.2, 0.2, 1)
 theme_override_constants/shadow_offset_x = 4
 theme_override_constants/shadow_offset_y = 4
+theme_override_fonts/font = ExtResource("3_qtoa1")
 theme_override_font_sizes/font_size = 100
 text = "Paper Fun RPG"
 horizontal_alignment = 1
@@ -86,10 +90,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -254.0
-offset_top = -61.0
-offset_right = 302.0
-offset_bottom = 320.25714
+offset_left = -710.0
+offset_top = -310.0
+offset_right = -154.0
+offset_bottom = 71.25714
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 16

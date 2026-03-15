@@ -1,6 +1,6 @@
 [gd_scene format=4 uid="uid://di52b8n3mmy86"]
 
-[ext_resource type="Script" uid="uid://p3i5qwiammq3" path="res://Dimensions/dimension_hub.gd" id="1_a1sdl"]
+[ext_resource type="Script" path="res://Dimensions/dimension_hub.gd" id="1_a1sdl"]
 [ext_resource type="Texture2D" uid="uid://bxjlvafxqv8ei" path="res://Images/cloudy.jpg" id="1_rl0p0"]
 [ext_resource type="AudioStream" uid="uid://belrhymkpkpfv" path="res://Music/dimensions/hub/ambient.mp3" id="2_lri0m"]
 [ext_resource type="TileSet" uid="uid://dfmqfrlltfrm4" path="res://Tilemaps/tile_128.tres" id="2_rl0p0"]
@@ -11,7 +11,7 @@
 [ext_resource type="Script" uid="uid://djtwoxygfqieq" path="res://Tilemaps/tile_after_128.gd" id="5_dtkbd"]
 [ext_resource type="PackedScene" uid="uid://c0lsnfct0maiq" path="res://Player/character_main.tscn" id="6_4ni5d"]
 [ext_resource type="TileSet" uid="uid://8qjqvrq3hifa" path="res://Tilemaps/tile_purple_128.tres" id="7_hmkhn"]
-[ext_resource type="Script" uid="uid://r5ia5aie8vnb" path="res://Dimensions/portal_yellow.gd" id="8_dtkbd"]
+[ext_resource type="Script" path="res://Dimensions/portal_yellow.gd" id="8_dtkbd"]
 [ext_resource type="TileSet" uid="uid://gjjfbqjhnsw1" path="res://Tilemaps/tile_clouds.tres" id="8_g5fkf"]
 [ext_resource type="Script" uid="uid://cgka7ek3csm22" path="res://Tilemaps/tile_clouds.gd" id="9_qn8vm"]
 [ext_resource type="Texture2D" uid="uid://bf1klnfd72md7" path="res://Images/portals.png" id="14_ghnmt"]
