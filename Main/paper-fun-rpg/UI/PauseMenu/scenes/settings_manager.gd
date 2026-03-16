@@ -6,6 +6,7 @@ var master_volume: float = 1.0
 var master_muted: bool = false
 var window_mode: String = "fullscreen"
 var local_llm: bool = false
+var local_llm_server: String = "http://localhost:8010"
 
 func _ready() -> void:
 	load_settings()
@@ -19,11 +20,13 @@ func load_settings() -> void:
 		save_settings()
 		return
 
-	master_volume = float(config.get_value("audio", "master_volume", 1.0))
-	master_muted = bool(config.get_value("audio", "master_muted", false))
-	window_mode = str(config.get_value("graphics", "window_mode", "fullscreen"))
-	local_llm = bool(config.get_value("gameplay", "local_llm", false))
+	master_volume = float(config.get_value("audio", "master_volume", master_volume))
+	master_muted = bool(config.get_value("audio", "master_muted", master_muted))
+	window_mode = str(config.get_value("graphics", "window_mode", window_mode))
+	local_llm = bool(config.get_value("gameplay", "local_llm", local_llm))
+	local_llm_server = String(config.get_value("gameplay", "local_llm_server", local_llm_server))
 	AI.useLocalLLM = local_llm
+	AI.localLLMServer = String(local_llm_server)
 
 func save_settings() -> void:
 	var config := ConfigFile.new()
@@ -31,6 +34,7 @@ func save_settings() -> void:
 	config.set_value("audio", "master_muted", master_muted)
 	config.set_value("graphics", "window_mode", window_mode)
 	config.set_value("gameplay", "local_llm", local_llm)
+	config.set_value("gameplay", "local_llm_server", local_llm_server)
 	config.save(SETTINGS_PATH)
 
 func apply_settings() -> void:

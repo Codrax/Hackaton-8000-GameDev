@@ -1,15 +1,15 @@
 extends Node
 
 const API_URL = "https://devsocket.025555.xyz/"
-const API_URL_LOCAL = "http://localhost:8010"
 const AUTH_TOKEN = "b8d4de9d-4c35-4143-b0c4-61c3776c0586"
 
 # Local LLM
 var useLocalLLM = false
+var localLLMServer = ""
 
 func getApiUrl():
 	if useLocalLLM:
-		return API_URL_LOCAL
+		return String(localLLMServer) + "/"
 	else:
 		return API_URL
 

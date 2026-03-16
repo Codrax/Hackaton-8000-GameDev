@@ -42,13 +42,6 @@ func _physics_process(_delta):
 		anim_state.travel("Idle")
 		velocity = Vector2.ZERO
 
-
-	if Input.is_action_just_pressed("attack"):
-		anim_state.travel("Attack")
-		BattleManager.battle_start(1)
-
-	move_and_slide()
-
 	# 4. Atac (Tasta F sau Click)
 	if Input.is_action_just_pressed("attack"):
 		anim_state.travel("Attack")
@@ -56,6 +49,9 @@ func _physics_process(_delta):
 		if interactable_target and interactable_target.get_parent().is_in_group("enemies"):
 			if has_node("/root/BattleManager"):
 				get_node("/root/BattleManager").battle_start(interactable_target.get_parent(), interactable_target.get_parent().get_path())
+				
+	# Move
+	move_and_slide()
 
 func _input(event):
 	# Blochează interacțiunea cât timp jocul este în pauză
